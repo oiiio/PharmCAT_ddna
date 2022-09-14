@@ -64,6 +64,7 @@ dependencies {
       [group: 'org.pharmgkb', name: 'vcf-parser', version: '0.2.3'],
       [group: 'org.slf4j', name: 'slf4j-api', version: '1.7.36'],
       [group: 'com.github.jknack', name: 'handlebars', version: '4.2.0'],
+      [group: 'ca.uhn.hapi', name: 'hapi-base', version: '2.3']
   )
 
   testImplementation(

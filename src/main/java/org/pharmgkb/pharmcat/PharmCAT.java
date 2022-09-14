@@ -23,6 +23,7 @@ import org.pharmgkb.pharmcat.haplotype.model.GeneCall;
 import org.pharmgkb.pharmcat.haplotype.model.Result;
 import org.pharmgkb.pharmcat.phenotype.Phenotyper;
 import org.pharmgkb.pharmcat.reporter.ReportContext;
+import org.pharmgkb.pharmcat.reporter.format.HL7Format;
 import org.pharmgkb.pharmcat.reporter.format.HtmlFormat;
 import org.pharmgkb.pharmcat.reporter.format.JsonFormat;
 import org.pharmgkb.pharmcat.reporter.io.OutsideCallParser;
@@ -59,6 +60,7 @@ public class PharmCAT {
   private String m_reporterTitle;
   private Path m_reporterJsonFile;
   private Path m_reporterHtmlFile;
+  private Path m_reporterHL7File;
   private ReportContext m_reportContext;
 
   private boolean m_deleteIntermediateFiles;
@@ -232,6 +234,7 @@ public class PharmCAT {
       if (cliHelper.hasOption("reporterJson")) {
         m_reporterJsonFile = getOutputFile(cliHelper, inputFile, ".report.json");
       }
+      m_reporterHL7File = getOutputFile(cliHelper, inputFile, ".hl7.txt");
     }
 
     m_deleteIntermediateFiles = cliHelper.hasOption("del");
@@ -346,11 +349,15 @@ public class PharmCAT {
         if (m_reporterJsonFile != null) {
           System.out.println("Saving reporter JSON results to " + m_reporterJsonFile);
         }
+        if (m_reporterHL7File != null) {
+          System.out.println("Saving HL7 report to " + m_reporterHL7File);
+        }
       }
       new HtmlFormat(m_reporterHtmlFile, m_testMode).write(m_reportContext);
       if (m_reporterJsonFile != null) {
         new JsonFormat(m_reporterJsonFile).write(m_reportContext);
       }
+      new HL7Format(m_reporterHL7File).write(m_reportContext);
       didSomething = true;
     }
 
