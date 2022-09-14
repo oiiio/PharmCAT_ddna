@@ -41,6 +41,7 @@ public class HL7Format extends AbstractFormat {
 
   private String generateHL7(ReportContext reportContext) {
 
+    //will ultimately be passed in
     String msg = "MSH|^~\\&|PENNCHART|UPHS||PharmCAT|20220315141017|BLEZNUCJ|ORM^O01|624|T|2.3\r" +
         "PID|1|8643070857^^^UID^UID|8643070857^^^UID^UID||ZZZTST^GENEONE^^^||20000915|M|\r" +
         "ORC|NW|620941^EPC||200091116|||^^^20220315^^RI^^||20220315141010|BLEZNUCJ^BLEZNUCK^JOSEPH^P^||1841226024^NATHANSON^KATHERINE^LEAH^^MD^^^NPI^^^^NPI|^^^ENT^^^^^MEDICAL GENETICS PERELMAN|(800)789-7366^^^^^800^7897366||||PC0T2HU0^PC0T2HU0^^1^INITIAL DEPARTMENT|||||||||||O|Protocol\r" +
@@ -72,12 +73,7 @@ public class HL7Format extends AbstractFormat {
     String obr = generateOBRSegment(t, sep, subSep);
     String obx = generateOBXSegments(reportContext, t, sep, subSep);
 
-    System.out.print(msh);
-    System.out.print(pid);
-    System.out.print(obr);
-
     return msh + pid + obr + obx;
-
   }
 
   private String getFieldSeparator(Terser t) {
@@ -104,7 +100,7 @@ public class HL7Format extends AbstractFormat {
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
     String msh = "MSH" + sep; //MSH-1 (MSH) and MSH-2 (field separator)
-    
+
     try {
       msh += t.get("MSH-6") + sep; //MSH-3: sending application
       msh += t.get("MSH-4") + sep; //MSH-4
@@ -174,6 +170,9 @@ public class HL7Format extends AbstractFormat {
     return obr;
   }
 
+  //TODO: refactor- extract fields into named strings for
+  //ask clinicians/end users: is this the proper data from PharmCAT they want to see in the HL7 report?
+  //Observation sub id: need info from Daniel/others
   private String generateOBXSegments(ReportContext reportContext, Terser t, String sep, String subsep) {
 
     String obx = "";
@@ -194,6 +193,7 @@ public class HL7Format extends AbstractFormat {
     return obx;
   }
 
+  //possible helper?
   private String generateOBXDrugSegment(GeneReport report) {
     String drug = "";
 
