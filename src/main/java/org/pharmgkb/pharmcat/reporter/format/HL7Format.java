@@ -10,10 +10,14 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.SortedSet;
+import java.util.StringJoiner;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.pharmgkb.pharmcat.reporter.model.DrugLink;
 import org.pharmgkb.pharmcat.reporter.model.result.GeneReport;
 import org.pharmgkb.pharmcat.reporter.ReportContext;
+import org.pharmgkb.pharmcat.phenotype.Phenotyper;
 
 import ca.uhn.hl7v2.HL7Exception;
 import ca.uhn.hl7v2.parser.EncodingNotSupportedException;
@@ -29,8 +33,42 @@ import ca.uhn.hl7v2.DefaultHapiContext;
  */
 public class HL7Format extends AbstractFormat {
 
-  private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+  private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 
+  private static Map<String, String> geneToInteractionType = new HashMap<>() {{
+    put("CYP2B6", "Metabolizer");
+    put("CYP2C9", "Metabolizer");
+    put("CYP2C19", "Metabolizer");
+    put("CYP2D6", "Metabolizer");
+    put("CYP3A5", "Metabolizer");
+    put("DPYD", "Metabolizer");
+    put("NUDT15", "Metabolizer");
+    put("TPMT", "Metabolizer");
+    put("UGT1A1", "Metabolizer");
+    put("ABCG2", "Transport");
+    put("SLCO1B1", "Transport");
+    put("CACNA1S", "Risk");
+    put("G6PD", "Risk");
+    put("HLA-A", "Risk");
+    put("MT-RNR1", "Risk");
+    put("RYR1", "Risk");
+    put("CFTR", "Efficacy");
+  }};
+
+  private static Map<String, String> interactionTypeToEpicCode = new HashMap<>() {{
+    put("Metabolizer", "53040-2");
+    put("Transport", "51961-1");
+    put("Risk", "83009-1");
+    put("Efficacy", "51961-1");
+  }};
+
+  private static Map<String, String> interactionTypeToEpicHeader = new HashMap<>() {{
+    put("Metabolizer", "Genetic Variation's Effect on Drug Metabolism");
+    put("Transport", "Genetic Variation's Effect on Drug Transport");
+    put("Risk", "Genetic Variation's Effect on High-Risk");
+    put("Efficacy", "Genetic Variation's Effect on Drug Efficacy");
+  }};
+  
   public HL7Format(Path outputPath) { super(outputPath); }
 
   public void write(ReportContext reportContext) throws IOException {
@@ -47,7 +85,6 @@ public class HL7Format extends AbstractFormat {
         "ORC|NW|620941^EPC||200091116|||^^^20220315^^RI^^||20220315141010|BLEZNUCJ^BLEZNUCK^JOSEPH^P^||1841226024^NATHANSON^KATHERINE^LEAH^^MD^^^NPI^^^^NPI|^^^ENT^^^^^MEDICAL GENETICS PERELMAN|(800)789-7366^^^^^800^7897366||||PC0T2HU0^PC0T2HU0^^1^INITIAL DEPARTMENT|||||||||||O|Protocol\r" +
         "OBR|1|620941^EPC||PCAT^PharmCAT Generic Order^PharmCAT^^PharmCAT Generic Order||20220315|||||||||^^^SALIVA&SALIVA|1841226024^NATHANSON^KATHERINE^LEAH^^MD^^^NPI^^^^NPI|(800)789-7366^^^^^800^7897366|||||||Lab|||^^^20220315^^RI^^|1144657396^ASHER^STEPHANIE^^^^^^NPI^^^^NPI||||||||20220315";
 
-
     HapiContext context = new DefaultHapiContext();
 
     Parser p = context.getGenericParser();
@@ -57,10 +94,12 @@ public class HL7Format extends AbstractFormat {
     try {
       m = p.parse(msg);
       t = new Terser(m);
-    } catch (EncodingNotSupportedException e) {
-        e.printStackTrace();
-        return "";
-    } catch (HL7Exception e) {
+    }
+    catch (EncodingNotSupportedException e) {
+      e.printStackTrace();
+      return "";
+    }
+    catch (HL7Exception e) {
       e.printStackTrace();
       return "";
     }
@@ -97,107 +136,122 @@ public class HL7Format extends AbstractFormat {
   }
 
   private String generateMSHSegment(Terser t, String sep, String subsep) {
-
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
-    String msh = "MSH" + sep; //MSH-1 (MSH) and MSH-2 (field separator)
+    StringJoiner msh_joiner = new StringJoiner(sep);
 
     try {
-      msh += t.get("MSH-6") + sep; //MSH-3: sending application
-      msh += t.get("MSH-4") + sep; //MSH-4
-      msh += sep.repeat(2); //MSH-5 and MSH-6 (empty)
-      msh += dateFormat.format(new Date()) + sep; //MSH-7: date
-      msh += sep; //MSH-8: security (empty)
-      msh += "ORU" + subsep + "R01" + sep; //MSH-9-1: msg type, and MSH-9-2: trigger event
-      msh += System.currentTimeMillis() + sep; //MSH-10: control ID (use server time in millis)
-      msh += "P" + sep; //MSH-11: processing ID (P = production)
-      msh += "2.3" + sep.repeat(2) + "\n"; //MSH-12: HL7 version, MSH-13 and MSH-14 left emptty
+      msh_joiner.add("MSH");
+      msh_joiner.add(t.get("MSH-2"));
+      msh_joiner.add(t.get("MSH-6")); //MSH-3: sending application
+      msh_joiner.add(t.get("MSH-4"));
+      msh_joiner.add("").add("");
+      msh_joiner.add(dateFormat.format(new Date())); //MSH-7: date
+      msh_joiner.add("");
+      msh_joiner.add("ORU" + subsep + "R01"); //MSH-9-1: msg type, and MSH-9-2: trigger event
+      msh_joiner.add(Long.toString(System.currentTimeMillis())); //MSH-10: control ID (use server time in millis)
+      msh_joiner.add("P"); //MSH-11: processing ID (P = production)
+      msh_joiner.add("2.3").add("").add("\n"); //MSH-12: HL7 version, MSH-13 and MSH-14 left empty
     }
     catch(HL7Exception e) {
       e.printStackTrace();
     }
-    return msh;
+    return msh_joiner.toString();
   }
 
   private String generatePIDSegment(Terser t, String sep, String subsep) {
-
-    String pid = "PID" + sep;
+    StringJoiner pid_joiner = new StringJoiner(sep);
 
     try {
-      pid += t.get("PID-1") + sep; //PID-1
-      pid += sep; //PID-2 blank
-      pid += t.get("PID-2-1") + subsep.repeat(4) + t.get("PID-2-4") + sep; //PID-3-1 and PID-3-5
-      pid += sep; //PID-4
-      pid += t.get("PID-5-1") + subsep + t.get("PID-5-2") + sep; //PID-5-1 and PID-5-2
-      pid += sep;
-      pid += t.get("PID-7") + sep; //date of birth
-      pid += t.get("PID-8") + "\n"; //gender
+      pid_joiner.add("PID");
+      pid_joiner.add(t.get("PID-1"));
+      pid_joiner.add("");
+      pid_joiner.add(t.get("PID-2-1") + subsep.repeat(4) + t.get("PID-2-4")); //PID-3-1 and PID-3-5
+      pid_joiner.add("");
+      pid_joiner.add(t.get("PID-5-1") + subsep + t.get("PID-5-2"));
+      pid_joiner.add("");
+      pid_joiner.add(t.get("PID-7")); //PID-7: DOB
+      pid_joiner.add(t.get("PID-8") + "\n"); //PID-8: gender
     }
     catch (HL7Exception e){
       e.printStackTrace();
     }
-
-    return pid;
+    return pid_joiner.toString();
   }
 
   private String generateOBRSegment(Terser t, String sep, String subsep) {
-
-    String obr = "OBR" + sep;
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+    StringJoiner obr_joiner = new StringJoiner(sep);
 
     try {
-      obr += t.get("OBR-1") + sep;
-      obr += t.get("OBR-2") + sep;
-      obr += System.currentTimeMillis() + sep;
-      obr += t.get("OBR-4-1") + subsep + t.get("OBR-4-2") + sep;
-      obr += sep.repeat(2); //5 and 6 unsupported
-      obr += dateFormat.format(new Date()) + sep; //observation date and time
-      obr += sep.repeat(6); //8 through 14 not needed
-      obr += sep.repeat(1); //15
-      obr += t.get("OBR-16-1") + subsep + t.get("OBR-16-2") + subsep + t.get("OBR-16-3") +
-          subsep + t.get("OBR-16-4") + subsep.repeat(9) + t.get("OBR-16-9") + sep;
-      obr += sep.repeat(5); //17 - 21 blank
-      obr += dateFormat.format(new Date()) + sep; //22 - results time
-      obr += sep.repeat(2); //23 and 24 blank
-      obr += "F" + sep; //25: status set to Final
-      obr += sep.repeat(2); //26 and 27 blank
-      obr += t.get("OBR-28-1") + subsep + t.get("OBR-28-2") + subsep + t.get("OBR-28-3") + subsep +
-          subsep.repeat(6) + t.get("OBR-28-9") + subsep.repeat(4) + t.get("OBR-28-13") + "\n";
+      obr_joiner.add("OBR");
+      obr_joiner.add(t.get("OBR-1"));
+      obr_joiner.add(t.get("OBR-2"));
+      obr_joiner.add(Long.toString(System.currentTimeMillis()));
+      obr_joiner.add(t.get("OBR-4-1") + subsep + t.get("OBR-4-2"));
+      obr_joiner.add("").add("");
+      obr_joiner.add(dateFormat.format(new Date())); //Observation date & time
+      obr_joiner.add("").add("").add("").add("").add("").add("").add("");
+      obr_joiner.add(t.get("OBR-16-1") + subsep + t.get("OBR-16-2") + subsep + t.get("OBR-16-3") +
+          subsep + t.get("OBR-16-4") + subsep.repeat(9) + t.get("OBR-16-9"));
+      obr_joiner.add("").add("").add("").add("").add("");
+      obr_joiner.add(dateFormat.format(new Date()));
+      obr_joiner.add("").add("");
+      obr_joiner.add("F"); //status to Final
+      obr_joiner.add("").add("");
+      obr_joiner.add(t.get("OBR-28-1") + subsep + t.get("OBR-28-2") + subsep + t.get("OBR-28-3") + subsep +
+          subsep.repeat(6) + t.get("OBR-28-9") + subsep.repeat(4) + t.get("OBR-28-13") + "\n");
     }
     catch (HL7Exception e) {
       e.printStackTrace();
     }
 
-    return obr;
+    return obr_joiner.toString();
   }
 
-  //TODO: refactor- extract fields into named strings for
-  //ask clinicians/end users: is this the proper data from PharmCAT they want to see in the HL7 report?
-  //Observation sub id: need info from Daniel/others
   private String generateOBXSegments(ReportContext reportContext, Terser t, String sep, String subsep) {
 
     String obx = "";
+    StringJoiner obx_joiner = new StringJoiner(sep);
+
     Collection<GeneReport> geneReports = reportContext.getGeneReports();
     int currentOBXSegment = 1;
 
     for (Iterator<GeneReport> i = geneReports.iterator(); i.hasNext();) {
       GeneReport report = i.next();
-      obx += "OBX" + sep + (currentOBXSegment++) + "|ST|47998-0^Variant Display Name^LN|<observation sub-id>|" + report.getGene() + "\r\n";
-      obx += "OBX" + sep + (currentOBXSegment++) +  "|CWE|48018-6^Gene studied^LN|<observation sub-id>|" + report.getGene() + "\r\n";
+
+      obx += "OBX" + sep + (currentOBXSegment++) + sep
+          + "ST" + sep + "47998-0^Variant Display Name^LN" + sep
+          + "sub-id" + sep + report.getGene() +
+          sep.repeat(6) + "F\r\n";
+
+      obx_joiner.add("OBX").add(Integer.toString(currentOBXSegment++));
+      obx_joiner.add("ST").add("47998-0^Variant Display Name^LN").add("sub-id").add(report.getGene());
+      obx_joiner.add("").add("").add("").add("").add("").add("").add("F\r\n");
+
+      obx += "OBX" + sep + (currentOBXSegment++) + sep
+          +  "CWE" + sep + "48018-6^Gene studied^LN" + sep
+          + "sub-id" + sep + report.getGene()
+          + sep.repeat(6) + "F\r\n";
+
+      obx_joiner.add("OBX").add(Integer.toString(currentOBXSegment++));
+      obx_joiner.add("CWE").add("48018-6^Gene studied^LN").add("sub-id").add(report.getGene());
+      obx_joiner.add("").add("").add("").add("").add("").add("").add("F\r\n");
+
+      obx += "OBX" + sep + (currentOBXSegment++) + sep
+          + "ST" + sep + "84413-4^Genotype display name^LN" + sep
+          + "sub-id" + sep + report.getReporterDiplotypes().get(0).printDisplay()
+          + sep.repeat(6) + "F\r\n";
+
+      obx += "OBX" + sep + (currentOBXSegment++) + sep
+          + "ST" + sep + "53040-2^Genetic Variation's Effect of Drug Metabolism^LN" + sep
+          + "sub-id" + sep + report.getReporterDiplotypes().get(0).printPhenotypes() + sep
+          + sep.repeat(6) + "F\r\n";
 
       SortedSet<DrugLink> relatedDrugs = report.getRelatedDrugs();
       for (Iterator<DrugLink> it = relatedDrugs.iterator(); it.hasNext();) {
-        obx += "OBX|" + currentOBXSegment + "|CWE|51963-7^Medication Assessed^LN|<observation sub-id>|" + it.next().getName() + "\r\n";
-            ++currentOBXSegment;
+        obx += "OBX" + sep + (currentOBXSegment++) + sep
+            + "CWE" + sep + "51963-7^Medication Assessed^LN" + sep
+            +"sub-id" + sep + it.next().getName() + sep.repeat(6) + "F\r\n";
       }
     }
     return obx;
   }
-
-  //possible helper?
-  private String generateOBXDrugSegment(GeneReport report) {
-    String drug = "";
-
-    return drug;
-  }
-
 }
