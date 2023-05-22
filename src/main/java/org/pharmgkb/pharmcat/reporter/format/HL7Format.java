@@ -13,11 +13,13 @@ import java.util.SortedSet;
 import java.util.StringJoiner;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 
 import org.pharmgkb.pharmcat.reporter.model.DrugLink;
+import org.pharmgkb.pharmcat.reporter.model.result.AnnotationGroup;
 import org.pharmgkb.pharmcat.reporter.model.result.GeneReport;
+import org.pharmgkb.pharmcat.reporter.model.result.DrugReport;
 import org.pharmgkb.pharmcat.reporter.ReportContext;
-import org.pharmgkb.pharmcat.phenotype.Phenotyper;
 
 import ca.uhn.hl7v2.HL7Exception;
 import ca.uhn.hl7v2.parser.EncodingNotSupportedException;
@@ -26,6 +28,7 @@ import ca.uhn.hl7v2.parser.Parser;
 import ca.uhn.hl7v2.util.Terser;
 import ca.uhn.hl7v2.model.Message;
 import ca.uhn.hl7v2.DefaultHapiContext;
+import org.pharmgkb.pharmcat.reporter.model.result.GuidelineReport;
 
 
 /**
@@ -33,9 +36,9 @@ import ca.uhn.hl7v2.DefaultHapiContext;
  */
 public class HL7Format extends AbstractFormat {
 
-  private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+  private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 
-  private static Map<String, String> geneToInteractionType = new HashMap<>() {{
+  private static final Map<String, String> geneToInteractionType = new HashMap<>() {{
     put("CYP2B6", "Metabolizer");
     put("CYP2C9", "Metabolizer");
     put("CYP2C19", "Metabolizer");
@@ -50,25 +53,38 @@ public class HL7Format extends AbstractFormat {
     put("CACNA1S", "Risk");
     put("G6PD", "Risk");
     put("HLA-A", "Risk");
+    put("HLA-B", "Risk");
     put("MT-RNR1", "Risk");
     put("RYR1", "Risk");
     put("CFTR", "Efficacy");
   }};
 
-  private static Map<String, String> interactionTypeToEpicCode = new HashMap<>() {{
+  private static final Map<String, String> interactionTypeToCPICCode = new HashMap<>() {{
     put("Metabolizer", "53040-2");
     put("Transport", "51961-1");
     put("Risk", "83009-1");
     put("Efficacy", "51961-1");
   }};
 
-  private static Map<String, String> interactionTypeToEpicHeader = new HashMap<>() {{
+  private static final Map<String, String> interactionTypeToCPICHeader = new HashMap<>() {{
     put("Metabolizer", "Genetic Variation's Effect on Drug Metabolism");
     put("Transport", "Genetic Variation's Effect on Drug Transport");
     put("Risk", "Genetic Variation's Effect on High-Risk");
     put("Efficacy", "Genetic Variation's Effect on Drug Efficacy");
   }};
-  
+
+  private static final Map<String, String> susceptibilityToRiskLevel = new HashMap<>() {{
+    put("Malignant Hyperthermia Susceptibility", "High Risk");
+    put("Uncertain Susceptibility", "Normal Risk");
+  }};
+
+  private static final Map<String, String> cftrGeneToEfficacy = new HashMap<>() {{
+    put("ivacaftor responsive in CF patients", "Responsive");
+    put("ivacaftor non-responsive in CF patients", "Presumed non-responsive");
+  }};
+
+  private static final Map<String, String> drugToRecommendation = new HashMap<>() {{}};
+
   public HL7Format(Path outputPath) { super(outputPath); }
 
   public void write(ReportContext reportContext) throws IOException {
@@ -79,8 +95,10 @@ public class HL7Format extends AbstractFormat {
 
   private String generateHL7(ReportContext reportContext) {
 
-    //will ultimately be passed in
-    String msg = "MSH|^~\\&|PENNCHART|UPHS||PharmCAT|20220315141017|BLEZNUCJ|ORM^O01|624|T|2.3\r" +
+    populateGeneDrugMap(reportContext);
+
+    //HL7 input message will need to be passed in the HL7Format. Using the following string as a placeholder
+    String inputHL7Message = "MSH|^~\\&|PENNCHART|UPHS||PharmCAT|20220315141017|BLEZNUCJ|ORM^O01|624|T|2.3\r" +
         "PID|1|8643070857^^^UID^UID|8643070857^^^UID^UID||ZZZTST^GENEONE^^^||20000915|M|\r" +
         "ORC|NW|620941^EPC||200091116|||^^^20220315^^RI^^||20220315141010|BLEZNUCJ^BLEZNUCK^JOSEPH^P^||1841226024^NATHANSON^KATHERINE^LEAH^^MD^^^NPI^^^^NPI|^^^ENT^^^^^MEDICAL GENETICS PERELMAN|(800)789-7366^^^^^800^7897366||||PC0T2HU0^PC0T2HU0^^1^INITIAL DEPARTMENT|||||||||||O|Protocol\r" +
         "OBR|1|620941^EPC||PCAT^PharmCAT Generic Order^PharmCAT^^PharmCAT Generic Order||20220315|||||||||^^^SALIVA&SALIVA|1841226024^NATHANSON^KATHERINE^LEAH^^MD^^^NPI^^^^NPI|(800)789-7366^^^^^800^7897366|||||||Lab|||^^^20220315^^RI^^|1144657396^ASHER^STEPHANIE^^^^^^NPI^^^^NPI||||||||20220315";
@@ -92,14 +110,9 @@ public class HL7Format extends AbstractFormat {
     Message m;
 
     try {
-      m = p.parse(msg);
+      m = p.parse(inputHL7Message);
       t = new Terser(m);
-    }
-    catch (EncodingNotSupportedException e) {
-      e.printStackTrace();
-      return "";
-    }
-    catch (HL7Exception e) {
+    } catch (HL7Exception e) {
       e.printStackTrace();
       return "";
     }
@@ -121,7 +134,7 @@ public class HL7Format extends AbstractFormat {
     }
     catch (HL7Exception e) {
       e.printStackTrace();
-      return "|"; //default
+      return "|";
     }
   }
 
@@ -131,8 +144,41 @@ public class HL7Format extends AbstractFormat {
     }
     catch (HL7Exception e) {
       e.printStackTrace();
-      return "^"; //default
+      return "^";
     }
+  }
+
+  private String getCPICRiskMessage(String gene, String pheno) {
+
+    if (gene.equals("CACNA1S") || gene.equals("RYR1")) {
+      return susceptibilityToRiskLevel.get(pheno);
+    }
+    else if (gene.equals("MT-RNR1")) {
+      if (pheno.contains("increased risk")) {
+        return "High Risk";
+      }
+      else {
+        return "Normal Risk";
+      }
+    }
+    else if (gene.equals("G6PD")) {
+      if (pheno.contains("Deficient") || pheno.equals("Variable")) {
+        return "High Risk";
+      }
+      else {
+        return "Normal Risk";
+      }
+    }
+    else if (gene.equals("HLA-A") || gene.equals("HLA-B")) {
+      //mapping provided for these terms was less concrete and based on whether the term contains the words positive or negative
+      if (pheno.contains("positive")) {
+        return "High Risk";
+      }
+      else {
+        return "Normal Risk";
+      }
+    }
+    return "";
   }
 
   private String generateMSHSegment(Terser t, String sep, String subsep) {
@@ -147,7 +193,7 @@ public class HL7Format extends AbstractFormat {
       msh_joiner.add(dateFormat.format(new Date())); //MSH-7: date
       msh_joiner.add("");
       msh_joiner.add("ORU" + subsep + "R01"); //MSH-9-1: msg type, and MSH-9-2: trigger event
-      msh_joiner.add(Long.toString(System.currentTimeMillis())); //MSH-10: control ID (use server time in millis)
+      msh_joiner.add(Long.toString(System.currentTimeMillis())); //MSH-10: control ID (server time in millis)
       msh_joiner.add("P"); //MSH-11: processing ID (P = production)
       msh_joiner.add("2.3").add("").add("\n"); //MSH-12: HL7 version, MSH-13 and MSH-14 left empty
     }
@@ -209,49 +255,78 @@ public class HL7Format extends AbstractFormat {
   private String generateOBXSegments(ReportContext reportContext, Terser t, String sep, String subsep) {
 
     String obx = "";
-    StringJoiner obx_joiner = new StringJoiner(sep);
+    String postfix = sep.repeat(5) + "F\r\n";
 
     Collection<GeneReport> geneReports = reportContext.getGeneReports();
     int currentOBXSegment = 1;
 
     for (Iterator<GeneReport> i = geneReports.iterator(); i.hasNext();) {
       GeneReport report = i.next();
+      String gene = report.getGene();
+      String diplo = report.getReporterDiplotypes().get(0).printDisplay();
+      String pheno = report.getReporterDiplotypes().get(0).printPhenotypes();
 
-      obx += "OBX" + sep + (currentOBXSegment++) + sep
-          + "ST" + sep + "47998-0^Variant Display Name^LN" + sep
-          + "sub-id" + sep + report.getGene() +
-          sep.repeat(6) + "F\r\n";
+      String interactionType = geneToInteractionType.get(gene);
+      String code = interactionTypeToCPICCode.get(interactionType);
+      String header = interactionTypeToCPICHeader.get(interactionType);
 
-      obx_joiner.add("OBX").add(Integer.toString(currentOBXSegment++));
-      obx_joiner.add("ST").add("47998-0^Variant Display Name^LN").add("sub-id").add(report.getGene());
-      obx_joiner.add("").add("").add("").add("").add("").add("").add("F\r\n");
+      String interactionMessage;
+      if (interactionType == "Risk") {
+        interactionMessage = getCPICRiskMessage(gene, pheno);
+      }
+      else if (interactionType == "Efficacy"){
+        interactionMessage = cftrGeneToEfficacy.get(pheno);
+      }
+      else {
+        interactionMessage = pheno;
+      }
 
-      obx += "OBX" + sep + (currentOBXSegment++) + sep
-          +  "CWE" + sep + "48018-6^Gene studied^LN" + sep
-          + "sub-id" + sep + report.getGene()
-          + sep.repeat(6) + "F\r\n";
-
-      obx_joiner.add("OBX").add(Integer.toString(currentOBXSegment++));
-      obx_joiner.add("CWE").add("48018-6^Gene studied^LN").add("sub-id").add(report.getGene());
-      obx_joiner.add("").add("").add("").add("").add("").add("").add("F\r\n");
-
-      obx += "OBX" + sep + (currentOBXSegment++) + sep
-          + "ST" + sep + "84413-4^Genotype display name^LN" + sep
-          + "sub-id" + sep + report.getReporterDiplotypes().get(0).printDisplay()
-          + sep.repeat(6) + "F\r\n";
-
-      obx += "OBX" + sep + (currentOBXSegment++) + sep
-          + "ST" + sep + "53040-2^Genetic Variation's Effect of Drug Metabolism^LN" + sep
-          + "sub-id" + sep + report.getReporterDiplotypes().get(0).printPhenotypes() + sep
-          + sep.repeat(6) + "F\r\n";
+      //sub-id can likely be omitted
+      //using + instead of StringJoiner here because obx segment spans multiple lines, and using StringJoiner has newlines starting with the separator (sep)
+      obx += "OBX" + sep + (currentOBXSegment++) + sep + "ST" + "47998-0^Variant Display Name^LN" + sep + "sub-id" + sep + gene + postfix;
+      obx += "OBX" + sep + (currentOBXSegment++) + sep + "CWE" + "48018-6^Gene studied^LN" + sep + "sub-id" + sep + gene + postfix;
+      obx += "OBX" + sep + (currentOBXSegment++) + sep + "ST" + "84413-4^Genotype display name^LN" + sep + "sub-id" + sep + diplo + postfix;
+      obx += "OBX" + sep + (currentOBXSegment++) + sep + "ST" + code + subsep + header + subsep + "LN" + sep + "sub-id" + sep + interactionMessage + postfix;
 
       SortedSet<DrugLink> relatedDrugs = report.getRelatedDrugs();
       for (Iterator<DrugLink> it = relatedDrugs.iterator(); it.hasNext();) {
-        obx += "OBX" + sep + (currentOBXSegment++) + sep
-            + "CWE" + sep + "51963-7^Medication Assessed^LN" + sep
-            +"sub-id" + sep + it.next().getName() + sep.repeat(6) + "F\r\n";
+        DrugLink drugLink = it.next();
+        obx += "OBX" + sep + (currentOBXSegment++) + sep + "CWE" + "51963-7^Medication Assessed^LN" + sep + "sub-id" + sep + drugLink.getName() + postfix;
+
+        //How to populate medication usage type remains an open question
+        obx += "OBX" + sep + (currentOBXSegment++) + sep + "ST" + "82116-5^Medication Usage Suggestion [Type]^LN" + sep + "sub-id" + sep + "type" + postfix;
+        obx += "OBX" + sep + (currentOBXSegment++) + sep +
+            "TX" + "83010-9^Medication Usage Suggestion [Narrative]^LN" + sep +
+            "sub-id" + sep + drugToRecommendation.get(drugLink.getName()) + postfix;
       }
     }
     return obx;
   }
+
+  private void populateGeneDrugMap(ReportContext reportContext) {
+
+    SortedSet<DrugReport> drugReports = reportContext.getDrugReports();
+
+    for (Iterator<DrugReport> i = drugReports.iterator(); i.hasNext();) {
+      DrugReport drug = i.next();
+      List<GuidelineReport> guidelineReports = drug.getGuidelines();
+      List<GuidelineReport> cpicGuideline = guidelineReports.stream().filter(g -> g.getSource().getDisplayName().equals("CPIC")).toList();
+
+      //skip if no CPIC guideline available
+      if(cpicGuideline.size() ==  0) {
+        continue;
+      }
+
+      for (Iterator<GuidelineReport> j = cpicGuideline.iterator(); j.hasNext();) {
+        GuidelineReport gReport = j.next();
+        List<AnnotationGroup> annotationGroups = gReport.getAnnotationGroups();
+
+        for (Iterator<AnnotationGroup> k = annotationGroups.iterator(); k.hasNext();) {
+          AnnotationGroup aGroup = k.next();
+          drugToRecommendation.put(drug.getName(), aGroup.getDrugRecommendation());
+        }
+      }
+    }
+  }
 }
+
