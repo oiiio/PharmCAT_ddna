@@ -36,23 +36,6 @@ jobs:
             21
           cache: 'gradle'
 
-      - name: Run PharmCAT tests
-        run: ./gradlew test --no-daemon --info --scan
-
-      - uses: actions/upload-artifact@v4
-        if: failure()
-        with:
-          name: ci-pharmcat-tests-jdk17
-          path: build/reports/tests/test/index.html
-          if-no-files-found: ignore
-
-      - uses: actions/upload-artifact@v4
-        if: failure()
-        with:
-          name: ci-pharmcat-tests-jdk17
-          path: build/reports/tests/test/index.html
-          if-no-files-found: ignore
-
       - name: Run PharmCAT tests on Java 21
         run: ./gradlew testOnJava21 --no-daemon --info --scan
 
@@ -63,10 +46,13 @@ jobs:
           path: build/reports/tests/test/index.html
           if-no-files-found: ignore
 
+      - name: Run PharmCAT tests on Java 17
+        run: ./gradlew test --no-daemon --info --scan
+
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: ci-pharmcat-tests-jdk21
+          name: ci-pharmcat-tests-jdk17
           path: build/reports/tests/test/index.html
           if-no-files-found: ignore
 
