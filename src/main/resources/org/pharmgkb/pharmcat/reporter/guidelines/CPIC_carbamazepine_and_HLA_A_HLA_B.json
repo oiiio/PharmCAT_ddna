@@ -793,7 +793,8 @@
         "Pirmohamed Munir"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2018
+      "year": 2018,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5847474"
     },
     {
       "pmid": "23695185",
@@ -812,8 +813,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2013
+      "year": 2013,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3748365"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

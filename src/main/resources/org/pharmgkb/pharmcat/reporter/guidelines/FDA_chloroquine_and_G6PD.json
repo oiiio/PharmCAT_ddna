@@ -1,0 +1,109 @@
+{
+  "guideline": {
+    "id": "PA166104786",
+    "name": "Annotation of FDA Label for chloroquine and G6PD",
+    "source": "FDA",
+    "version": 32,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104786",
+    "relatedChemicals": [
+      {
+        "id": "PA448948",
+        "name": "chloroquine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312762",
+      "name": "Recommendation Annotation PA166312762",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448948",
+          "name": "chloroquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452219101,
+        "html": "<p>&quot;Chloroquine may cause hemolysis in glucose-6 phosphate dehydrogenase (G-6-PD) deficiency. Blood monitoring may be needed as hemolytic anemia may occur, in particular in association with other drugs that cause hemolysis.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312763",
+      "name": "Recommendation Annotation PA166312763",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448948",
+          "name": "chloroquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452219102,
+        "html": "<p>&quot;Chloroquine may cause hemolysis in glucose-6 phosphate dehydrogenase (G-6-PD) deficiency. Blood monitoring may be needed as hemolytic anemia may occur, in particular in association with other drugs that cause hemolysis.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312761",
+      "name": "Recommendation Annotation PA166312761",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448948",
+          "name": "chloroquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452219100,
+        "html": "<p>&quot;Chloroquine may cause hemolysis in glucose-6 phosphate dehydrogenase (G-6-PD) deficiency. Blood monitoring may be needed as hemolytic anemia may occur, in particular in association with other drugs that cause hemolysis.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product chloroquine (NDA006002)",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=006002"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

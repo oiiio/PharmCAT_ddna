@@ -1135,7 +1135,8 @@
         "Yang Jun J"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2019
+      "year": 2019,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6576267"
     },
     {
       "pmid": "23422873",
@@ -1156,7 +1157,8 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2013
+      "year": 2013,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3604643"
     },
     {
       "pmid": "21270794",
@@ -1175,8 +1177,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2011
+      "year": 2011,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3098761"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

@@ -703,8 +703,9 @@
         "Schwab M"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2017
+      "year": 2017,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479760"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

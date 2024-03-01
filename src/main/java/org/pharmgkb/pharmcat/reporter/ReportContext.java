@@ -30,7 +30,7 @@ import org.pharmgkb.pharmcat.util.CliUtils;
  * @author Ryan Whaley
  */
 public class ReportContext {
-  private static final List<DataSource> DRUG_REPORT_SOURCES = ImmutableList.of(DataSource.CPIC, DataSource.DPWG);
+  private static final List<DataSource> DRUG_REPORT_SOURCES = ImmutableList.of(DataSource.CPIC, DataSource.DPWG, DataSource.FDA);
 
   @Expose
   @SerializedName("title")
@@ -180,6 +180,9 @@ public class ReportContext {
   }
 
   public @Nullable GeneReport getGeneReport(DataSource source, String gene) {
+    if (source == DataSource.FDA) {
+      return m_geneReports.get(DataSource.CPIC).get(gene);
+    }
     return m_geneReports.get(source).get(gene);
   }
 

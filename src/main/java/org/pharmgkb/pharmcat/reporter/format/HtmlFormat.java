@@ -48,7 +48,7 @@ public class HtmlFormat extends AbstractFormat {
   private static final String sf_templatePrefix = "/org/pharmgkb/pharmcat/reporter";
   private static final String sf_handlebarTemplateName = "report";
   private static final boolean sf_compact_drugs = false;
-  private List<DataSource> m_sources = Lists.newArrayList(DataSource.CPIC, DataSource.DPWG);
+  private List<DataSource> m_sources = Lists.newArrayList(DataSource.CPIC, DataSource.DPWG, DataSource.FDA);
   private boolean m_compact;
   private final boolean f_testMode;
 
@@ -224,9 +224,7 @@ public class HtmlFormat extends AbstractFormat {
     result.put("functionMap", functionMap);
 
     // Section II: Prescribing Recommendations
-    SortedMap<String, Map<DataSource, DrugReport>> drugReports = new TreeMap<>();
     SortedMap<String, Recommendation> recommendationMap = new TreeMap<>();
-
     for (DataSource source : reportContext.getDrugReports().keySet()) {
       if (!m_sources.contains(source)) {
         continue;
@@ -239,9 +237,6 @@ public class HtmlFormat extends AbstractFormat {
 
         Recommendation rec = recommendationMap.computeIfAbsent(drugReport.getName(), n -> new Recommendation(getEnv(), n));
         rec.addReport(source, drugReport);
-
-        drugReports.computeIfAbsent(drugReport.getName(), (n) -> new HashMap<>())
-            .put(source, drugReport);
       }
     }
 

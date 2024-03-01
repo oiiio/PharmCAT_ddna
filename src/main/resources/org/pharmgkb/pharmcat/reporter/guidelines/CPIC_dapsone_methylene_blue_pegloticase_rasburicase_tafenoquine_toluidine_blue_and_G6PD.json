@@ -715,35 +715,6 @@
       "otherPrescribingGuidance": false
     },
     {
-      "id": "PA166298518",
-      "name": "Recommendation PA166298518",
-      "population": "general",
-      "classification": {
-        "term": "Moderate",
-        "termId": "guidelineStrength:981501931"
-      },
-      "relatedChemicals": [
-        {
-          "id": "PA166115580",
-          "name": "tafenoquine",
-          "symbol": null
-        }
-      ],
-      "text": {
-        "id": 1452061120,
-        "html": "<p>To ascertain G6PD status, enzyme activity must be measured. Drug use should be guided per the recommendations based on the activity-based phenotype.</p>\n<h4 id=\"other-considerations\">Other Considerations</h4>\n<p>Due to X-linked mosaicism, individuals with more than one X chromosome (e.g., females, individuals with Klinefelter syndrome) and heterozygous for one non-deficient (class IV) and one deficient (class I–III) allele may display a normal or a deficient phenotype; an enzyme activity test is needed to assign G6PD phenotype in such cases. Tafenoquine’s safety has been established for a G6PD enzyme activity ≥70% of normal. (Inclusion criteria for clinical trials involving tafenoquine included G6PD activity ≥70%.)</p>\n"
-      },
-      "implications": [
-        "G6PD: Variable risk of acute hemolytic anemia"
-      ],
-      "lookupKey": {
-        "G6PD": "Variable"
-      },
-      "dosingInformation": false,
-      "alternateDrugAvailable": false,
-      "otherPrescribingGuidance": true
-    },
-    {
       "id": "PA166298509",
       "name": "Recommendation PA166298509",
       "population": "general",
@@ -771,6 +742,35 @@
       "dosingInformation": false,
       "alternateDrugAvailable": true,
       "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166298518",
+      "name": "Recommendation PA166298518",
+      "population": "general",
+      "classification": {
+        "term": "Moderate",
+        "termId": "guidelineStrength:981501931"
+      },
+      "relatedChemicals": [
+        {
+          "id": "PA166115580",
+          "name": "tafenoquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452061120,
+        "html": "<p>To ascertain G6PD status, enzyme activity must be measured. Drug use should be guided per the recommendations based on the activity-based phenotype.</p>\n<h4 id=\"other-considerations\">Other Considerations</h4>\n<p>Due to X-linked mosaicism, individuals with more than one X chromosome (e.g., females, individuals with Klinefelter syndrome) and heterozygous for one non-deficient (class IV) and one deficient (class I–III) allele may display a normal or a deficient phenotype; an enzyme activity test is needed to assign G6PD phenotype in such cases. Tafenoquine’s safety has been established for a G6PD enzyme activity ≥70% of normal. (Inclusion criteria for clinical trials involving tafenoquine included G6PD activity ≥70%.)</p>\n"
+      },
+      "implications": [
+        "G6PD: Variable risk of acute hemolytic anemia"
+      ],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
     },
     {
       "id": "PA166297614",
@@ -938,7 +938,8 @@
         "Relling Mary V"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2022
+      "year": 2022,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/36049896"
     },
     {
       "pmid": "24787449",
@@ -955,8 +956,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2014
+      "year": 2014,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4111801"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

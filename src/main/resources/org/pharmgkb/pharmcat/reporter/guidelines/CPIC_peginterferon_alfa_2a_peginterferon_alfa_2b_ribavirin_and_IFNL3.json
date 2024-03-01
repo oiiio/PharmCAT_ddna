@@ -48,8 +48,9 @@
         "Clinical Pharmacogenetics Implementation Consortium (CPIC)"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2014
+      "year": 2014,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3904555"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

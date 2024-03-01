@@ -1,0 +1,565 @@
+{
+  "guideline": {
+    "id": "PA166246301",
+    "name": "Annotation of FDA Label for acetaminophen / caffeine / dihydrocodeine and CYP2D6",
+    "source": "FDA",
+    "version": 5,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166246301",
+    "relatedChemicals": [
+      {
+        "id": "PA166246281",
+        "name": "acetaminophen / caffeine / dihydrocodeine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312462",
+      "name": "Recommendation Annotation PA166312462",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216761,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312504",
+      "name": "Recommendation Annotation PA166312504",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216803,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312464",
+      "name": "Recommendation Annotation PA166312464",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216763,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312482",
+      "name": "Recommendation Annotation PA166312482",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216781,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312548",
+      "name": "Recommendation Annotation PA166312548",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216847,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312502",
+      "name": "Recommendation Annotation PA166312502",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216801,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312542",
+      "name": "Recommendation Annotation PA166312542",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216841,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312544",
+      "name": "Recommendation Annotation PA166312544",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216843,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312546",
+      "name": "Recommendation Annotation PA166312546",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216845,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312465",
+      "name": "Recommendation Annotation PA166312465",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216764,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312461",
+      "name": "Recommendation Annotation PA166312461",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216760,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312503",
+      "name": "Recommendation Annotation PA166312503",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216802,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312463",
+      "name": "Recommendation Annotation PA166312463",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216762,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312481",
+      "name": "Recommendation Annotation PA166312481",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216780,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312547",
+      "name": "Recommendation Annotation PA166312547",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216846,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312483",
+      "name": "Recommendation Annotation PA166312483",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216782,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312549",
+      "name": "Recommendation Annotation PA166312549",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216848,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312501",
+      "name": "Recommendation Annotation PA166312501",
+      "population": "adults",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216800,
+        "html": "<p>&quot;Individuals who are ultra-rapid metabolizers should not use codeine.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312543",
+      "name": "Recommendation Annotation PA166312543",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216842,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312545",
+      "name": "Recommendation Annotation PA166312545",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216844,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312521",
+      "name": "Recommendation Annotation PA166312521",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216820,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312541",
+      "name": "Recommendation Annotation PA166312541",
+      "population": "pediatrics",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166246281",
+          "name": "acetaminophen / caffeine / dihydrocodeine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216840,
+        "html": "<p>&quot;Ultra-Rapid Metabolism of Codeine and Other Risk Factors for Life-threatening Respiratory Depression in Children.\nLife-threatening respiratory depression and death have occurred in children who received codeine. Most of the reported cases occurred following tonsillectomy and/or adenoidectomy, and many of the children had evidence of being an ultra-rapid metabolizer of codeine due to CYP2D6 polymorphism.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Acetaminophen, Caffeine, Dihydrocodeine Bitartrate (Acetaminophen, Caffeine, Dihydrocodeine Bitartrate), ANDA204785, Xspire Pharma, Llc",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=204785"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

@@ -1,0 +1,717 @@
+{
+  "guideline": {
+    "id": "PA166104810",
+    "name": "Annotation of FDA Label for mercaptopurine and NUDT15, TPMT",
+    "source": "FDA",
+    "version": 34,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104810",
+    "relatedChemicals": [
+      {
+        "id": "PA450379",
+        "name": "mercaptopurine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134963132",
+        "name": "nudix hydrolase 15",
+        "symbol": "NUDT15"
+      },
+      {
+        "id": "PA356",
+        "name": "thiopurine S-methyltransferase",
+        "symbol": "TPMT"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166311181",
+      "name": "Recommendation Annotation PA166311181",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213800,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311148",
+      "name": "Recommendation Annotation PA166311148",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213747,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311161",
+      "name": "Recommendation Annotation PA166311161",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213780,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311185",
+      "name": "Recommendation Annotation PA166311185",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213804,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311183",
+      "name": "Recommendation Annotation PA166311183",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213802,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311141",
+      "name": "Recommendation Annotation PA166311141",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213740,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311152",
+      "name": "Recommendation Annotation PA166311152",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213751,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311163",
+      "name": "Recommendation Annotation PA166311163",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213782,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311150",
+      "name": "Recommendation Annotation PA166311150",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213749,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311158",
+      "name": "Recommendation Annotation PA166311158",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213757,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311145",
+      "name": "Recommendation Annotation PA166311145",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213744,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311156",
+      "name": "Recommendation Annotation PA166311156",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213755,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311143",
+      "name": "Recommendation Annotation PA166311143",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213742,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311154",
+      "name": "Recommendation Annotation PA166311154",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213753,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311149",
+      "name": "Recommendation Annotation PA166311149",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213748,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311147",
+      "name": "Recommendation Annotation PA166311147",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213746,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311184",
+      "name": "Recommendation Annotation PA166311184",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213803,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311182",
+      "name": "Recommendation Annotation PA166311182",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213801,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311153",
+      "name": "Recommendation Annotation PA166311153",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213752,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311151",
+      "name": "Recommendation Annotation PA166311151",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213750,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311162",
+      "name": "Recommendation Annotation PA166311162",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213781,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311186",
+      "name": "Recommendation Annotation PA166311186",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213805,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311146",
+      "name": "Recommendation Annotation PA166311146",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213745,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311157",
+      "name": "Recommendation Annotation PA166311157",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213756,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311144",
+      "name": "Recommendation Annotation PA166311144",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213743,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311155",
+      "name": "Recommendation Annotation PA166311155",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213754,
+        "html": "<p>&quot;Heterozygous deficiency in TPMT and/or NUDT15...Reduce the PURIXAN dosage based on tolerability. Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended mercaptopurine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311142",
+      "name": "Recommendation Annotation PA166311142",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450379",
+          "name": "mercaptopurine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213741,
+        "html": "<p>&quot;Homozygous deficiency in either TPMT or NUDT15...Patients with homozygous deficiency of either enzyme typically require 10% or less of the standard PURIXAN dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product PURIXAN (Purixan), NDA205919, Nova Laboratories, Ltd",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=205919"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

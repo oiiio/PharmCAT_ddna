@@ -1,0 +1,717 @@
+{
+  "guideline": {
+    "id": "PA166104838",
+    "name": "Annotation of FDA Label for thioguanine and NUDT15, TPMT",
+    "source": "FDA",
+    "version": 30,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104838",
+    "relatedChemicals": [
+      {
+        "id": "PA451663",
+        "name": "thioguanine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134963132",
+        "name": "nudix hydrolase 15",
+        "symbol": "NUDT15"
+      },
+      {
+        "id": "PA356",
+        "name": "thiopurine S-methyltransferase",
+        "symbol": "TPMT"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312147",
+      "name": "Recommendation Annotation PA166312147",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216386,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312134",
+      "name": "Recommendation Annotation PA166312134",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216373,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions. Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312136",
+      "name": "Recommendation Annotation PA166312136",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216375,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312123",
+      "name": "Recommendation Annotation PA166312123",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216362,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312125",
+      "name": "Recommendation Annotation PA166312125",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216364,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312138",
+      "name": "Recommendation Annotation PA166312138",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216377,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312130",
+      "name": "Recommendation Annotation PA166312130",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216369,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312143",
+      "name": "Recommendation Annotation PA166312143",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216382,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312132",
+      "name": "Recommendation Annotation PA166312132",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216371,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions. Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312145",
+      "name": "Recommendation Annotation PA166312145",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216384,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312121",
+      "name": "Recommendation Annotation PA166312121",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216360,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312141",
+      "name": "Recommendation Annotation PA166312141",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216380,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312139",
+      "name": "Recommendation Annotation PA166312139",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216378,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312128",
+      "name": "Recommendation Annotation PA166312128",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216367,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312122",
+      "name": "Recommendation Annotation PA166312122",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216361,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312146",
+      "name": "Recommendation Annotation PA166312146",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216385,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312135",
+      "name": "Recommendation Annotation PA166312135",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216374,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions. Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312137",
+      "name": "Recommendation Annotation PA166312137",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216376,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312124",
+      "name": "Recommendation Annotation PA166312124",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216363,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312126",
+      "name": "Recommendation Annotation PA166312126",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216365,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312142",
+      "name": "Recommendation Annotation PA166312142",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216381,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312131",
+      "name": "Recommendation Annotation PA166312131",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216370,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312144",
+      "name": "Recommendation Annotation PA166312144",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216383,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312133",
+      "name": "Recommendation Annotation PA166312133",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216372,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities. Patients who are heterozygous for both TPMT and NUDT15 may require more substantial dosage reductions. Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312140",
+      "name": "Recommendation Annotation PA166312140",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216379,
+        "html": "<p>&quot;Most patients with heterozygous TPMT or NUDT15 deficiency tolerate recommended thioguanine doses, but some require dose reduction based on toxicities...Reduce the dosage based on tolerability.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312127",
+      "name": "Recommendation Annotation PA166312127",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216366,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312129",
+      "name": "Recommendation Annotation PA166312129",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216368,
+        "html": "<p>&quot;Patients with homozygous deficiency of either TPMT or NUDT15 enzyme typically require 10% or less of the standard thioguanine dosage. Reduce initial dosage in patients who are known to have homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product TABLOID (thioguanine), NDA012429, Aspen Global Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=012429"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

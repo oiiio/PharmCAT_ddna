@@ -32,6 +32,7 @@ public class Recommendation implements Comparable<Recommendation> {
   private final String m_drug;
   private Report m_cpicReport;
   private Report m_dpwgReport;
+  private Report m_fdaReport;
   private boolean m_hasInferred;
   private boolean m_hasDpydInferred;
   private final Set<MessageAnnotation> m_messages = new LinkedHashSet<>();
@@ -62,6 +63,13 @@ public class Recommendation implements Comparable<Recommendation> {
               source.getDisplayName());
         }
         m_dpwgReport = new Report(source, report);
+      }
+      case FDA -> {
+        if (m_fdaReport != null) {
+          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " +
+              source.getDisplayName());
+        }
+        m_fdaReport = new Report(source, report);
       }
     }
 
@@ -160,7 +168,8 @@ public class Recommendation implements Comparable<Recommendation> {
 
   public boolean isMatched() {
     return (m_cpicReport != null && m_cpicReport.isMatched()) ||
-        (m_dpwgReport != null && m_dpwgReport.isMatched());
+        (m_dpwgReport != null && m_dpwgReport.isMatched()) ||
+        (m_fdaReport != null && m_fdaReport.isMatched());
   }
 
 
@@ -172,6 +181,9 @@ public class Recommendation implements Comparable<Recommendation> {
     if (m_dpwgReport != null) {
       reports.add(m_dpwgReport);
     }
+    if (m_fdaReport != null) {
+      reports.add(m_fdaReport);
+    }
     return reports;
   }
 
@@ -181,6 +193,10 @@ public class Recommendation implements Comparable<Recommendation> {
 
   public Report getDpwgReport() {
     return m_dpwgReport;
+  }
+
+  public Report getFdaReport() {
+    return m_fdaReport;
   }
 
   public boolean isHasInferred() {

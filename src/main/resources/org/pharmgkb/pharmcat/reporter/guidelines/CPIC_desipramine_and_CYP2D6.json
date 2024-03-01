@@ -706,7 +706,8 @@
         "Stingl J C"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2017
+      "year": 2017,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5478479"
     },
     {
       "pmid": "23486447",
@@ -725,8 +726,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2013
+      "year": 2013,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3689226"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

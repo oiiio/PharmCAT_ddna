@@ -3,7 +3,7 @@
     "id": "PA166104996",
     "name": "Annotation of CPIC Guideline for codeine and CYP2D6",
     "source": "CPIC",
-    "version": 66,
+    "version": 65,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166104996",
     "relatedChemicals": [
       {
@@ -713,7 +713,8 @@
         "Skaar Todd C"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2021
+      "year": 2021,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8249478"
     },
     {
       "pmid": "24458010",
@@ -735,7 +736,8 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2014
+      "year": 2014,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3975212"
     },
     {
       "pmid": "22205192",
@@ -752,8 +754,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2012
+      "year": 2012,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3289963"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

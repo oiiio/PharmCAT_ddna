@@ -228,7 +228,7 @@ public class DataManager {
     }
   }
 
-  private static final Pattern GUIDELINE_FILENAME_PATTERN = Pattern.compile("^Annotation_of_(.+)_Guideline_for_(.+)$");
+  private static final Pattern GUIDELINE_FILENAME_PATTERN = Pattern.compile("^Annotation_of_(.+)_(Guideline|Label)_for_(.+)$");
 
   private void transformGuidelines(Path downloadDir, Path guidelinesDir) throws IOException {
     if (!Files.exists(guidelinesDir)) {
@@ -245,7 +245,7 @@ public class DataManager {
           Matcher m = GUIDELINE_FILENAME_PATTERN.matcher(origFilename);
           if (m.matches()) {
             String dataSource = m.group(1);
-            String annotationName = m.group(2);
+            String annotationName = m.group(3);
             String filename = dataSource + "_" + annotationName;
             count.incrementAndGet();
             try (Reader reader = Files.newBufferedReader(file)) {

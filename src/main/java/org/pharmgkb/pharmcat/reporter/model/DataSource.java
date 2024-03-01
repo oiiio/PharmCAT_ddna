@@ -8,6 +8,7 @@ public enum DataSource {
   // NOTE: we want to indicate that the Dutch (DPWG) data comes through PharmGKB annotations so we add it to the display
   DPWG("PharmGKB-DPWG", "DPWG"),
   PHARMGKB("PharmGKB", "PharmGKB"),
+  FDA("FDA Drug Label", "FDA"),
   UNKNOWN("Unknown", "Unknown");
 
   private final String displayName;

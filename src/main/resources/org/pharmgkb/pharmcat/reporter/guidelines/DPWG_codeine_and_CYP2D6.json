@@ -3,7 +3,7 @@
     "id": "PA166104970",
     "name": "Annotation of DPWG Guideline for codeine and CYP2D6",
     "source": "DPWG",
-    "version": 37,
+    "version": 36,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166104970",
     "relatedChemicals": [
       {
@@ -566,7 +566,8 @@
         "van Schaik Ron H N"
       ],
       "journal": "European journal of human genetics : EJHG",
-      "year": 2022
+      "year": 2022,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/34267337"
     },
     {
       "pmid": "21412232",
@@ -588,8 +589,9 @@
         "Guchelaar H-J"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2011
+      "year": 2011,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/21412232"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

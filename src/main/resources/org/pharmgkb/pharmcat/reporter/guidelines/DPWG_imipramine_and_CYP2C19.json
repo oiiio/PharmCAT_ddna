@@ -3,7 +3,7 @@
     "id": "PA166104954",
     "name": "Annotation of DPWG Guideline for imipramine and CYP2C19",
     "source": "DPWG",
-    "version": 32,
+    "version": 31,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166104954",
     "relatedChemicals": [
       {
@@ -160,8 +160,9 @@
         "Guchelaar H-J"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2011
+      "year": 2011,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/21412232"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

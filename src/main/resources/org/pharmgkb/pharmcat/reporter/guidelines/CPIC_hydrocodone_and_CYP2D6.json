@@ -713,8 +713,9 @@
         "Skaar Todd C"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2021
+      "year": 2021,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8249478"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

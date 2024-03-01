@@ -185,7 +185,7 @@ public class DrugReport implements Comparable<DrugReport> {
   }
 
   public String toString() {
-    return m_drugName;
+    return m_source + ": " + m_drugName;
   }
 
   /**

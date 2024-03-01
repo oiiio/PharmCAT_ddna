@@ -3,7 +3,7 @@
     "id": "PA166104969",
     "name": "Annotation of DPWG Guideline for flecainide and CYP2D6",
     "source": "DPWG",
-    "version": 33,
+    "version": 32,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166104969",
     "relatedChemicals": [
       {
@@ -566,8 +566,9 @@
         "Guchelaar H-J"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2011
+      "year": 2011,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/21412232"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

@@ -1,0 +1,109 @@
+{
+  "guideline": {
+    "id": "PA166182786",
+    "name": "Annotation of FDA Label for tolazamide and G6PD",
+    "source": "FDA",
+    "version": 9,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166182786",
+    "relatedChemicals": [
+      {
+        "id": "PA164774902",
+        "name": "tolazamide",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312341",
+      "name": "Recommendation Annotation PA166312341",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164774902",
+          "name": "tolazamide",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216620,
+        "html": "<p>&quot;Because tolazamide belongs to the class of sulfonylurea agents, caution should be used in patients with G6PD deficiency and a non-sulfonylurea alternative should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315101",
+      "name": "Recommendation Annotation PA166315101",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164774902",
+          "name": "tolazamide",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245640,
+        "html": "<p>&quot;Because tolazamide belongs to the class of sulfonylurea agents, caution should be used in patients with G6PD deficiency and a non-sulfonylurea alternative should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312342",
+      "name": "Recommendation Annotation PA166312342",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164774902",
+          "name": "tolazamide",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216621,
+        "html": "<p>&quot;Because tolazamide belongs to the class of sulfonylurea agents, caution should be used in patients with G6PD deficiency and a non-sulfonylurea alternative should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Tolazamide (tolazamide), ANDA070259, PD-Rx Pharmaceuticals, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=070259"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

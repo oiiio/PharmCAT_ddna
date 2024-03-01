@@ -39,7 +39,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PipelineWrapper {
   // controls to support running PipelineTest from SyntheticBatchTest
   private static boolean m_compact = true;
-  private static List<DataSource> m_sources = Lists.newArrayList(DataSource.CPIC, DataSource.DPWG);
+  private static List<DataSource> m_sources = Lists.newArrayList(DataSource.CPIC, DataSource.DPWG, DataSource.FDA);
 
   private final Env m_env;
   private final Path m_outputPath;

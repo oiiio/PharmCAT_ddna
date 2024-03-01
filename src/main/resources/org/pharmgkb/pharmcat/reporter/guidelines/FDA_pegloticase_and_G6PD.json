@@ -1,0 +1,109 @@
+{
+  "guideline": {
+    "id": "PA166104900",
+    "name": "Annotation of FDA Label for pegloticase and G6PD",
+    "source": "FDA",
+    "version": 32,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104900",
+    "relatedChemicals": [
+      {
+        "id": "PA165963961",
+        "name": "pegloticase",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312287",
+      "name": "Recommendation Annotation PA166312287",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA165963961",
+          "name": "pegloticase",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216546,
+        "html": "<p>&quot;KRYSTEXXA [pegloticase] is contraindicated inpatients with G6PD deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166315003",
+      "name": "Recommendation Annotation PA166315003",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA165963961",
+          "name": "pegloticase",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245542,
+        "html": "<p>&quot;KRYSTEXXA [pegloticase] is contraindicated inpatients with G6PD deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312321",
+      "name": "Recommendation Annotation PA166312321",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA165963961",
+          "name": "pegloticase",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216580,
+        "html": "<p>&quot;KRYSTEXXA [pegloticase] is contraindicated inpatients with G6PD deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Krystexxa (pegloticase), BLA125293, Horizon Pharma Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=125293"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

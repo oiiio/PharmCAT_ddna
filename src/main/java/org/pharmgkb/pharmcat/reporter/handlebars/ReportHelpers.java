@@ -239,11 +239,8 @@ public class ReportHelpers {
 
   public static String rxAnnotationClass(DataSource source, String drug) {
     StringBuilder builder = new StringBuilder();
-    if (source == DataSource.CPIC) {
-      builder.append("cpic-");
-    } else {
-      builder.append("dpwg-");
-    }
+    builder.append(source.name().toLowerCase());
+    builder.append("-");
     builder.append(sanitizeCssSelector(drug));
     return builder.toString();
   }
@@ -616,13 +613,16 @@ public class ReportHelpers {
   private static final Pattern sf_endsWithPuncuationPattern = Pattern.compile(".*?\\p{Punct}$");
 
   public static String printCitation(Publication pub) {
-    String url = "https://www.ncbi.nlm.nih.gov/pubmed/" + pub.getPmid();
     String period = "";
     if (!sf_endsWithPuncuationPattern.matcher(pub.getTitle()).matches()) {
       period = ".";
     }
-    return externalHref(url, pub.getTitle()) + period + " <i>" + pub.getJournal() + "</i>. " + pub.getYear() +
-        ". PMID:" + pub.getPmid();
+    if (pub.getPmid() != null) {
+      return externalHref(pub.getUrl(), pub.getTitle()) + period + " <i>" + pub.getJournal() + "</i>. " + pub.getYear() +
+          ". PMID:" + pub.getPmid();
+    } else {
+      return externalHref(pub.getUrl(), pub.getTitle()) + period;
+    }
   }
 
   public static String capitalizeNA(String text) {

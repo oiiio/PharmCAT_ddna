@@ -1,0 +1,85 @@
+{
+  "guideline": {
+    "id": "PA166104802",
+    "name": "Annotation of FDA Label for capecitabine and DPYD",
+    "source": "FDA",
+    "version": 33,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104802",
+    "relatedChemicals": [
+      {
+        "id": "PA448771",
+        "name": "capecitabine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA145",
+        "name": "dihydropyrimidine dehydrogenase",
+        "symbol": "DPYD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310724",
+      "name": "Recommendation Annotation PA166310724",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448771",
+          "name": "capecitabine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213163,
+        "html": "<p>&quot;Patients with certain homozygous or compound heterozygous variants in the DPYD gene known to result in complete or near complete absence of DPD activity (complete DPD deficiency) are at increased risk for acute early-onset toxicity and serious, including fatal, adverse reactions due to XELODA (e.g., mucositis, diarrhea, neutropenia, and neurotoxicity). Patients with partial DPD activity (partial DPD deficiency) may also have increased risk of serious, including fatal, adverse reactions...XELODA [capecitabine] is not recommended for use in patients known to have certain homozygous or compound heterozygous DPYD variants that result in complete DPD deficiency. Withhold or permanently discontinue XELODA based on clinical assessment of the onset, duration, and severity of the observed adverse reactions in patients with evidence of acute early- onset or unusually severe reactions, which may indicate complete DPD deficiency. No XELODA dose has been proven safe for patients with complete DPD deficiency. There are insufficient data to recommend a specific dose in patients with partial DPD deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310725",
+      "name": "Recommendation Annotation PA166310725",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448771",
+          "name": "capecitabine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213164,
+        "html": "<p>&quot;Patients with certain homozygous or compound heterozygous variants in the DPYD gene known to result in complete or near complete absence of DPD activity (complete DPD deficiency) are at increased risk for acute early-onset toxicity and serious, including fatal, adverse reactions due to XELODA (e.g., mucositis, diarrhea, neutropenia, and neurotoxicity). Patients with partial DPD activity (partial DPD deficiency) may also have increased risk of serious, including fatal, adverse reactions...XELODA [capecitabine] is not recommended for use in patients known to have certain homozygous or compound heterozygous DPYD variants that result in complete DPD deficiency. Withhold or permanently discontinue XELODA based on clinical assessment of the onset, duration, and severity of the observed adverse reactions in patients with evidence of acute early- onset or unusually severe reactions, which may indicate complete DPD deficiency. No XELODA dose has been proven safe for patients with complete DPD deficiency. There are insufficient data to recommend a specific dose in patients with partial DPD deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Xeloda (capecitabine), NDA020896, Genentech, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=020896"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

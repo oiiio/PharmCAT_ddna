@@ -221,8 +221,9 @@
         "Haas David W"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2019
+      "year": 2019,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6739160"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

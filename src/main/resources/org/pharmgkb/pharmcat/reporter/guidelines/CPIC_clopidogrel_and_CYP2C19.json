@@ -743,7 +743,8 @@
         "Shuldiner Alan R"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2022
+      "year": 2022,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9287492"
     },
     {
       "pmid": "23698643",
@@ -762,7 +763,8 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2013
+      "year": 2013,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3748366"
     },
     {
       "pmid": "21716271",
@@ -780,8 +782,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2011
+      "year": 2011,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3234301"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

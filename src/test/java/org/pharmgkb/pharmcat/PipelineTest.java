@@ -314,9 +314,9 @@ class PipelineTest {
     Elements srcSections = drugSections.select(srcSelector);
 
     if (annPresence == RecPresence.NO) {
-      Elements rows = drugSections.select(srcSelector + " .rx-dip");
+      Elements rows = srcSections.select(srcSelector + " .rx-dip");
       assertEquals(0, rows.size());
-      rows = drugSections.select(srcSelector + " .rx-unmatched-dip");
+      rows = srcSections.select(srcSelector + " .rx-unmatched-dip");
       assertEquals(0, rows.size());
 
     } else if (annPresence == RecPresence.YES_NO_MATCH) {
@@ -418,13 +418,13 @@ class PipelineTest {
         .flatMap((k) -> testWrapper.getContext().getGeneReports().get(k).values().stream()
             .map(GeneReport::getGeneDisplay))
         .collect(Collectors.toCollection(TreeSet::new));
-    assertEquals(22, genes.size());
+    assertEquals(23, genes.size());
 
     SortedSet<String> drugs = testWrapper.getContext().getDrugReports().keySet().stream()
         .flatMap((k) -> testWrapper.getContext().getDrugReports().get(k).values().stream()
             .map(DrugReport::getName))
         .collect(Collectors.toCollection(TreeSet::new));
-    assertEquals(101, drugs.size());
+    assertEquals(150, drugs.size());
   }
 
   @Test
@@ -630,7 +630,7 @@ class PipelineTest {
 
     PipelineWrapper testWrapper = new PipelineWrapper(testInfo, false);
     testWrapper.getVcfBuilder()
-        .reference("ABCG2")
+        .reference("F5")
         .allowUnknownAllele()
         .variation("CYP2C19", "rs3758581", "G", "T")
         .variation("TPMT", "rs1256618794", "A", "A") // C -> A
@@ -807,9 +807,10 @@ class PipelineTest {
     testWrapper.testAnyMatchFromSource("nortriptyline", DataSource.DPWG);
     testWrapper.testMatchedAnnotations("trimipramine", 1);
 
-    testWrapper.testMatchedAnnotations("clopidogrel", 4);
+    testWrapper.testMatchedAnnotations("clopidogrel", 5);
     testWrapper.testAnyMatchFromSource("clopidogrel", DataSource.CPIC);
     testWrapper.testAnyMatchFromSource("clopidogrel", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("clopidogrel", DataSource.FDA);
 
     testWrapper.testMatchedAnnotations("lansoprazole", 2);
     testWrapper.testAnyMatchFromSource("lansoprazole", DataSource.CPIC);
@@ -850,9 +851,10 @@ class PipelineTest {
     testWrapper.testCalledByMatcher("CYP2C19");
     testWrapper.testPrintCpicCalls("CYP2C19", "*4/*4", "*4/*17", "*17/*17");
 
-    testWrapper.testMatchedAnnotations("citalopram", 6);
+    testWrapper.testMatchedAnnotations("citalopram", 7);
     testWrapper.testMatchedAnnotations("citalopram", DataSource.CPIC, 3);
     testWrapper.testMatchedAnnotations("citalopram", DataSource.DPWG, 3);
+    testWrapper.testMatchedAnnotations("citalopram", DataSource.FDA, 1);
     testWrapper.testAnyMatchFromSource("citalopram", DataSource.CPIC);
     testWrapper.testAnyMatchFromSource("citalopram", DataSource.DPWG);
   }
@@ -991,7 +993,7 @@ class PipelineTest {
     testWrapper.testRecommendedDiplotypes(DataSource.CPIC, "CFTR", List.of("ivacaftor non-responsive CFTR sequence", "D1270N"));
     testWrapper.testPrintCalls(DataSource.CPIC, "CFTR", expectedCalls);
 
-    testWrapper.testMatchedAnnotations("ivacaftor", 1);
+    testWrapper.testMatchedAnnotations("ivacaftor", 2);
 
     Document document = readHtmlReport(vcfFile);
     htmlChecks(document, "CFTR", expectedCalls, "ivacaftor", RecPresence.YES, RecPresence.NO);
@@ -1012,7 +1014,7 @@ class PipelineTest {
     testWrapper.testRecommendedDiplotypes(DataSource.CPIC, "CFTR", expectedCallsToRecommendedDiplotypes(expectedCalls));
     testWrapper.testPrintCalls(DataSource.CPIC, "CFTR", expectedCalls);
 
-    testWrapper.testMatchedAnnotations("ivacaftor", 1);
+    testWrapper.testMatchedAnnotations("ivacaftor", 2);
 
     Document document = readHtmlReport(vcfFile);
     htmlChecks(document, "CFTR", expectedCalls, "ivacaftor", RecPresence.YES, RecPresence.NO);
@@ -1669,9 +1671,10 @@ class PipelineTest {
     // *58:01 guideline
     testWrapper.testMatchedAnnotations("allopurinol", DataSource.CPIC, 1);
     // *15:02 guideline (along with CYP2C9)
-    testWrapper.testMatchedAnnotations("phenytoin", 4);
+    testWrapper.testMatchedAnnotations("phenytoin", 5);
     testWrapper.testMatchedAnnotations("phenytoin", DataSource.CPIC, 2);
     testWrapper.testMatchedAnnotations("phenytoin", DataSource.DPWG, 2);
+    testWrapper.testMatchedAnnotations("phenytoin", DataSource.FDA, 1);
   }
 
   @Test
@@ -1697,9 +1700,10 @@ class PipelineTest {
 
     testWrapper.testMatchedAnnotations("abacavir", DataSource.CPIC, 1);
     testWrapper.testMatchedAnnotations("allopurinol", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("phenytoin", 4);
+    testWrapper.testMatchedAnnotations("phenytoin", 5);
     testWrapper.testMatchedAnnotations("phenytoin", DataSource.CPIC, 2);
     testWrapper.testMatchedAnnotations("phenytoin", DataSource.DPWG, 2);
+    testWrapper.testMatchedAnnotations("phenytoin", DataSource.FDA, 1);
 
     // carbamazepine-CPIC is a two gene lookup, let's test to make sure only specifying HLA-B will still return results
     testWrapper.testMatchedAnnotations("carbamazepine", DataSource.CPIC, 3);
@@ -1723,9 +1727,10 @@ class PipelineTest {
     testWrapper.testNotCalledByMatcher("HLA-B");
     testWrapper.testReportable("CYP2C9");
     testWrapper.testReportable("HLA-B");
-    testWrapper.testMatchedAnnotations("abacavir", 2);
+    testWrapper.testMatchedAnnotations("abacavir", 3);
     testWrapper.testMatchedAnnotations("abacavir", DataSource.CPIC, 1);
     testWrapper.testMatchedAnnotations("abacavir", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("abacavir", DataSource.FDA, 1);
     // allopurinol relies on a different allele for recs so no matches
     testWrapper.testMatchedAnnotations("allopurinol", 0);
     // phenytoin also relies on a different allele, but there will be a match for DPWG since the recommendations are
@@ -1777,10 +1782,10 @@ class PipelineTest {
     testWrapper.testReportable("CYP2C19", "CYP2C9", "HLA-A", "HLA-B");
     testWrapper.testMatchedAnnotations("celecoxib", 1);
     testWrapper.testAnyMatchFromSource("celecoxib", DataSource.CPIC);
-    testWrapper.testMatchedAnnotations("citalopram", 2);
+    testWrapper.testMatchedAnnotations("citalopram", 3);
     testWrapper.testMatchedAnnotations("clomipramine", DataSource.CPIC, 1);
     testWrapper.testMatchedAnnotations("clomipramine", DataSource.DPWG, 1);
-    testWrapper.testMatchedAnnotations("clopidogrel", 4);
+    testWrapper.testMatchedAnnotations("clopidogrel", 5);
     testWrapper.testMatchedAnnotations("clopidogrel", DataSource.CPIC, 3);
     testWrapper.testMatchedAnnotations("clopidogrel", DataSource.DPWG, 1);
     testWrapper.testNoMatchFromSource("flucloxacillin", DataSource.CPIC);
@@ -2362,6 +2367,95 @@ class PipelineTest {
     testWrapper.testMessageCountForGene(DataSource.CPIC, "CYP2C19", 1);
     testWrapper.testGeneHasMessage(DataSource.CPIC, "CYP2C19", "reference-allele");
     testWrapper.testGeneHasMessage(DataSource.CPIC, "CYP2D6", MessageHelper.MSG_OUTSIDE_CALL);
+  }
+
+
+  @Test
+  void testF5(TestInfo testInfo) throws Exception {
+    PipelineWrapper testWrapper = new PipelineWrapper(testInfo, false);
+    String gene = "F5";
+    testWrapper.getVcfBuilder()
+        .reference(gene);
+    Path vcfFile = testWrapper.execute(null);
+
+    List<String> expectedCalls = List.of("rs6025 C/rs6025 C");
+
+    testWrapper.testCalledByMatcher(gene);
+    testWrapper.testSourceDiplotypes(DataSource.DPWG, gene, expectedCalls);
+    testWrapper.testRecommendedDiplotypes(DataSource.DPWG, gene, expectedCallsToRecommendedDiplotypes(expectedCalls));
+    testWrapper.testPrintCalls(DataSource.DPWG, gene, expectedCalls);
+
+    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", 1);
+
+    Document document = readHtmlReport(vcfFile);
+    htmlChecks(document, gene, expectedCalls, "hormonal contraceptives for systemic use", RecPresence.NO, RecPresence.YES);
+  }
+
+
+  /**
+   * Can we use phenotype for F5 DPWG matching?
+   */
+  @Test
+  void testF5OutsideCallPhenotype(TestInfo testInfo) throws Exception {
+    Path outDir = TestUtils.getTestOutputDir(testInfo, false);
+    Path outsideCallFile = outDir.resolve(TestUtils.getTestName(testInfo) + ".tsv");
+    try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(outsideCallFile))) {
+      writer.println("F5\t\tFactor V Leiden absent");
+    }
+
+    PipelineWrapper testWrapper = new PipelineWrapper(testInfo, false);
+    testWrapper.execute(outsideCallFile);
+
+    String gene = "F5";
+
+    List<String> displayedCalls = List.of("Factor V Leiden absent");
+
+    testWrapper.testNotCalledByMatcher(gene);
+    testWrapper.testSourceDiplotypes(DataSource.DPWG, gene, NO_OUTSIDE_DIPLOTYPE, displayedCalls);
+    testWrapper.testRecommendedDiplotypes(DataSource.DPWG, gene, displayedCalls);
+    testWrapper.testReportable(gene);
+    testWrapper.testPrintCalls(DataSource.DPWG, gene, displayedCalls);
+
+    testWrapper.testNoMatchFromSource("hormonal contraceptives for systemic use", DataSource.CPIC);
+    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", DataSource.DPWG, 1);
+
+    Document document = readHtmlReport(outsideCallFile);
+    htmlChecks(document,
+        new ImmutableSortedMap.Builder<String, List<String>>(Ordering.natural())
+            .put(gene, NO_OUTSIDE_DIPLOTYPE)
+            .build(),
+        null, "hormonal contraceptives for systemic use",
+        RecPresence.NO, RecPresence.YES);
+  }
+
+
+  @Test
+  void testF5OutsideCallDiplotype(TestInfo testInfo) throws Exception {
+    Path outDir = TestUtils.getTestOutputDir(testInfo, false);
+    Path outsideCallFile = outDir.resolve(TestUtils.getTestName(testInfo) + ".tsv");
+    try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(outsideCallFile))) {
+      writer.println("F5\trs6025 C/rs6025 T (Factor V Leiden)");
+    }
+
+    PipelineWrapper testWrapper = new PipelineWrapper(testInfo, false);
+    testWrapper.execute(outsideCallFile);
+
+    String gene = "F5";
+    List<String> expectedCalls = List.of("rs6025 C/rs6025 T (Factor V Leiden)");
+
+    testWrapper.testNotCalledByMatcher(gene);
+    testWrapper.testSourceDiplotypes(DataSource.DPWG, gene, expectedCalls);
+    testWrapper.testRecommendedDiplotypes(DataSource.DPWG, gene, expectedCallsToRecommendedDiplotypes(expectedCalls));
+    testWrapper.testSourcePhenotype(DataSource.DPWG, gene, "Factor V Leiden heterozygous");
+    testWrapper.testRecommendedPhenotype(DataSource.DPWG, gene, "Factor V Leiden heterozygous");
+    testWrapper.testReportable(gene);
+    testWrapper.testPrintCalls(DataSource.DPWG, gene, expectedCalls);
+
+    testWrapper.testNoMatchFromSource("hormonal contraceptives for systemic use", DataSource.CPIC);
+    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", DataSource.DPWG, 1);
+
+    Document document = readHtmlReport(outsideCallFile);
+    htmlChecks(document, gene, expectedCalls, "hormonal contraceptives for systemic use", RecPresence.NO, RecPresence.YES);
   }
 
 

@@ -225,7 +225,8 @@
         "Voora Deepak"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2022
+      "year": 2022,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9035072"
     },
     {
       "pmid": "24918167",
@@ -249,7 +250,8 @@
         "Niemi M"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2014
+      "year": 2014,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4169720"
     },
     {
       "pmid": "22617227",
@@ -272,8 +274,9 @@
         "Clinical Pharmacogenomics Implementation Consortium (CPIC)"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2012
+      "year": 2012,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3384438"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

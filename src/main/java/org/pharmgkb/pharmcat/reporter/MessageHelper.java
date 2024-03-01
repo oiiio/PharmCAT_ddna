@@ -197,6 +197,9 @@ public class MessageHelper {
     if (key.contains("dpwg-") && source != DataSource.DPWG) {
       return false;
     }
+    if (key.contains("fda-") && source != DataSource.FDA) {
+      return false;
+    }
     return true;
   }
 

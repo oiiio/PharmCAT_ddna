@@ -750,8 +750,9 @@
         "Grosser Tilo"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2020
+      "year": 2020,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8080882"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

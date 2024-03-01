@@ -1975,7 +1975,8 @@
         "Bishop Jeffrey R"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2023
+      "year": 2023,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/37032427"
     },
     {
       "pmid": "25974703",
@@ -2000,8 +2001,9 @@
         "Clinical Pharmacogenetics Implementation Consortium"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2015
+      "year": 2015,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4512908"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

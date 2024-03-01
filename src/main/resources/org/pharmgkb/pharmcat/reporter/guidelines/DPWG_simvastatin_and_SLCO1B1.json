@@ -3,7 +3,7 @@
     "id": "PA166182844",
     "name": "Annotation of DPWG Guideline for simvastatin and SLCO1B1",
     "source": "DPWG",
-    "version": 14,
+    "version": 13,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166182844",
     "relatedChemicals": [
       {
@@ -111,5 +111,5 @@
     }
   ],
   "citations": [],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

@@ -3,7 +3,7 @@
     "id": "PA166104992",
     "name": "Annotation of DPWG Guideline for zuclopenthixol and CYP2D6",
     "source": "DPWG",
-    "version": 35,
+    "version": 34,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166104992",
     "relatedChemicals": [
       {
@@ -567,7 +567,8 @@
         "van der Weide Jan"
       ],
       "journal": "European journal of human genetics : EJHG",
-      "year": 2024
+      "year": 2023,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/37002327"
     },
     {
       "pmid": "21412232",
@@ -589,8 +590,9 @@
         "Guchelaar H-J"
       ],
       "journal": "Clinical pharmacology and therapeutics",
-      "year": 2011
+      "year": 2011,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pubmed/21412232"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }

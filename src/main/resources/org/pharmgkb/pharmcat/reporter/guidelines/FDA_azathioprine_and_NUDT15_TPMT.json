@@ -1,0 +1,717 @@
+{
+  "guideline": {
+    "id": "PA166104782",
+    "name": "Annotation of FDA Label for azathioprine and NUDT15, TPMT",
+    "source": "FDA",
+    "version": 33,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104782",
+    "relatedChemicals": [
+      {
+        "id": "PA448515",
+        "name": "azathioprine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134963132",
+        "name": "nudix hydrolase 15",
+        "symbol": "NUDT15"
+      },
+      {
+        "id": "PA356",
+        "name": "thiopurine S-methyltransferase",
+        "symbol": "TPMT"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310968",
+      "name": "Recommendation Annotation PA166310968",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213567,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311487",
+      "name": "Recommendation Annotation PA166311487",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215666,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311485",
+      "name": "Recommendation Annotation PA166311485",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215664,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310981",
+      "name": "Recommendation Annotation PA166310981",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213580,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15. Patients who are heterozygous for both TPMT and NUDT15 deficiency may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310970",
+      "name": "Recommendation Annotation PA166310970",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213569,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310984",
+      "name": "Recommendation Annotation PA166310984",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213583,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310986",
+      "name": "Recommendation Annotation PA166310986",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213585,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310962",
+      "name": "Recommendation Annotation PA166310962",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213561,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311484",
+      "name": "Recommendation Annotation PA166311484",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215663,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310988",
+      "name": "Recommendation Annotation PA166310988",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213587,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310964",
+      "name": "Recommendation Annotation PA166310964",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213563,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311482",
+      "name": "Recommendation Annotation PA166311482",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215661,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310966",
+      "name": "Recommendation Annotation PA166310966",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213565,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310967",
+      "name": "Recommendation Annotation PA166310967",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213566,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311486",
+      "name": "Recommendation Annotation PA166311486",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215665,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310969",
+      "name": "Recommendation Annotation PA166310969",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213568,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310982",
+      "name": "Recommendation Annotation PA166310982",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213581,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15. Patients who are heterozygous for both TPMT and NUDT15 deficiency may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310983",
+      "name": "Recommendation Annotation PA166310983",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213582,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15. Patients who are heterozygous for both TPMT and NUDT15 deficiency may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310985",
+      "name": "Recommendation Annotation PA166310985",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213584,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310961",
+      "name": "Recommendation Annotation PA166310961",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213560,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310987",
+      "name": "Recommendation Annotation PA166310987",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213586,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310963",
+      "name": "Recommendation Annotation PA166310963",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213562,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311483",
+      "name": "Recommendation Annotation PA166311483",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215662,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310965",
+      "name": "Recommendation Annotation PA166310965",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213564,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310941",
+      "name": "Recommendation Annotation PA166310941",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213540,
+        "html": "<p>&quot;Consider alternative therapy in patients with homozygous TPMT or NUDT15 deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310989",
+      "name": "Recommendation Annotation PA166310989",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213588,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311481",
+      "name": "Recommendation Annotation PA166311481",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452215660,
+        "html": "<p>&quot;Consider...reduced dosages in patients with heterozygous [TPMT or NUDT15] deficiency...Because of the risk of increased toxicity, dosage reduction is recommended in patients known to have heterozygous deficiency of TPMT or NUDT15. Patients who are heterozygous for both TPMT and NUDT15 deficiency may require more substantial dosage reductions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product IMURAN (azathioprine), NDA016324, Sebela Pharmaceuticals Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=016324"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

@@ -1,0 +1,109 @@
+{
+  "guideline": {
+    "id": "PA166104891",
+    "name": "Annotation of FDA Label for nalidixic acid and G6PD",
+    "source": "FDA",
+    "version": 31,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104891",
+    "relatedChemicals": [
+      {
+        "id": "PA164746384",
+        "name": "nalidixic acid",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312284",
+      "name": "Recommendation Annotation PA166312284",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164746384",
+          "name": "nalidixic acid",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216543,
+        "html": "<p>&quot;Caution should be observed in patients with glucose-6-phosphate dehydrogenase deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312301",
+      "name": "Recommendation Annotation PA166312301",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164746384",
+          "name": "nalidixic acid",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216560,
+        "html": "<p>&quot;Caution should be observed in patients with glucose-6-phosphate dehydrogenase deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315001",
+      "name": "Recommendation Annotation PA166315001",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164746384",
+          "name": "nalidixic acid",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245540,
+        "html": "<p>&quot;Caution should be observed in patients with glucose-6-phosphate dehydrogenase deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product nalidixic acid (NDA014214)",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=014214"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

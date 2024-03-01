@@ -1,0 +1,247 @@
+{
+  "guideline": {
+    "id": "PA166122970",
+    "name": "Annotation of FDA Label for succinylcholine and BCHE, CACNA1S, RYR1",
+    "source": "FDA",
+    "version": 40,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166122970",
+    "relatedChemicals": [
+      {
+        "id": "PA451522",
+        "name": "succinylcholine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA25294",
+        "name": "butyrylcholinesterase",
+        "symbol": "BCHE"
+      },
+      {
+        "id": "PA85",
+        "name": "calcium voltage-gated channel subunit alpha1 S",
+        "symbol": "CACNA1S"
+      },
+      {
+        "id": "PA34896",
+        "name": "ryanodine receptor 1",
+        "symbol": "RYR1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166311921",
+      "name": "Recommendation Annotation PA166311921",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216120,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Malignant Hyperthermia Susceptibility",
+        "CACNA1S": "Malignant Hyperthermia Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311925",
+      "name": "Recommendation Annotation PA166311925",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216124,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Malignant Hyperthermia Susceptibility",
+        "CACNA1S": "No Result"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312606",
+      "name": "Recommendation Annotation PA166312606",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218674,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants...Succinylcholine is metabolized by plasma cholinesterase and should be used with caution, if at all, in patients known to be or suspected of being homozygous for the atypical plasma cholinesterase gene [BCHE] .&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "No Result",
+        "CACNA1S": "Uncertain Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166311923",
+      "name": "Recommendation Annotation PA166311923",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216122,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "No Result",
+        "CACNA1S": "Malignant Hyperthermia Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312607",
+      "name": "Recommendation Annotation PA166312607",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218675,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants...Succinylcholine is metabolized by plasma cholinesterase and should be used with caution, if at all, in patients known to be or suspected of being homozygous for the atypical plasma cholinesterase gene [BCHE] .&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Uncertain Susceptibility",
+        "CACNA1S": "Uncertain Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166311926",
+      "name": "Recommendation Annotation PA166311926",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216125,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Malignant Hyperthermia Susceptibility",
+        "CACNA1S": "Uncertain Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312605",
+      "name": "Recommendation Annotation PA166312605",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218673,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants...Succinylcholine is metabolized by plasma cholinesterase and should be used with caution, if at all, in patients known to be or suspected of being homozygous for the atypical plasma cholinesterase gene [BCHE] .&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Uncertain Susceptibility",
+        "CACNA1S": "No Result"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166311924",
+      "name": "Recommendation Annotation PA166311924",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451522",
+          "name": "succinylcholine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216123,
+        "html": "<p>&quot;ANECTINE [succinylcholine] is contraindicated in patients with...[k]nown or suspected genetic susceptibility to malignant hyperthermia...Anectine [succinylcholine] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Uncertain Susceptibility",
+        "CACNA1S": "Malignant Hyperthermia Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Anectine (Succinylcholine Chloride), NDA008453, Sandoz Inc",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=008453"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

@@ -1,0 +1,85 @@
+{
+  "guideline": {
+    "id": "PA166104777",
+    "name": "Annotation of FDA Label for clopidogrel and CYP2C19",
+    "source": "FDA",
+    "version": 35,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104777",
+    "relatedChemicals": [
+      {
+        "id": "PA449053",
+        "name": "clopidogrel",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA124",
+        "name": "cytochrome P450 family 2 subfamily C member 19",
+        "symbol": "CYP2C19"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310301",
+      "name": "Recommendation Annotation PA166310301",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449053",
+          "name": "clopidogrel",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211481,
+        "html": "<p>&quot;Consider use of another platelet P2Y12 inhibitor in patients identified as CYP2C19 poor metabolizers.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166307901",
+      "name": "Recommendation Annotation PA166307901",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449053",
+          "name": "clopidogrel",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452189320,
+        "html": "<p>&quot;Consider use of another platelet P2Y12 inhibitor in patients identified as CYP2C19 poor metabolizers.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Plavix (clopidogrel bisulfate), NDA020839, Rebel Distributors Corp",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=020839"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

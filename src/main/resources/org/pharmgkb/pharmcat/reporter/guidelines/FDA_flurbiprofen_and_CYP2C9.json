@@ -1,0 +1,93 @@
+{
+  "guideline": {
+    "id": "PA166104922",
+    "name": "Annotation of FDA Label for flurbiprofen and CYP2C9",
+    "source": "FDA",
+    "version": 31,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104922",
+    "relatedChemicals": [
+      {
+        "id": "PA449683",
+        "name": "flurbiprofen",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA126",
+        "name": "cytochrome P450 family 2 subfamily C member 9",
+        "symbol": "CYP2C9"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166311943",
+      "name": "Recommendation Annotation PA166311943",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449683",
+          "name": "flurbiprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216142,
+        "html": "<p>&quot;In patients who are known or suspected to be poor CYP2C9 metabolizers based on genotype or previous history/experience with other CYP2C9 substrates (such as warfarin and phenytoin), reduce the dose of flurbiprofen to avoid abnormally high plasma levels due to reduced metabolic clearance.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.0"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311929",
+      "name": "Recommendation Annotation PA166311929",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449683",
+          "name": "flurbiprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216128,
+        "html": "<p>&quot;In patients who are known or suspected to be poor CYP2C9 metabolizers based on genotype or previous history/experience with other CYP2C9 substrates (such as warfarin and phenytoin), reduce the dose of flurbiprofen to avoid abnormally high plasma levels due to reduced metabolic clearance.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.5"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product FLURBIPROFEN SODIUM (flurbiprofen sodium), NDA019404, Rebel Distributors Corp",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=019404"
+    },
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product flurbiprofen (NDA018766)",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=018766"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

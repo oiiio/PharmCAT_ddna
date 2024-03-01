@@ -1,0 +1,109 @@
+{
+  "guideline": {
+    "id": "PA166104881",
+    "name": "Annotation of FDA Label for glyburide and G6PD",
+    "source": "FDA",
+    "version": 31,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104881",
+    "relatedChemicals": [
+      {
+        "id": "PA449782",
+        "name": "glyburide",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312282",
+      "name": "Recommendation Annotation PA166312282",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449782",
+          "name": "glyburide",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216541,
+        "html": "<p>&quot;Because GLYNASE PresTab [glyburide] belongs to the class of sulfonylurea agents, caution should be used in patients with G6PD deficiency and a non-sulfonylurea alternative should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166314981",
+      "name": "Recommendation Annotation PA166314981",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449782",
+          "name": "glyburide",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245520,
+        "html": "<p>&quot;Because GLYNASE PresTab [glyburide] belongs to the class of sulfonylurea agents, caution should be used in patients with G6PD deficiency and a non-sulfonylurea alternative should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312283",
+      "name": "Recommendation Annotation PA166312283",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449782",
+          "name": "glyburide",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216542,
+        "html": "<p>&quot;Because GLYNASE PresTab [glyburide] belongs to the class of sulfonylurea agents, caution should be used in patients with G6PD deficiency and a non-sulfonylurea alternative should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Glynase (glyburide), NDA020051, Pharmacia and Upjohn Company LLC",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=020051"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

@@ -1,0 +1,583 @@
+{
+  "guideline": {
+    "id": "PA166180000",
+    "name": "Annotation of FDA Label for meclizine and CYP2D6",
+    "source": "FDA",
+    "version": 12,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166180000",
+    "relatedChemicals": [
+      {
+        "id": "PA450338",
+        "name": "meclizine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166309563",
+      "name": "Recommendation Annotation PA166309563",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204002,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309565",
+      "name": "Recommendation Annotation PA166309565",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204004,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"... when ANTIVERT® \\[meclizine\\] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.\" See label for more information."
+      ],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309541",
+      "name": "Recommendation Annotation PA166309541",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203980,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "1.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309567",
+      "name": "Recommendation Annotation PA166309567",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204006,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309543",
+      "name": "Recommendation Annotation PA166309543",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203982,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "1.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309569",
+      "name": "Recommendation Annotation PA166309569",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204008,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309521",
+      "name": "Recommendation Annotation PA166309521",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203960,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "1.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309481",
+      "name": "Recommendation Annotation PA166309481",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203920,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "0.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309501",
+      "name": "Recommendation Annotation PA166309501",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203940,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "0.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309571",
+      "name": "Recommendation Annotation PA166309571",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204010,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309562",
+      "name": "Recommendation Annotation PA166309562",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204001,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309564",
+      "name": "Recommendation Annotation PA166309564",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204003,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309566",
+      "name": "Recommendation Annotation PA166309566",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204005,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"... when ANTIVERT® \\[meclizine\\] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.\" See label for more information."
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309542",
+      "name": "Recommendation Annotation PA166309542",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203981,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "1.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309568",
+      "name": "Recommendation Annotation PA166309568",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204007,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309544",
+      "name": "Recommendation Annotation PA166309544",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203983,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "2.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309482",
+      "name": "Recommendation Annotation PA166309482",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203921,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309570",
+      "name": "Recommendation Annotation PA166309570",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204009,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309462",
+      "name": "Recommendation Annotation PA166309462",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452203901,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309572",
+      "name": "Recommendation Annotation PA166309572",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204011,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166309561",
+      "name": "Recommendation Annotation PA166309561",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450338",
+          "name": "meclizine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452204000,
+        "html": "<p>&quot;... when ANTIVERT® [meclizine] is administered to patients with CYP2D6 polymorphism, monitor for adverse reactions and clinical effect accordingly.&quot; See label for more information.</p>\n"
+      },
+      "implications": [
+        "\"The genetic polymorphism of CYP2D6 that results in poor-, intermediate-, extensive-, and ultrarapid metabolizer phenotypes could contribute to large inter-individual variability in meclizine exposure.\""
+      ],
+      "lookupKey": {
+        "CYP2D6": "2.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product meclizine (NDA010721)",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=010721"
+    }
+  ],
+  "version": "2024-02-29-20-19"
+}

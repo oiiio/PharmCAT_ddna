@@ -3,7 +3,7 @@
     "id": "PA166265141",
     "name": "Annotation of DPWG Guideline for allopurinol and HLA-B",
     "source": "DPWG",
-    "version": 7,
+    "version": 6,
     "url": "https://www.pharmgkb.org/guidelineAnnotation/PA166265141",
     "relatedChemicals": [
       {
@@ -74,8 +74,9 @@
         "Rongen Gerard A"
       ],
       "journal": "European journal of human genetics : EJHG",
-      "year": 2024
+      "year": 2024,
+      "_sameAs": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10853275"
     }
   ],
-  "version": "2024-03-25-16-13"
+  "version": "2024-02-29-20-19"
 }
