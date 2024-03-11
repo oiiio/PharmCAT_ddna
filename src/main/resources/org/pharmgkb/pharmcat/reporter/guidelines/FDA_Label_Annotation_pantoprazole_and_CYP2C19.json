@@ -1,0 +1,86 @@
+{
+  "guideline": {
+    "id": "PA166104901",
+    "name": "Annotation of FDA Label for pantoprazole and CYP2C19",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 33,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104901",
+    "relatedChemicals": [
+      {
+        "id": "PA450774",
+        "name": "pantoprazole",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA124",
+        "name": "cytochrome P450 family 2 subfamily C member 19",
+        "symbol": "CYP2C19"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310325",
+      "name": "Recommendation Annotation PA166310325",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450774",
+          "name": "pantoprazole",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211504,
+        "html": "<p>&quot;For adult patients who are CYP2C19 poor metabolizers, no dosage adjustment is needed...For known pediatric poor metabolizers, a dose reduction should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310326",
+      "name": "Recommendation Annotation PA166310326",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450774",
+          "name": "pantoprazole",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211505,
+        "html": "<p>&quot;For adult patients who are CYP2C19 poor metabolizers, no dosage adjustment is needed...For known pediatric poor metabolizers, a dose reduction should be considered.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Protonix Delayed-Release (PANTOPRAZOLE SODIUM), NDA020987, Avera McKennan Hospital",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=020987"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

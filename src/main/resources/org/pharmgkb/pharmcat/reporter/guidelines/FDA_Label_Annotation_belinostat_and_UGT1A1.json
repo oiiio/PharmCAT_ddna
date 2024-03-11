@@ -1,0 +1,64 @@
+{
+  "guideline": {
+    "id": "PA166129553",
+    "name": "Annotation of FDA Label for belinostat and UGT1A1",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 38,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166129553",
+    "relatedChemicals": [
+      {
+        "id": "PA165971474",
+        "name": "belinostat",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA420",
+        "name": "UDP glucuronosyltransferase 1 family, polypeptide A1",
+        "symbol": "UGT1A1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312581",
+      "name": "Recommendation Annotation PA166312581",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA165971474",
+          "name": "belinostat",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452217300,
+        "html": "<p>&quot;Reduce the starting dose of Beleodaq [belinostat] to 750 mg/m<sup>2</sup> in patients known to be homozygous for the UGT1A1*28 allele to minimize dose limiting toxicities.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "UGT1A1": {
+          "*28": 2.0
+        }
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Beleodaq (Belinostat), NDA206256, Spectrum Pharmaceuticals, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=206256"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

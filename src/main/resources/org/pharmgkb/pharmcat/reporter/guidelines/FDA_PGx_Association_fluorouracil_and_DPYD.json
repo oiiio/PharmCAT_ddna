@@ -1,0 +1,125 @@
+{
+  "guideline": {
+    "id": "PA166328688",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Fluorouracil - DPYD",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328688",
+    "relatedChemicals": [
+      {
+        "id": "PA128406956",
+        "name": "fluorouracil",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA145",
+        "name": "dihydropyrimidine dehydrogenase",
+        "symbol": "DPYD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310702",
+      "name": "Recommendation Annotation PA166310702",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizer",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA128406956",
+          "name": "fluorouracil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213141,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310704",
+      "name": "Recommendation Annotation PA166310704",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizer",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA128406956",
+          "name": "fluorouracil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213143,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "1.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166310703",
+      "name": "Recommendation Annotation PA166310703",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizer",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA128406956",
+          "name": "fluorouracil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213142,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310741",
+      "name": "Recommendation Annotation PA166310741",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizer",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA128406956",
+          "name": "fluorouracil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213180,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "1.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

@@ -13,7 +13,6 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 import com.google.common.base.Preconditions;
-import com.google.common.collect.Lists;
 import org.checkerframework.checker.nullness.qual.Nullable;
 import org.junit.jupiter.api.TestInfo;
 import org.opentest4j.AssertionFailedError;
@@ -22,6 +21,7 @@ import org.pharmgkb.pharmcat.reporter.TextConstants;
 import org.pharmgkb.pharmcat.reporter.handlebars.ReportHelpers;
 import org.pharmgkb.pharmcat.reporter.model.DataSource;
 import org.pharmgkb.pharmcat.reporter.model.MessageAnnotation;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.result.Diplotype;
 import org.pharmgkb.pharmcat.reporter.model.result.DiplotypeTest;
 import org.pharmgkb.pharmcat.reporter.model.result.DrugReport;
@@ -39,7 +39,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PipelineWrapper {
   // controls to support running PipelineTest from SyntheticBatchTest
   private static boolean m_compact = true;
-  private static List<DataSource> m_sources = Lists.newArrayList(DataSource.CPIC, DataSource.DPWG, DataSource.FDA);
+  private static List<PrescribingGuidanceSource> m_sources = PrescribingGuidanceSource.listValues();
 
   private final Env m_env;
   private final Path m_outputPath;
@@ -55,7 +55,7 @@ class PipelineWrapper {
     m_compact = compact;
   }
 
-  static void setSources(List<DataSource> sources) {
+  static void setSources(List<PrescribingGuidanceSource> sources) {
     m_sources = sources;
   }
 
@@ -393,7 +393,7 @@ class PipelineWrapper {
         drugName + " has " + numMatched + " matching recommendation(s) instead of " + expectedCount);
   }
 
-  void testMatchedAnnotations(String drugName, DataSource source, int expectedCount) {
+  void testMatchedAnnotations(String drugName, PrescribingGuidanceSource source, int expectedCount) {
     DrugReport drugReport = getContext().getDrugReport(source, drugName);
     assertNotNull(drugReport);
     assertEquals(expectedCount, drugReport.getMatchedAnnotationCount(),
@@ -401,14 +401,14 @@ class PipelineWrapper {
             " recommendation(s) instead of " + expectedCount);
   }
 
-  void testAnyMatchFromSource(String drugName, DataSource source) {
+  void testAnyMatchFromSource(String drugName, PrescribingGuidanceSource source) {
     DrugReport drugReport = getContext().getDrugReport(source, drugName);
     assertNotNull(drugReport);
     assertTrue(drugReport.getGuidelines().stream().anyMatch((g) -> g.getSource() == source && g.isMatched()),
         drugName + " does not have matching recommendation from " + source);
   }
 
-  void testNoMatchFromSource(String drugName, DataSource source) {
+  void testNoMatchFromSource(String drugName, PrescribingGuidanceSource source) {
     DrugReport drugReport = getContext().getDrugReport(source, drugName);
     if (drugReport != null) {
       assertTrue(drugReport.getGuidelines().stream().noneMatch(r -> r.getSource() == source && r.isMatched()),
@@ -416,7 +416,7 @@ class PipelineWrapper {
     }
   }
 
-  void testMessageCountForDrug(DataSource source, String drugName, int messageCount) {
+  void testMessageCountForDrug(PrescribingGuidanceSource source, String drugName, int messageCount) {
     DrugReport drugReport = getContext().getDrugReport(source, drugName);
     assertNotNull(drugReport);
     assertEquals(messageCount, drugReport.getMessages().size(),

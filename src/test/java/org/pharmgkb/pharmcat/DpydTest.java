@@ -25,6 +25,7 @@ import org.pharmgkb.pharmcat.reporter.MessageHelper;
 import org.pharmgkb.pharmcat.reporter.TextConstants;
 import org.pharmgkb.pharmcat.reporter.handlebars.ReportHelpers;
 import org.pharmgkb.pharmcat.reporter.model.DataSource;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.VariantReport;
 import org.pharmgkb.pharmcat.reporter.model.result.AnnotationReport;
 import org.pharmgkb.pharmcat.reporter.model.result.DrugReport;
@@ -94,23 +95,23 @@ class DpydTest {
     int numAnnotations = 0;
 
     if (hasCpicReport == RecPresence.YES) {
-      testWrapper.testAnyMatchFromSource("fluorouracil", DataSource.CPIC);
-      testWrapper.testAnyMatchFromSource("capecitabine", DataSource.CPIC);
+      testWrapper.testAnyMatchFromSource("fluorouracil", PrescribingGuidanceSource.CPIC_GUIDELINE);
+      testWrapper.testAnyMatchFromSource("capecitabine", PrescribingGuidanceSource.CPIC_GUIDELINE);
       numAnnotations += 1;
 
     } else {
-      testWrapper.testNoMatchFromSource("fluorouracil", DataSource.CPIC);
-      testWrapper.testNoMatchFromSource("capecitabine", DataSource.CPIC);
+      testWrapper.testNoMatchFromSource("fluorouracil", PrescribingGuidanceSource.CPIC_GUIDELINE);
+      testWrapper.testNoMatchFromSource("capecitabine", PrescribingGuidanceSource.CPIC_GUIDELINE);
     }
 
     if (hasDpwgReport == RecPresence.YES) {
-      testWrapper.testAnyMatchFromSource("fluorouracil", DataSource.DPWG);
-      testWrapper.testAnyMatchFromSource("capecitabine", DataSource.DPWG);
+      testWrapper.testAnyMatchFromSource("fluorouracil", PrescribingGuidanceSource.DPWG_GUIDELINE);
+      testWrapper.testAnyMatchFromSource("capecitabine", PrescribingGuidanceSource.DPWG_GUIDELINE);
       numAnnotations += 1;
 
     } else {
-      testWrapper.testNoMatchFromSource("fluorouracil", DataSource.DPWG);
-      testWrapper.testNoMatchFromSource("capecitabine", DataSource.DPWG);
+      testWrapper.testNoMatchFromSource("fluorouracil", PrescribingGuidanceSource.DPWG_GUIDELINE);
+      testWrapper.testNoMatchFromSource("capecitabine", PrescribingGuidanceSource.DPWG_GUIDELINE);
     }
 
     if (numAnnotations > 0) {
@@ -409,8 +410,8 @@ class DpydTest {
     assertNotNull(highScoreDpydReport);
     assertTrue(highScoreDpydReport.getRecommendationDiplotypes().stream().allMatch((d) -> d.getActivityScore().equals("1.5")));
 
-    highScoreWrapper.testAnyMatchFromSource("capecitabine", DataSource.CPIC);
-    DrugReport highScoreDrug = highScoreWrapper.getContext().getDrugReport(DataSource.CPIC, "capecitabine");
+    highScoreWrapper.testAnyMatchFromSource("capecitabine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    DrugReport highScoreDrug = highScoreWrapper.getContext().getDrugReport(PrescribingGuidanceSource.CPIC_GUIDELINE, "capecitabine");
     assertNotNull(highScoreDrug);
     List<String> highRecs = highScoreDrug.getGuidelines().stream()
         .flatMap(g -> g.getAnnotations().stream())
@@ -430,8 +431,8 @@ class DpydTest {
     assertNotNull(lowScoreDpydReport);
     assertTrue(lowScoreDpydReport.getRecommendationDiplotypes().stream().allMatch((d) -> d.getActivityScore().equals("1.0")));
 
-    lowScoreWrapper.testAnyMatchFromSource("capecitabine", DataSource.CPIC);
-    DrugReport lowScoreDrug = lowScoreWrapper.getContext().getDrugReport(DataSource.CPIC, "capecitabine");
+    lowScoreWrapper.testAnyMatchFromSource("capecitabine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    DrugReport lowScoreDrug = lowScoreWrapper.getContext().getDrugReport(PrescribingGuidanceSource.CPIC_GUIDELINE, "capecitabine");
     assertNotNull(lowScoreDrug);
     List<String> lowRecs = lowScoreDrug.getGuidelines().stream()
         .flatMap(g -> g.getAnnotations().stream())

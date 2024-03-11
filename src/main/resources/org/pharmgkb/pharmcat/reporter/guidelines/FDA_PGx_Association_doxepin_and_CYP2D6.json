@@ -1,0 +1,413 @@
+{
+  "guideline": {
+    "id": "PA166328760",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Doxepin - CYP2D6",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328760",
+    "relatedChemicals": [
+      {
+        "id": "PA449409",
+        "name": "doxepin",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315638",
+      "name": "Recommendation Annotation PA166315638",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246557,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315649",
+      "name": "Recommendation Annotation PA166315649",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246588,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315646",
+      "name": "Recommendation Annotation PA166315646",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246585,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315644",
+      "name": "Recommendation Annotation PA166315644",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246583,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315642",
+      "name": "Recommendation Annotation PA166315642",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246581,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315640",
+      "name": "Recommendation Annotation PA166315640",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246559,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315651",
+      "name": "Recommendation Annotation PA166315651",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246590,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315650",
+      "name": "Recommendation Annotation PA166315650",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246589,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315639",
+      "name": "Recommendation Annotation PA166315639",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246558,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315637",
+      "name": "Recommendation Annotation PA166315637",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246556,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315648",
+      "name": "Recommendation Annotation PA166315648",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246587,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315647",
+      "name": "Recommendation Annotation PA166315647",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246586,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315645",
+      "name": "Recommendation Annotation PA166315645",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246584,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315643",
+      "name": "Recommendation Annotation PA166315643",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246582,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315641",
+      "name": "Recommendation Annotation PA166315641",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246580,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "1.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315652",
+      "name": "Recommendation Annotation PA166315652",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449409",
+          "name": "doxepin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246591,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

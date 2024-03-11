@@ -1,0 +1,53 @@
+{
+  "guideline": {
+    "id": "PA166328766",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Galantamine - CYP2D6",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328766",
+    "relatedChemicals": [
+      {
+        "id": "PA449726",
+        "name": "galantamine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315874",
+      "name": "Recommendation Annotation PA166315874",
+      "population": "Affected subgroup: CYP2D6 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449726",
+          "name": "galantamine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246853,
+        "html": "<p>&quot;Results in higher systemic concentrations. Titrate dosage based on tolerability.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

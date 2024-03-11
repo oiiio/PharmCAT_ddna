@@ -33,6 +33,7 @@ import org.pharmgkb.pharmcat.reporter.TextConstants;
 import org.pharmgkb.pharmcat.reporter.handlebars.ReportHelpers;
 import org.pharmgkb.pharmcat.reporter.model.DataSource;
 import org.pharmgkb.pharmcat.reporter.model.MessageAnnotation;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.VariantReport;
 import org.pharmgkb.pharmcat.reporter.model.result.AnnotationReport;
 import org.pharmgkb.pharmcat.reporter.model.result.Diplotype;
@@ -674,10 +675,10 @@ class PipelineTest {
     testWrapper.testCalledByMatcher("CYP2C19");
     testWrapper.testPrintCpicCalls( "CYP2C19", "*1/*1");
 
-    testWrapper.testMatchedAnnotations("amitriptyline", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("amitriptyline", DataSource.DPWG, 1);
-    testWrapper.testMatchedAnnotations("citalopram", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("citalopram", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("amitriptyline", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("citalopram", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("citalopram", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
     testWrapper.testMatchedAnnotations("ivacaftor", 0);
   }
 
@@ -701,14 +702,14 @@ class PipelineTest {
     testWrapper.testPrintCpicCalls( "CYP2D6", "*3/*4");
 
     testWrapper.testMatchedAnnotations("amitriptyline", 2);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("citalopram", 2);
-    testWrapper.testAnyMatchFromSource("citalopram", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("citalopram", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("citalopram", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("citalopram", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("clomipramine", 3);
-    testWrapper.testAnyMatchFromSource("clomipramine", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("clomipramine", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("clomipramine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("clomipramine", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("ivacaftor", 0);
 
     GeneReport cyp2c19report = testWrapper.getContext().getGeneReport(DataSource.CPIC, "CYP2C19");
@@ -724,7 +725,7 @@ class PipelineTest {
             Objects.requireNonNull(m.getMatches().getVariant()).equals("rs58973490"))
         .count());
 
-    testWrapper.testMessageCountForDrug(DataSource.CPIC, "amitriptyline", 1);
+    testWrapper.testMessageCountForDrug(PrescribingGuidanceSource.CPIC_GUIDELINE, "amitriptyline", 1);
   }
 
   /**
@@ -744,14 +745,14 @@ class PipelineTest {
     testWrapper.testPrintCpicCalls( "CYP2C19", "*1/*2");
 
     testWrapper.testMatchedAnnotations("amitriptyline", 2);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("citalopram", 2);
-    testWrapper.testAnyMatchFromSource("citalopram", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("citalopram", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("citalopram", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("citalopram", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("clomipramine", 3);
-    testWrapper.testAnyMatchFromSource("clomipramine", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("clomipramine", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("clomipramine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("clomipramine", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("ivacaftor", 0);
 
     GeneReport cyp2c19report = testWrapper.getContext().getGeneReport(DataSource.CPIC, "CYP2C19");
@@ -768,9 +769,9 @@ class PipelineTest {
             Objects.requireNonNull(m.getMatches().getVariant()).equals("rs58973490"))
         .count());
 
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.CPIC);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
     // the variant is hom, so the ambiguity message should not apply and, thus, no matching messages
-    testWrapper.testMessageCountForDrug(DataSource.CPIC, "amitriptyline", 0);
+    testWrapper.testMessageCountForDrug(PrescribingGuidanceSource.CPIC_GUIDELINE, "amitriptyline", 0);
 
     // CYP2C19 reference is *38, not *1, so should not have a reference message
     testWrapper.testMessageCountForGene(DataSource.CPIC, "CYP2C19", 0);
@@ -789,37 +790,37 @@ class PipelineTest {
     testWrapper.testPrintCpicCalls( "CYP2C19", "*2/*2");
 
     testWrapper.testMatchedAnnotations("amitriptyline", 2);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("clomipramine", 3);
-    testWrapper.testAnyMatchFromSource("clomipramine", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("clomipramine", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("clomipramine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("clomipramine", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("desipramine", 1);
-    testWrapper.testAnyMatchFromSource("desipramine", DataSource.CPIC);
+    testWrapper.testAnyMatchFromSource("desipramine", PrescribingGuidanceSource.CPIC_GUIDELINE);
     testWrapper.testMatchedAnnotations("doxepin", 2);
-    testWrapper.testAnyMatchFromSource("doxepin", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("doxepin", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("doxepin", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("doxepin", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("imipramine", 3);
-    testWrapper.testAnyMatchFromSource("imipramine", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("imipramine", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("imipramine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("imipramine", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("nortriptyline", 2);
-    testWrapper.testAnyMatchFromSource("nortriptyline", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("nortriptyline", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("nortriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("nortriptyline", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("trimipramine", 1);
 
     testWrapper.testMatchedAnnotations("clopidogrel", 5);
-    testWrapper.testAnyMatchFromSource("clopidogrel", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("clopidogrel", DataSource.DPWG);
-    testWrapper.testAnyMatchFromSource("clopidogrel", DataSource.FDA);
+    testWrapper.testAnyMatchFromSource("clopidogrel", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("clopidogrel", PrescribingGuidanceSource.DPWG_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("clopidogrel", PrescribingGuidanceSource.FDA_LABEL);
 
     testWrapper.testMatchedAnnotations("lansoprazole", 2);
-    testWrapper.testAnyMatchFromSource("lansoprazole", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("lansoprazole", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("lansoprazole", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("lansoprazole", PrescribingGuidanceSource.DPWG_GUIDELINE);
 
     // voriconazole has 2 populations with recommendations so should have 2 matching annotations from CPIC
     // and 1 from DPWG
-    testWrapper.testMatchedAnnotations("voriconazole", DataSource.CPIC, 2);
-    testWrapper.testMatchedAnnotations("voriconazole", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("voriconazole", PrescribingGuidanceSource.CPIC_GUIDELINE, 2);
+    testWrapper.testMatchedAnnotations("voriconazole", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
   }
 
   @Test
@@ -832,10 +833,10 @@ class PipelineTest {
 
     testWrapper.testNotCalledByMatcher("CYP2C19");
 
-    testWrapper.testNoMatchFromSource("citalopram", DataSource.CPIC);
-    testWrapper.testNoMatchFromSource("citalopram", DataSource.DPWG);
-    testWrapper.testNoMatchFromSource("ivacaftor", DataSource.CPIC);
-    testWrapper.testNoMatchFromSource("ivacaftor", DataSource.DPWG);
+    testWrapper.testNoMatchFromSource("citalopram", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testNoMatchFromSource("citalopram", PrescribingGuidanceSource.DPWG_GUIDELINE);
+    testWrapper.testNoMatchFromSource("ivacaftor", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testNoMatchFromSource("ivacaftor", PrescribingGuidanceSource.DPWG_GUIDELINE);
   }
 
   @Test
@@ -852,11 +853,11 @@ class PipelineTest {
     testWrapper.testPrintCpicCalls("CYP2C19", "*4/*4", "*4/*17", "*17/*17");
 
     testWrapper.testMatchedAnnotations("citalopram", 7);
-    testWrapper.testMatchedAnnotations("citalopram", DataSource.CPIC, 3);
-    testWrapper.testMatchedAnnotations("citalopram", DataSource.DPWG, 3);
-    testWrapper.testMatchedAnnotations("citalopram", DataSource.FDA, 1);
-    testWrapper.testAnyMatchFromSource("citalopram", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("citalopram", DataSource.DPWG);
+    testWrapper.testMatchedAnnotations("citalopram", PrescribingGuidanceSource.CPIC_GUIDELINE, 3);
+    testWrapper.testMatchedAnnotations("citalopram", PrescribingGuidanceSource.DPWG_GUIDELINE, 3);
+    testWrapper.testMatchedAnnotations("citalopram", PrescribingGuidanceSource.FDA_LABEL, 1);
+    testWrapper.testAnyMatchFromSource("citalopram", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("citalopram", PrescribingGuidanceSource.DPWG_GUIDELINE);
   }
 
   @Test
@@ -913,8 +914,8 @@ class PipelineTest {
         .filter(m -> m.getExceptionType().equals(MessageAnnotation.TYPE_AMBIGUITY))
         .count());
 
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.CPIC);
-    testWrapper.testMessageCountForDrug(DataSource.CPIC, "amitriptyline", 2);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testMessageCountForDrug(PrescribingGuidanceSource.CPIC_GUIDELINE, "amitriptyline", 2);
   }
 
   @Test
@@ -1081,8 +1082,8 @@ class PipelineTest {
     testWrapper.testRecommendedDiplotypes("CYP2D6", "*1", "*4");
 
     testWrapper.testMatchedAnnotations("amitriptyline", 2);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("amitriptyline", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("amitriptyline", PrescribingGuidanceSource.DPWG_GUIDELINE);
   }
 
 
@@ -1102,7 +1103,7 @@ class PipelineTest {
 
     testWrapper.testMatchedAnnotations("simvastatin", 2);
 
-    DrugReport dpwgReport = testWrapper.getContext().getDrugReport(DataSource.DPWG, "simvastatin");
+    DrugReport dpwgReport = testWrapper.getContext().getDrugReport(PrescribingGuidanceSource.DPWG_GUIDELINE, "simvastatin");
     assertNotNull(dpwgReport);
     assertNotNull(dpwgReport.getGuidelines());
     assertEquals("No recommendation", dpwgReport.getGuidelines().first().getAnnotations().first().getClassification());
@@ -1126,8 +1127,8 @@ class PipelineTest {
     testWrapper.testRecommendedDiplotypes(DataSource.CPIC, "SLCO1B1", expectedCallsToRecommendedDiplotypes(expectedCalls));
     testWrapper.testPrintCalls(DataSource.CPIC, "SLCO1B1", expectedCalls);
 
-    testWrapper.testMatchedAnnotations("simvastatin", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("simvastatin", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("simvastatin", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("simvastatin", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
 
     Document document = readHtmlReport(vcfFile);
     htmlChecks(document, "SLCO1B1", expectedCalls, "simvastatin", RecPresence.YES, RecPresence.YES);
@@ -1170,8 +1171,8 @@ class PipelineTest {
     testWrapper.testRecommendedDiplotypes(DataSource.CPIC, "SLCO1B1", expectedCallsToRecommendedDiplotypes(expectedCalls));
     testWrapper.testPrintCalls(DataSource.CPIC, "SLCO1B1", expectedCalls);
 
-    testWrapper.testMatchedAnnotations("simvastatin", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("simvastatin", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("simvastatin", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("simvastatin", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
 
     Document document = readHtmlReport(vcfFile);
     htmlChecks(document, "SLCO1B1", expectedCalls, "simvastatin", RecPresence.YES, RecPresence.YES);
@@ -1305,7 +1306,7 @@ class PipelineTest {
 
     // the guideline should not have an ambiguity message
     testWrapper.testMatchedAnnotations("atazanavir", 1);
-    testWrapper.testMessageCountForDrug(DataSource.CPIC, "atazanavir", 0);
+    testWrapper.testMessageCountForDrug(PrescribingGuidanceSource.CPIC_GUIDELINE, "atazanavir", 0);
 
     testWrapper.testMessageCountForGene(DataSource.CPIC, "UGT1A1", 2);
     testWrapper.testGeneHasMessage(DataSource.CPIC, "UGT1A1", "reference-allele");
@@ -1666,15 +1667,15 @@ class PipelineTest {
     testWrapper.testSourcePhenotype(DataSource.DPWG, "HLA-B", "*15:02 positive");
 
     // *57:01 guideline
-    testWrapper.testMatchedAnnotations("abacavir", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("abacavir", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("abacavir", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("abacavir", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
     // *58:01 guideline
-    testWrapper.testMatchedAnnotations("allopurinol", DataSource.CPIC, 1);
+    testWrapper.testMatchedAnnotations("allopurinol", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
     // *15:02 guideline (along with CYP2C9)
     testWrapper.testMatchedAnnotations("phenytoin", 5);
-    testWrapper.testMatchedAnnotations("phenytoin", DataSource.CPIC, 2);
-    testWrapper.testMatchedAnnotations("phenytoin", DataSource.DPWG, 2);
-    testWrapper.testMatchedAnnotations("phenytoin", DataSource.FDA, 1);
+    testWrapper.testMatchedAnnotations("phenytoin", PrescribingGuidanceSource.CPIC_GUIDELINE, 2);
+    testWrapper.testMatchedAnnotations("phenytoin", PrescribingGuidanceSource.DPWG_GUIDELINE, 2);
+    testWrapper.testMatchedAnnotations("phenytoin", PrescribingGuidanceSource.FDA_LABEL, 1);
   }
 
   @Test
@@ -1698,17 +1699,17 @@ class PipelineTest {
     testWrapper.testSourcePhenotype(DataSource.DPWG, "HLA-B", "*58:01 negative");
     testWrapper.testSourcePhenotype(DataSource.DPWG, "HLA-B", "*15:02 positive");
 
-    testWrapper.testMatchedAnnotations("abacavir", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("allopurinol", DataSource.CPIC, 1);
+    testWrapper.testMatchedAnnotations("abacavir", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("allopurinol", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
     testWrapper.testMatchedAnnotations("phenytoin", 5);
-    testWrapper.testMatchedAnnotations("phenytoin", DataSource.CPIC, 2);
-    testWrapper.testMatchedAnnotations("phenytoin", DataSource.DPWG, 2);
-    testWrapper.testMatchedAnnotations("phenytoin", DataSource.FDA, 1);
+    testWrapper.testMatchedAnnotations("phenytoin", PrescribingGuidanceSource.CPIC_GUIDELINE, 2);
+    testWrapper.testMatchedAnnotations("phenytoin", PrescribingGuidanceSource.DPWG_GUIDELINE, 2);
+    testWrapper.testMatchedAnnotations("phenytoin", PrescribingGuidanceSource.FDA_LABEL, 1);
 
     // carbamazepine-CPIC is a two gene lookup, let's test to make sure only specifying HLA-B will still return results
-    testWrapper.testMatchedAnnotations("carbamazepine", DataSource.CPIC, 3);
+    testWrapper.testMatchedAnnotations("carbamazepine", PrescribingGuidanceSource.CPIC_GUIDELINE, 3);
     // carbamazepine-DPWG is a single gene lookup so it will be a "normal" lookup
-    testWrapper.testMatchedAnnotations("carbamazepine", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("carbamazepine", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
   }
 
   @Test
@@ -1728,16 +1729,16 @@ class PipelineTest {
     testWrapper.testReportable("CYP2C9");
     testWrapper.testReportable("HLA-B");
     testWrapper.testMatchedAnnotations("abacavir", 3);
-    testWrapper.testMatchedAnnotations("abacavir", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("abacavir", DataSource.DPWG, 1);
-    testWrapper.testMatchedAnnotations("abacavir", DataSource.FDA, 1);
+    testWrapper.testMatchedAnnotations("abacavir", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("abacavir", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("abacavir", PrescribingGuidanceSource.FDA_LABEL, 1);
     // allopurinol relies on a different allele for recs so no matches
     testWrapper.testMatchedAnnotations("allopurinol", 0);
     // phenytoin also relies on a different allele, but there will be a match for DPWG since the recommendations are
     // split between the two genes on that side
     testWrapper.testMatchedAnnotations("phenytoin", 1);
-    testWrapper.testNoMatchFromSource("phenytoin", DataSource.CPIC);
-    testWrapper.testAnyMatchFromSource("phenytoin", DataSource.DPWG);
+    testWrapper.testNoMatchFromSource("phenytoin", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testAnyMatchFromSource("phenytoin", PrescribingGuidanceSource.DPWG_GUIDELINE);
   }
 
   /**
@@ -1781,22 +1782,24 @@ class PipelineTest {
 
     testWrapper.testReportable("CYP2C19", "CYP2C9", "HLA-A", "HLA-B");
     testWrapper.testMatchedAnnotations("celecoxib", 1);
-    testWrapper.testAnyMatchFromSource("celecoxib", DataSource.CPIC);
-    testWrapper.testMatchedAnnotations("citalopram", 3);
-    testWrapper.testMatchedAnnotations("clomipramine", DataSource.CPIC, 1);
-    testWrapper.testMatchedAnnotations("clomipramine", DataSource.DPWG, 1);
-    testWrapper.testMatchedAnnotations("clopidogrel", 5);
-    testWrapper.testMatchedAnnotations("clopidogrel", DataSource.CPIC, 3);
-    testWrapper.testMatchedAnnotations("clopidogrel", DataSource.DPWG, 1);
-    testWrapper.testNoMatchFromSource("flucloxacillin", DataSource.CPIC);
-    testWrapper.testMatchedAnnotations("flucloxacillin", DataSource.DPWG, 1);
-    testWrapper.testNoMatchFromSource("fluvoxamine", DataSource.CPIC);
-    testWrapper.testNoMatchFromSource("fluvoxamine", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("celecoxib", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testMatchedAnnotations("citalopram", 4);
+    testWrapper.testMatchedAnnotations("clomipramine", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("clomipramine", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("clopidogrel", 6);
+    testWrapper.testMatchedAnnotations("clopidogrel", PrescribingGuidanceSource.CPIC_GUIDELINE, 3);
+    testWrapper.testMatchedAnnotations("clopidogrel", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
+    testWrapper.testMatchedAnnotations("clopidogrel", PrescribingGuidanceSource.FDA_LABEL, 1);
+    testWrapper.testMatchedAnnotations("clopidogrel", PrescribingGuidanceSource.FDA_ASSOC, 1);
+    testWrapper.testNoMatchFromSource("flucloxacillin", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testMatchedAnnotations("flucloxacillin", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
+    testWrapper.testNoMatchFromSource("fluvoxamine", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testNoMatchFromSource("fluvoxamine", PrescribingGuidanceSource.DPWG_GUIDELINE);
     testWrapper.testMatchedAnnotations("siponimod", 1);
-    testWrapper.testAnyMatchFromSource("siponimod", DataSource.DPWG);
+    testWrapper.testAnyMatchFromSource("siponimod", PrescribingGuidanceSource.DPWG_GUIDELINE);
 
-    testWrapper.testMatchedAnnotations("carbamazepine", DataSource.CPIC, 3);
-    testWrapper.testMatchedAnnotations("carbamazepine", DataSource.DPWG, 1);
+    testWrapper.testMatchedAnnotations("carbamazepine", PrescribingGuidanceSource.CPIC_GUIDELINE, 3);
+    testWrapper.testMatchedAnnotations("carbamazepine", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
   }
 
   @Test
@@ -1953,8 +1956,8 @@ class PipelineTest {
     testWrapper.testSourcePhenotype(DataSource.CPIC, "CYP2D6", "n/a");
 
     // this nonsense allele will still match to "Indeterminate" phenotypes in guidelines for CYP2D6
-    testWrapper.testMatchedAnnotations("atomoxetine", DataSource.CPIC, 2);
-    DrugReport atoReport = testWrapper.getContext().getDrugReport(DataSource.CPIC, "atomoxetine");
+    testWrapper.testMatchedAnnotations("atomoxetine", PrescribingGuidanceSource.CPIC_GUIDELINE, 2);
+    DrugReport atoReport = testWrapper.getContext().getDrugReport(PrescribingGuidanceSource.CPIC_GUIDELINE, "atomoxetine");
     assertNotNull(atoReport);
     assertNotNull(atoReport.getGuidelines());
     assertEquals(1, atoReport.getGuidelines().size());
@@ -2203,7 +2206,7 @@ class PipelineTest {
 
     // We don't expect to get a match since 2C19 is a partial call even when 2D6 has a call.
     // Currently, partials will not be visible past the phenotyper so recommendation matches are not visible.
-    testWrapper.testMatchedAnnotations("amitriptyline", DataSource.CPIC, 0);
+    testWrapper.testMatchedAnnotations("amitriptyline", PrescribingGuidanceSource.CPIC_GUIDELINE, 0);
   }
 
 
@@ -2296,7 +2299,7 @@ class PipelineTest {
     Diplotype diplotype = geneReport.getRecommendationDiplotypes().first();
     assertThat(diplotype.getPhenotypes(), contains("Poor Metabolizer"));
 
-    DrugReport drugReport = testWrapper.getContext().getDrugReport(DataSource.CPIC, "clomipramine");
+    DrugReport drugReport = testWrapper.getContext().getDrugReport(PrescribingGuidanceSource.CPIC_GUIDELINE, "clomipramine");
     assertNotNull(drugReport);
     assertEquals(1, drugReport.getGuidelines().size());
     GuidelineReport guidelineReport = drugReport.getGuidelines().first();
@@ -2416,8 +2419,8 @@ class PipelineTest {
     testWrapper.testReportable(gene);
     testWrapper.testPrintCalls(DataSource.DPWG, gene, displayedCalls);
 
-    testWrapper.testNoMatchFromSource("hormonal contraceptives for systemic use", DataSource.CPIC);
-    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", DataSource.DPWG, 1);
+    testWrapper.testNoMatchFromSource("hormonal contraceptives for systemic use", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
 
     Document document = readHtmlReport(outsideCallFile);
     htmlChecks(document,
@@ -2451,8 +2454,8 @@ class PipelineTest {
     testWrapper.testReportable(gene);
     testWrapper.testPrintCalls(DataSource.DPWG, gene, expectedCalls);
 
-    testWrapper.testNoMatchFromSource("hormonal contraceptives for systemic use", DataSource.CPIC);
-    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", DataSource.DPWG, 1);
+    testWrapper.testNoMatchFromSource("hormonal contraceptives for systemic use", PrescribingGuidanceSource.CPIC_GUIDELINE);
+    testWrapper.testMatchedAnnotations("hormonal contraceptives for systemic use", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
 
     Document document = readHtmlReport(outsideCallFile);
     htmlChecks(document, gene, expectedCalls, "hormonal contraceptives for systemic use", RecPresence.NO, RecPresence.YES);

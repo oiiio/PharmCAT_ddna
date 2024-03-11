@@ -1,0 +1,53 @@
+{
+  "guideline": {
+    "id": "PA166328665",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Amphetamine - CYP2D6",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328665",
+    "relatedChemicals": [
+      {
+        "id": "PA448408",
+        "name": "amphetamine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315182",
+      "name": "Recommendation Annotation PA166315182",
+      "population": "Affected subgroup: CYP2D6 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448408",
+          "name": "amphetamine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245821,
+        "html": "<p>&quot;May affect systemic concentrations and adverse reaction risk. Consider lower starting dosage or use alternative agent.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

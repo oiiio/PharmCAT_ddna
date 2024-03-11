@@ -11,8 +11,8 @@ import org.pharmgkb.pharmcat.Env;
 import org.pharmgkb.pharmcat.phenotype.model.GenePhenotype;
 import org.pharmgkb.pharmcat.reporter.MessageHelper;
 import org.pharmgkb.pharmcat.reporter.caller.LowestFunctionGeneCaller;
-import org.pharmgkb.pharmcat.reporter.model.DataSource;
 import org.pharmgkb.pharmcat.reporter.model.MessageAnnotation;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.cpic.Publication;
 import org.pharmgkb.pharmcat.reporter.model.result.AnnotationReport;
 import org.pharmgkb.pharmcat.reporter.model.result.Diplotype;
@@ -33,6 +33,7 @@ public class Recommendation implements Comparable<Recommendation> {
   private Report m_cpicReport;
   private Report m_dpwgReport;
   private Report m_fdaReport;
+  private Report m_fdaPgxAssocReport;
   private boolean m_hasInferred;
   private boolean m_hasDpydInferred;
   private final Set<MessageAnnotation> m_messages = new LinkedHashSet<>();
@@ -46,31 +47,36 @@ public class Recommendation implements Comparable<Recommendation> {
   }
 
 
-  public void addReport(DataSource source, DrugReport report) {
+  public void addReport(PrescribingGuidanceSource source, DrugReport report) {
     Preconditions.checkArgument(m_drug.equals(report.getName()));
+    Preconditions.checkNotNull(source);
 
     switch (source) {
-      case CPIC -> {
+      case CPIC_GUIDELINE ->  {
         if (m_cpicReport != null) {
-          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " +
-              source.getDisplayName());
+          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " + source);
         }
         m_cpicReport = new Report(source, report);
       }
-      case DPWG -> {
+      case DPWG_GUIDELINE ->  {
         if (m_dpwgReport != null) {
-          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " +
-              source.getDisplayName());
+          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " + source);
         }
         m_dpwgReport = new Report(source, report);
       }
-      case FDA -> {
+      case FDA_LABEL ->  {
         if (m_fdaReport != null) {
-          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " +
-              source.getDisplayName());
+          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " + source);
         }
         m_fdaReport = new Report(source, report);
       }
+      case FDA_ASSOC ->  {
+        if (m_fdaPgxAssocReport != null) {
+          throw new IllegalStateException("Multiple drug reports for " + report.getName() + " from " + source);
+        }
+        m_fdaPgxAssocReport = new Report(source, report);
+      }
+      default -> throw new RuntimeException("Source not supported: " + source);
     }
 
     boolean callMultiMatch = false;
@@ -169,7 +175,8 @@ public class Recommendation implements Comparable<Recommendation> {
   public boolean isMatched() {
     return (m_cpicReport != null && m_cpicReport.isMatched()) ||
         (m_dpwgReport != null && m_dpwgReport.isMatched()) ||
-        (m_fdaReport != null && m_fdaReport.isMatched());
+        (m_fdaReport != null && m_fdaReport.isMatched()) ||
+        (m_fdaPgxAssocReport != null && m_fdaPgxAssocReport.isMatched());
   }
 
 
@@ -184,6 +191,9 @@ public class Recommendation implements Comparable<Recommendation> {
     if (m_fdaReport != null) {
       reports.add(m_fdaReport);
     }
+    if (m_fdaPgxAssocReport != null) {
+      reports.add(m_fdaPgxAssocReport);
+    }
     return reports;
   }
 
@@ -197,6 +207,10 @@ public class Recommendation implements Comparable<Recommendation> {
 
   public Report getFdaReport() {
     return m_fdaReport;
+  }
+
+  public Report getFdaPgxAssocReport() {
+    return m_fdaPgxAssocReport;
   }
 
   public boolean isHasInferred() {

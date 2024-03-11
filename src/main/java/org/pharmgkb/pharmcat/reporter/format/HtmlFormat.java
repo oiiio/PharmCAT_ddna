@@ -15,11 +15,12 @@ import java.util.SortedMap;
 import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.helper.StringHelpers;
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader;
 import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Lists;
+import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.SortedSetMultimap;
 import com.google.common.collect.TreeMultimap;
@@ -31,6 +32,7 @@ import org.pharmgkb.pharmcat.reporter.format.html.Recommendation;
 import org.pharmgkb.pharmcat.reporter.handlebars.ReportHelpers;
 import org.pharmgkb.pharmcat.reporter.model.DataSource;
 import org.pharmgkb.pharmcat.reporter.model.MessageAnnotation;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.result.CallSource;
 import org.pharmgkb.pharmcat.reporter.model.result.DrugLink;
 import org.pharmgkb.pharmcat.reporter.model.result.DrugReport;
@@ -48,7 +50,8 @@ public class HtmlFormat extends AbstractFormat {
   private static final String sf_templatePrefix = "/org/pharmgkb/pharmcat/reporter";
   private static final String sf_handlebarTemplateName = "report";
   private static final boolean sf_compact_drugs = false;
-  private List<DataSource> m_sources = Lists.newArrayList(DataSource.CPIC, DataSource.DPWG, DataSource.FDA);
+  private Set<DataSource> m_geneSources = ImmutableSet.of(DataSource.CPIC, DataSource.DPWG);
+  private List<PrescribingGuidanceSource> m_sources = PrescribingGuidanceSource.listValues();
   private boolean m_compact;
   private final boolean f_testMode;
 
@@ -63,8 +66,11 @@ public class HtmlFormat extends AbstractFormat {
     f_testMode = testMode;
   }
 
-  public HtmlFormat sources(List<DataSource> sources) {
+  public HtmlFormat sources(List<PrescribingGuidanceSource> sources) {
     if (sources != null) {
+      m_geneSources = sources.stream()
+          .map(PrescribingGuidanceSource::getPhenoSource)
+          .collect(Collectors.toSet());
       m_sources = sources;
     }
     return this;
@@ -122,7 +128,7 @@ public class HtmlFormat extends AbstractFormat {
     SortedSetMultimap<String, GeneReport> geneReportMap = TreeMultimap.create();
     Map<String, Map<String, String>> functionMap = new HashMap<>();
     for (DataSource source : new TreeSet<>(reportContext.getGeneReports().keySet())) {
-      if (!m_sources.contains(source)) {
+      if (!m_geneSources.contains(source)) {
         continue;
       }
       for (GeneReport geneReport : reportContext.getGeneReports().get(source).values()) {
@@ -151,7 +157,7 @@ public class HtmlFormat extends AbstractFormat {
         }
 
         // skip gene reports that aren't related to any drugs
-        if (geneReport.getRelatedDrugs().size() == 0) {
+        if (geneReport.getRelatedDrugs().isEmpty()) {
           continue;
         }
 
@@ -225,7 +231,7 @@ public class HtmlFormat extends AbstractFormat {
 
     // Section II: Prescribing Recommendations
     SortedMap<String, Recommendation> recommendationMap = new TreeMap<>();
-    for (DataSource source : reportContext.getDrugReports().keySet()) {
+    for (PrescribingGuidanceSource source : reportContext.getDrugReports().keySet()) {
       if (!m_sources.contains(source)) {
         continue;
       }

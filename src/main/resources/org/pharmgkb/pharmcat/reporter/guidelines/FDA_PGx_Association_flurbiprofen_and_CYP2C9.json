@@ -1,0 +1,104 @@
+{
+  "guideline": {
+    "id": "PA166328687",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Flurbiprofen - CYP2C9",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328687",
+    "relatedChemicals": [
+      {
+        "id": "PA449683",
+        "name": "flurbiprofen",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA126",
+        "name": "cytochrome P450 family 2 subfamily C member 9",
+        "symbol": "CYP2C9"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166311942",
+      "name": "Recommendation Annotation PA166311942",
+      "population": "Affected subgroup: CYP2C9 poor metabolizers or *3 carriers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449683",
+          "name": "flurbiprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216141,
+        "html": "<p>&quot;Results in higher systemic concentrations. Use a reduced dosage in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.0"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312662",
+      "name": "Recommendation Annotation PA166312662",
+      "population": "Affected subgroup: CYP2C9 poor metabolizers or *3 carriers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449683",
+          "name": "flurbiprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218961,
+        "html": "<p>&quot;Results in higher systemic concentrations. Use a reduced dosage in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": {
+          "*1": 1.0,
+          "*3": 1.0
+        }
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311928",
+      "name": "Recommendation Annotation PA166311928",
+      "population": "Affected subgroup: CYP2C9 poor metabolizers or *3 carriers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449683",
+          "name": "flurbiprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216127,
+        "html": "<p>&quot;Results in higher systemic concentrations. Use a reduced dosage in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.5"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

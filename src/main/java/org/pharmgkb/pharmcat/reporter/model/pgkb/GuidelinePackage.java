@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.cpic.Publication;
 
 
@@ -46,7 +47,7 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
   }
 
   public boolean hasRecommendations() {
-    return guideline.isRecommendation() && recommendations != null && recommendations.size() > 0;
+    return guideline.isRecommendation() && recommendations != null && !recommendations.isEmpty();
   }
 
 
@@ -73,10 +74,26 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
   }
 
 
+  public boolean isDataSourceType(PrescribingGuidanceSource type) {
+    return guideline != null && type.matches(guideline);
+  }
+
   @Override
   public String toString() {
     if (guideline != null) {
-      return guideline.getName();
+      String chemicals = recommendations.stream()
+          .flatMap((r) -> r.getRelatedChemicals().stream())
+          .map(AccessionObject::getName)
+          .distinct()
+          .sorted()
+          .collect(Collectors.joining("_"));
+      return String.format(
+          "%s_%s_%s_and_%s.json",
+          guideline.getSource(),
+          guideline.getObjCls(),
+          chemicals,
+          guideline.getRelatedGenes().stream().map(AccessionObject::getSymbol).collect(Collectors.joining("_"))
+      ).replaceAll("[\\s\\/]", "_");
     }
     else {
       return super.toString();

@@ -1,0 +1,413 @@
+{
+  "guideline": {
+    "id": "PA166328748",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Amoxapine - CYP2D6",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328748",
+    "relatedChemicals": [
+      {
+        "id": "PA448405",
+        "name": "amoxapine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315541",
+      "name": "Recommendation Annotation PA166315541",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246460,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315528",
+      "name": "Recommendation Annotation PA166315528",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246447,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "1.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315525",
+      "name": "Recommendation Annotation PA166315525",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246444,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315536",
+      "name": "Recommendation Annotation PA166315536",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246455,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315534",
+      "name": "Recommendation Annotation PA166315534",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246453,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315532",
+      "name": "Recommendation Annotation PA166315532",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246451,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315530",
+      "name": "Recommendation Annotation PA166315530",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246449,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315529",
+      "name": "Recommendation Annotation PA166315529",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246448,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315527",
+      "name": "Recommendation Annotation PA166315527",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246446,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315526",
+      "name": "Recommendation Annotation PA166315526",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246445,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315537",
+      "name": "Recommendation Annotation PA166315537",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246456,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315524",
+      "name": "Recommendation Annotation PA166315524",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246443,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315535",
+      "name": "Recommendation Annotation PA166315535",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246454,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315533",
+      "name": "Recommendation Annotation PA166315533",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246452,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315531",
+      "name": "Recommendation Annotation PA166315531",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246450,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315542",
+      "name": "Recommendation Annotation PA166315542",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448405",
+          "name": "amoxapine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246461,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

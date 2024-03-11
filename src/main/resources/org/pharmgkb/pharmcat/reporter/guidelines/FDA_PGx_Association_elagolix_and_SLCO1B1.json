@@ -1,0 +1,53 @@
+{
+  "guideline": {
+    "id": "PA166328761",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Elagolix - SLCO1B1",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328761",
+    "relatedChemicals": [
+      {
+        "id": "PA166182348",
+        "name": "elagolix",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134865839",
+        "name": "solute carrier organic anion transporter family member 1B1",
+        "symbol": "SLCO1B1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315864",
+      "name": "Recommendation Annotation PA166315864",
+      "population": "Affected subgroup: SLCO1B1 521 CC (poor function transporters)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166182348",
+          "name": "elagolix",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246843,
+        "html": "<p>&quot;Results in higher systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "SLCO1B1": "Poor Function"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

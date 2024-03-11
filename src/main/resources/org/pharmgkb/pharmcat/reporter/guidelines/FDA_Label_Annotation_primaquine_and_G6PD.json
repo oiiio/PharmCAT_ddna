@@ -1,0 +1,110 @@
+{
+  "guideline": {
+    "id": "PA166104876",
+    "name": "Annotation of FDA Label for primaquine and G6PD",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 30,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104876",
+    "relatedChemicals": [
+      {
+        "id": "PA451103",
+        "name": "primaquine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312222",
+      "name": "Recommendation Annotation PA166312222",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451103",
+          "name": "primaquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216481,
+        "html": "<p>&quot;Primaquine should not be prescribed for patients with severe G6PD deficiency.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312223",
+      "name": "Recommendation Annotation PA166312223",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451103",
+          "name": "primaquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216482,
+        "html": "<p>&quot;In case of mild to moderate G6PD deficiency, a decision to prescribe primaquine must be based on an assessment of the risks and benefits...&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166314961",
+      "name": "Recommendation Annotation PA166314961",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451103",
+          "name": "primaquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245500,
+        "html": "<p>&quot;In case of mild to moderate G6PD deficiency, a decision to prescribe primaquine must be based on an assessment of the risks and benefits...&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Primaquine Phosphate (Primaquine Phosphate), NDA008316, PD-Rx Pharmaceuticals, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=008316"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

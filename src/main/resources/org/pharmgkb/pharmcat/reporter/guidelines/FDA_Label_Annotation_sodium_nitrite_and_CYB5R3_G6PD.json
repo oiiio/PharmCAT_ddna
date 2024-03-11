@@ -1,0 +1,115 @@
+{
+  "guideline": {
+    "id": "PA166115362",
+    "name": "Annotation of FDA Label for sodium nitrite and CYB5R3, G6PD",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 32,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166115362",
+    "relatedChemicals": [
+      {
+        "id": "PA166115361",
+        "name": "sodium nitrite",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA27331",
+        "name": "cytochrome b5 reductase 3",
+        "symbol": "CYB5R3"
+      },
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312398",
+      "name": "Recommendation Annotation PA166312398",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166115361",
+          "name": "sodium nitrite",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216678,
+        "html": "<p>&quot;Because patients with G6PD deficiency are at increased risk of a hemolytic crisis with sodium nitrite administration, alternative therapeutic approaches should be considered in these patients.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312425",
+      "name": "Recommendation Annotation PA166312425",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166115361",
+          "name": "sodium nitrite",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216724,
+        "html": "<p>&quot;Because patients with G6PD deficiency are at increased risk of a hemolytic crisis with sodium nitrite administration, alternative therapeutic approaches should be considered in these patients.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315161",
+      "name": "Recommendation Annotation PA166315161",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166115361",
+          "name": "sodium nitrite",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245700,
+        "html": "<p>&quot;Because patients with G6PD deficiency are at increased risk of a hemolytic crisis with sodium nitrite administration, alternative therapeutic approaches should be considered in these patients.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Sodium Nitrite (Sodium Nitrite), NDA203922, Hope Pharmaceuticals",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=203922"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

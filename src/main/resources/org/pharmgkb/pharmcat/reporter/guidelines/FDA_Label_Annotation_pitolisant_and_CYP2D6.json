@@ -1,0 +1,62 @@
+{
+  "guideline": {
+    "id": "PA166185168",
+    "name": "Annotation of FDA Label for pitolisant and CYP2D6",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 9,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166185168",
+    "relatedChemicals": [
+      {
+        "id": "PA166185163",
+        "name": "pitolisant",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312397",
+      "name": "Recommendation Annotation PA166312397",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166185163",
+          "name": "pitolisant",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216677,
+        "html": "<p>&quot;In patients known to be poor CYP2D6 metabolizers, initiate WAKIX [pitolisant] at 8.9 mg once daily and titrate to a maximum dose of 17.8 mg once daily after 7 days.&quot; See label for more information</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product  pitolisant NDA 211150",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=211150"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

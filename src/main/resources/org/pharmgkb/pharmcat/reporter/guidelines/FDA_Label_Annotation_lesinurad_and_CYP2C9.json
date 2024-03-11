@@ -1,0 +1,86 @@
+{
+  "guideline": {
+    "id": "PA166160007",
+    "name": "Annotation of FDA Label for lesinurad and CYP2C9",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 26,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166160007",
+    "relatedChemicals": [
+      {
+        "id": "PA166160006",
+        "name": "lesinurad",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA126",
+        "name": "cytochrome P450 family 2 subfamily C member 9",
+        "symbol": "CYP2C9"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166311982",
+      "name": "Recommendation Annotation PA166311982",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166160006",
+          "name": "lesinurad",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216181,
+        "html": "<p>&quot;ZURAMPIC [lesinurad] should be used with caution in patients taking moderate inhibitors of CYP2C9 (eg, fluconazole, amiodarone), and in CYP2C9 poor metabolizers.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166311981",
+      "name": "Recommendation Annotation PA166311981",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166160006",
+          "name": "lesinurad",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216180,
+        "html": "<p>&quot;ZURAMPIC [lesinurad] should be used with caution in patients taking moderate inhibitors of CYP2C9 (eg, fluconazole, amiodarone), and in CYP2C9 poor metabolizers.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Zurampic (lesinurad), NDA207988, Ironwood Pharmaceuticals, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=207988"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

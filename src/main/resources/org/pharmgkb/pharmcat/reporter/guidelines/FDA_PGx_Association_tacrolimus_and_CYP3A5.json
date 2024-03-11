@@ -1,0 +1,101 @@
+{
+  "guideline": {
+    "id": "PA166328712",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Tacrolimus - CYP3A5",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328712",
+    "relatedChemicals": [
+      {
+        "id": "PA451578",
+        "name": "tacrolimus",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA131",
+        "name": "cytochrome P450 family 3 subfamily A member 5",
+        "symbol": "CYP3A5"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315261",
+      "name": "Recommendation Annotation PA166315261",
+      "population": "Affected subgroup: CYP3A5 intermediate or normal metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451578",
+          "name": "tacrolimus",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246020,
+        "html": "<p>&quot;Results in lower systemic concentrations, lower probability of achieving target concentrations and may result in higher rejection risk. Measure drug concentrations and adjust dosage based on trough whole blood tacrolimus concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP3A5": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166315263",
+      "name": "Recommendation Annotation PA166315263",
+      "population": "Affected subgroup: CYP3A5 intermediate or normal metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451578",
+          "name": "tacrolimus",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246022,
+        "html": "<p>&quot;Results in lower systemic concentrations, lower probability of achieving target concentrations and may result in higher rejection risk. Measure drug concentrations and adjust dosage based on trough whole blood tacrolimus concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP3A5": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166315262",
+      "name": "Recommendation Annotation PA166315262",
+      "population": "Affected subgroup: CYP3A5 intermediate or normal metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451578",
+          "name": "tacrolimus",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246021,
+        "html": "<p>&quot;Results in lower systemic concentrations, lower probability of achieving target concentrations and may result in higher rejection risk. Measure drug concentrations and adjust dosage based on trough whole blood tacrolimus concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP3A5": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

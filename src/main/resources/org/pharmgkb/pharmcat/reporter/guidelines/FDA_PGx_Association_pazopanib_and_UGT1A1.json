@@ -1,0 +1,53 @@
+{
+  "guideline": {
+    "id": "PA166328738",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Indicate a Potential Impact on Safety or Response]: Pazopanib - UGT1A1",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328738",
+    "relatedChemicals": [
+      {
+        "id": "PA165291492",
+        "name": "pazopanib",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA420",
+        "name": "UDP glucuronosyltransferase 1 family, polypeptide A1",
+        "symbol": "UGT1A1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166317863",
+      "name": "Recommendation Annotation PA166317863",
+      "population": "Affected subgroup: UGT1A1*28/*28 (poor metabolizers)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA165291492",
+          "name": "pazopanib",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452269122,
+        "html": "<p>&quot;Results in higher adverse reaction risk (hyperbilirubinemia).&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "UGT1A1": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

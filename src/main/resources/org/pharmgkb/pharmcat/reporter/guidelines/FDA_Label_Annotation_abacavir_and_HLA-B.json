@@ -1,0 +1,62 @@
+{
+  "guideline": {
+    "id": "PA166104833",
+    "name": "Annotation of FDA Label for abacavir and HLA-B",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 47,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104833",
+    "relatedChemicals": [
+      {
+        "id": "PA448004",
+        "name": "abacavir",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA35056",
+        "name": "major histocompatibility complex, class I, B",
+        "symbol": "HLA-B"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310761",
+      "name": "Recommendation Annotation PA166310761",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448004",
+          "name": "abacavir",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213200,
+        "html": "<p>&quot;All patients should be screened for the HLA-B*5701 allele prior to initiating therapy with ZIAGEN [abacavir] or reinitiation of therapy with ZIAGEN, unless patients have a previously documented HLA-B*5701 allele assessment...ZIAGEN [abacavir] is contraindicated in patients: who have the HLA-B*5701 allele.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "HLA-B": "*57:01 positive"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product ZIAGEN (abacavir sulfate), NDA020977, ViiV Healthcare Company",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=020977"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

@@ -1,0 +1,110 @@
+{
+  "guideline": {
+    "id": "PA166182739",
+    "name": "Annotation of FDA Label for tafenoquine and G6PD",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 11,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166182739",
+    "relatedChemicals": [
+      {
+        "id": "PA166115580",
+        "name": "tafenoquine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315081",
+      "name": "Recommendation Annotation PA166315081",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166115580",
+          "name": "tafenoquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245620,
+        "html": "<p>&quot;ARAKODA [tafenoquine] is contraindicated in: patients with G6PD deficiency or unknown G6PD status due to the risk of hemolytic anemia...[and] breastfeeding by a lactating woman when the infant is found to be G6PD deficient or if the G6PD status of the infant is unknown...&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312291",
+      "name": "Recommendation Annotation PA166312291",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166115580",
+          "name": "tafenoquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216552,
+        "html": "<p>&quot;ARAKODA [tafenoquine] is contraindicated in: patients with G6PD deficiency or unknown G6PD status due to the risk of hemolytic anemia...[and] breastfeeding by a lactating woman when the infant is found to be G6PD deficient or if the G6PD status of the infant is unknown...&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312292",
+      "name": "Recommendation Annotation PA166312292",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166115580",
+          "name": "tafenoquine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216553,
+        "html": "<p>&quot;ARAKODA [tafenoquine] is contraindicated in: patients with G6PD deficiency or unknown G6PD status due to the risk of hemolytic anemia...[and] breastfeeding by a lactating woman when the infant is found to be G6PD deficient or if the G6PD status of the infant is unknown...&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Arakoda (Tafenoquine), NDA210607, 60 Degrees Pharmaceuticals, LLC",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=210607"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

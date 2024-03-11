@@ -1,0 +1,125 @@
+{
+  "guideline": {
+    "id": "PA166328673",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Brivaracetam - CYP2C19",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328673",
+    "relatedChemicals": [
+      {
+        "id": "PA166153491",
+        "name": "brivaracetam",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA124",
+        "name": "cytochrome P450 family 2 subfamily C member 19",
+        "symbol": "CYP2C19"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310382",
+      "name": "Recommendation Annotation PA166310382",
+      "population": "Affected subgroup: CYP2C19 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166153491",
+          "name": "brivaracetam",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211561,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310361",
+      "name": "Recommendation Annotation PA166310361",
+      "population": "Affected subgroup: CYP2C19 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166153491",
+          "name": "brivaracetam",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211540,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310341",
+      "name": "Recommendation Annotation PA166310341",
+      "population": "Affected subgroup: CYP2C19 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166153491",
+          "name": "brivaracetam",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211521,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310381",
+      "name": "Recommendation Annotation PA166310381",
+      "population": "Affected subgroup: CYP2C19 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166153491",
+          "name": "brivaracetam",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211560,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

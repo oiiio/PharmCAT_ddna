@@ -1,0 +1,243 @@
+{
+  "guideline": {
+    "id": "PA166129515",
+    "name": "Annotation of FDA Label for desflurane and CACNA1S, RYR1",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 33,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166129515",
+    "relatedChemicals": [
+      {
+        "id": "PA164749136",
+        "name": "desflurane",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA85",
+        "name": "calcium voltage-gated channel subunit alpha1 S",
+        "symbol": "CACNA1S"
+      },
+      {
+        "id": "PA34896",
+        "name": "ryanodine receptor 1",
+        "symbol": "RYR1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166311842",
+      "name": "Recommendation Annotation PA166311842",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216041,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Uncertain Susceptibility",
+        "CACNA1S": "Malignant Hyperthermia Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311824",
+      "name": "Recommendation Annotation PA166311824",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216003,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Malignant Hyperthermia Susceptibility",
+        "CACNA1S": "Uncertain Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312625",
+      "name": "Recommendation Annotation PA166312625",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218684,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Uncertain Susceptibility",
+        "CACNA1S": "Uncertain Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311822",
+      "name": "Recommendation Annotation PA166311822",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216001,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "No Result",
+        "CACNA1S": "Malignant Hyperthermia Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312604",
+      "name": "Recommendation Annotation PA166312604",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218671,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Uncertain Susceptibility",
+        "CACNA1S": "No Result"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311841",
+      "name": "Recommendation Annotation PA166311841",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216040,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Malignant Hyperthermia Susceptibility",
+        "CACNA1S": "Malignant Hyperthermia Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312624",
+      "name": "Recommendation Annotation PA166312624",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452218683,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "No Result",
+        "CACNA1S": "Uncertain Susceptibility"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166311823",
+      "name": "Recommendation Annotation PA166311823",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164749136",
+          "name": "desflurane",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216002,
+        "html": "<p>&quot;The use of SUPRANE [desflurane] is contraindicated in...[cases of k]nown or suspected genetic susceptibility to malignant hyperthermia...SUPRANE [desflurane] can induce malignant hyperthermia in patients with known or suspected susceptibility based on genetic factors or family history, including those with certain inherited ryanodine receptor (RYR1) or dihydropyridine receptor (CACNA1S) variants.  &quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "RYR1": "Malignant Hyperthermia Susceptibility",
+        "CACNA1S": "No Result"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product SUPRANE (desflurane), NDA020118, Baxter Healthcare Corporation",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=020118"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

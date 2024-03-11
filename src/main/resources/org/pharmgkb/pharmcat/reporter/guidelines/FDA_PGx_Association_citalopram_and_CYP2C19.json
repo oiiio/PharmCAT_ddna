@@ -1,0 +1,77 @@
+{
+  "guideline": {
+    "id": "PA166328677",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Citalopram - CYP2C19",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328677",
+    "relatedChemicals": [
+      {
+        "id": "PA449015",
+        "name": "citalopram",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA124",
+        "name": "cytochrome P450 family 2 subfamily C member 19",
+        "symbol": "CYP2C19"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166309901",
+      "name": "Recommendation Annotation PA166309901",
+      "population": "Affected subgroup: CYP2C19 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449015",
+          "name": "citalopram",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452208400,
+        "html": "<p>&quot;Results in higher systemic concentrations and adverse reaction risk (QT prolongation). The maximum recommended dose is 20 mg.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166309921",
+      "name": "Recommendation Annotation PA166309921",
+      "population": "Affected subgroup: CYP2C19 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449015",
+          "name": "citalopram",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452208420,
+        "html": "<p>&quot;Results in higher systemic concentrations and adverse reaction risk (QT prolongation). The maximum recommended dose is 20 mg.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

@@ -1,0 +1,110 @@
+{
+  "guideline": {
+    "id": "PA166104897",
+    "name": "Annotation of FDA Label for moviprep and G6PD",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 34,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104897",
+    "relatedChemicals": [
+      {
+        "id": "PA166163260",
+        "name": "moviprep",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315002",
+      "name": "Recommendation Annotation PA166315002",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166163260",
+          "name": "moviprep",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245541,
+        "html": "<p>&quot;Since MoviPrep contains sodium ascorbate and ascorbic acid, MoviPrep should be used with caution in patients with glucose-6-phosphate dehydrogenase (G-6-PD) deficiency, especially G-6-PD deficiency patients with an active infection, with a history of hemolysis, or taking concomitant medications known to precipitate hemolytic reactions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312286",
+      "name": "Recommendation Annotation PA166312286",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166163260",
+          "name": "moviprep",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216545,
+        "html": "<p>&quot;Since MoviPrep contains sodium ascorbate and ascorbic acid, MoviPrep should be used with caution in patients with glucose-6-phosphate dehydrogenase (G-6-PD) deficiency, especially G-6-PD deficiency patients with an active infection, with a history of hemolysis, or taking concomitant medications known to precipitate hemolytic reactions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312285",
+      "name": "Recommendation Annotation PA166312285",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166163260",
+          "name": "moviprep",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216544,
+        "html": "<p>&quot;Since MoviPrep contains sodium ascorbate and ascorbic acid, MoviPrep should be used with caution in patients with glucose-6-phosphate dehydrogenase (G-6-PD) deficiency, especially G-6-PD deficiency patients with an active infection, with a history of hemolysis, or taking concomitant medications known to precipitate hemolytic reactions.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product MoviPrep (POLYETHYLENE GLYCOL 3350, SODIUM SULFATE, SODIUM CHLORIDE, POTASSIUM CHLORIDE, ASCORBIC ACID, SODIUM ASCORBATE), NDA021881, Salix Pharmaceuticals, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=021881"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

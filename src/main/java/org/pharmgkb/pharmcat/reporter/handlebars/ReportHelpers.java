@@ -18,8 +18,8 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 import org.pharmgkb.pharmcat.phenotype.model.GenePhenotype;
 import org.pharmgkb.pharmcat.reporter.TextConstants;
 import org.pharmgkb.pharmcat.reporter.format.html.Report;
-import org.pharmgkb.pharmcat.reporter.model.DataSource;
 import org.pharmgkb.pharmcat.reporter.model.MessageAnnotation;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.VariantReport;
 import org.pharmgkb.pharmcat.reporter.model.cpic.Publication;
 import org.pharmgkb.pharmcat.reporter.model.result.AnnotationReport;
@@ -237,16 +237,14 @@ public class ReportHelpers {
   }
 
 
-  public static String rxAnnotationClass(DataSource source, String drug) {
-    StringBuilder builder = new StringBuilder();
-    builder.append(source.name().toLowerCase());
-    builder.append("-");
-    builder.append(sanitizeCssSelector(drug));
-    return builder.toString();
+  public static String rxAnnotationClass(PrescribingGuidanceSource source, String drug) {
+    return source.getCodeName() +
+        "-" +
+        sanitizeCssSelector(drug);
   }
 
-  public static boolean rxIsCpicWarfarin(String drug, DataSource source) {
-    return drug.equals("warfarin") && source == DataSource.CPIC;
+  public static boolean rxIsCpicWarfarin(String drug, PrescribingGuidanceSource source) {
+    return drug.equals("warfarin") && source == PrescribingGuidanceSource.CPIC_GUIDELINE;
   }
 
   public static boolean rxDpydInferred(Genotype genotype) {

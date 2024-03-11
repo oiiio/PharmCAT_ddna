@@ -11,7 +11,7 @@ import com.google.gson.annotations.SerializedName;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.pharmgkb.common.util.ComparisonChain;
 import org.pharmgkb.pharmcat.reporter.ReportContext;
-import org.pharmgkb.pharmcat.reporter.model.DataSource;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.pgkb.GuidelinePackage;
 import org.pharmgkb.pharmcat.reporter.model.pgkb.RecommendationAnnotation;
 
@@ -26,7 +26,7 @@ public class GuidelineReport implements Comparable<GuidelineReport> {
 
   @Expose
   @SerializedName("source")
-  private DataSource m_source;
+  private PrescribingGuidanceSource m_source;
   @Expose
   @SerializedName("version")
   private String m_version;
@@ -54,7 +54,7 @@ public class GuidelineReport implements Comparable<GuidelineReport> {
   public GuidelineReport(GuidelinePackage guidelinePackage, ReportContext reportContext, String drugName) {
     m_id = guidelinePackage.getGuideline().getId();
     m_name = guidelinePackage.getGuideline().getName();
-    m_source = DataSource.valueOf(guidelinePackage.getGuideline().getSource());
+    m_source = PrescribingGuidanceSource.typeFor(guidelinePackage.getGuideline());
     m_version = guidelinePackage.getVersion();
     m_url = guidelinePackage.getGuideline().getUrl();
     initializeGenes(guidelinePackage.getGenes(), reportContext);
@@ -90,7 +90,7 @@ public class GuidelineReport implements Comparable<GuidelineReport> {
     return m_name;
   }
 
-  public DataSource getSource() {
+  public PrescribingGuidanceSource getSource() {
     return m_source;
   }
 
@@ -147,7 +147,7 @@ public class GuidelineReport implements Comparable<GuidelineReport> {
           .filter(rec -> rec.matchesGenotype(genotype))
           .forEach(rec -> matchedGenotypes.put(rec, genotype));
     }
-    if (drugName.equals("warfarin") && m_source == DataSource.CPIC) {
+    if (drugName.equals("warfarin") && m_source == PrescribingGuidanceSource.CPIC_GUIDELINE) {
       AnnotationReport ann = AnnotationReport.forWarfarin(m_recommendationGenotypes);
       m_recommendationGenotypes.forEach(ann::addGenotype);
       m_annotationReports.add(ann);

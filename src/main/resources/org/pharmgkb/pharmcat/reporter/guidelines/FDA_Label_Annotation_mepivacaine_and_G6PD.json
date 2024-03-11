@@ -1,0 +1,110 @@
+{
+  "guideline": {
+    "id": "PA166182751",
+    "name": "Annotation of FDA Label for mepivacaine and G6PD",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 12,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166182751",
+    "relatedChemicals": [
+      {
+        "id": "PA164748741",
+        "name": "mepivacaine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA28469",
+        "name": "glucose-6-phosphate dehydrogenase",
+        "symbol": "G6PD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315144",
+      "name": "Recommendation Annotation PA166315144",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164748741",
+          "name": "mepivacaine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245683,
+        "html": "<p>&quot;Although all patients are at risk for methemoglobinemia, patients with glucose-6-phosphate dehydrogenase deficiency, ... are more susceptible to developing clinical manifestations of the condition. If local anesthetics must be used in these patients, close monitoring for symptoms and signs of methemoglobinemia is recommended.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Variable"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312441",
+      "name": "Recommendation Annotation PA166312441",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164748741",
+          "name": "mepivacaine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216740,
+        "html": "<p>&quot;Although all patients are at risk for methemoglobinemia, patients with glucose-6-phosphate dehydrogenase deficiency, ... are more susceptible to developing clinical manifestations of the condition. If local anesthetics must be used in these patients, close monitoring for symptoms and signs of methemoglobinemia is recommended.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient with CNSHA"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166312442",
+      "name": "Recommendation Annotation PA166312442",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA164748741",
+          "name": "mepivacaine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216741,
+        "html": "<p>&quot;Although all patients are at risk for methemoglobinemia, patients with glucose-6-phosphate dehydrogenase deficiency, ... are more susceptible to developing clinical manifestations of the condition. If local anesthetics must be used in these patients, close monitoring for symptoms and signs of methemoglobinemia is recommended.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "G6PD": "Deficient"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Carbocaine (Mepivacaine Hydrochloride), NDA012250, Hospira, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=012250"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

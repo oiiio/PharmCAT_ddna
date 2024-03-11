@@ -1,0 +1,709 @@
+{
+  "guideline": {
+    "id": "PA166328714",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Thioguanine - TPMT and/or NUDT15",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328714",
+    "relatedChemicals": [
+      {
+        "id": "PA451663",
+        "name": "thioguanine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134963132",
+        "name": "nudix hydrolase 15",
+        "symbol": "NUDT15"
+      },
+      {
+        "id": "PA356",
+        "name": "thiopurine S-methyltransferase",
+        "symbol": "TPMT"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166312070",
+      "name": "Recommendation Annotation PA166312070",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216309,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312081",
+      "name": "Recommendation Annotation PA166312081",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216320,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312072",
+      "name": "Recommendation Annotation PA166312072",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216311,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312083",
+      "name": "Recommendation Annotation PA166312083",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216322,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312101",
+      "name": "Recommendation Annotation PA166312101",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216340,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312033",
+      "name": "Recommendation Annotation PA166312033",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216232,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312042",
+      "name": "Recommendation Annotation PA166312042",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216282,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312066",
+      "name": "Recommendation Annotation PA166312066",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216305,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312068",
+      "name": "Recommendation Annotation PA166312068",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216307,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312044",
+      "name": "Recommendation Annotation PA166312044",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216284,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312031",
+      "name": "Recommendation Annotation PA166312031",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216230,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312062",
+      "name": "Recommendation Annotation PA166312062",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216301,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312102",
+      "name": "Recommendation Annotation PA166312102",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216341,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312104",
+      "name": "Recommendation Annotation PA166312104",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216343,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312073",
+      "name": "Recommendation Annotation PA166312073",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216312,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312064",
+      "name": "Recommendation Annotation PA166312064",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216303,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312082",
+      "name": "Recommendation Annotation PA166312082",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216321,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312071",
+      "name": "Recommendation Annotation PA166312071",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216310,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312069",
+      "name": "Recommendation Annotation PA166312069",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216308,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312065",
+      "name": "Recommendation Annotation PA166312065",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216304,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312032",
+      "name": "Recommendation Annotation PA166312032",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216231,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312043",
+      "name": "Recommendation Annotation PA166312043",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216283,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312067",
+      "name": "Recommendation Annotation PA166312067",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216306,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312103",
+      "name": "Recommendation Annotation PA166312103",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216342,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312074",
+      "name": "Recommendation Annotation PA166312074",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216313,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312061",
+      "name": "Recommendation Annotation PA166312061",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216300,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166312063",
+      "name": "Recommendation Annotation PA166312063",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451663",
+          "name": "thioguanine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452216302,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Initial dosages should be reduced in poor metabolizers; poor metabolizers generally tolerate 10% or less of the recommended dosage. Intermediate metabolizers may require dosage reductions based on tolerability. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

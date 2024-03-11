@@ -1,0 +1,77 @@
+{
+  "guideline": {
+    "id": "PA166328686",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Flibanserin - CYP2C19",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328686",
+    "relatedChemicals": [
+      {
+        "id": "PA166153431",
+        "name": "flibanserin",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA124",
+        "name": "cytochrome P450 family 2 subfamily C member 19",
+        "symbol": "CYP2C19"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315202",
+      "name": "Recommendation Annotation PA166315202",
+      "population": "Affected subgroup: CYP2C19 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166153431",
+          "name": "flibanserin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245881,
+        "html": "<p>&quot;May result in higher systemic concentrations and higher adverse reaction risk. Monitor patients for adverse reactions.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315201",
+      "name": "Recommendation Annotation PA166315201",
+      "population": "Affected subgroup: CYP2C19 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166153431",
+          "name": "flibanserin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452245880,
+        "html": "<p>&quot;May result in higher systemic concentrations and higher adverse reaction risk. Monitor patients for adverse reactions.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

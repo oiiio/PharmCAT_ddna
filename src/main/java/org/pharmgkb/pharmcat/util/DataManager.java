@@ -20,14 +20,11 @@ import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.pharmgkb.common.util.CliHelper;
 import org.pharmgkb.common.util.PathUtils;
 import org.pharmgkb.pharmcat.definition.DefinitionReader;
@@ -135,10 +132,6 @@ public class DataManager {
                 zipFile.toFile());
             ZipUtils.unzip(zipFile, downloadDir);
           }
-          Path guidelinesDir = downloadDir.resolve("guidelines");
-          if (Files.exists(guidelinesDir)) {
-            FileUtils.deleteDirectory(guidelinesDir.toFile());
-          }
           if (Files.exists(zipFile)) {
             ZipUtils.unzip(zipFile, downloadDir);
           } else {
@@ -149,8 +142,8 @@ public class DataManager {
         // must get guidelines before alleles
         PgkbGuidelineCollection pgkbGuidelineCollection;
         if (!skipGuidelines) {
-          Path reporterDir = cliHelper.getValidDirectory("g", true);
-          Path guidelinesDir = reporterDir.resolve("guidelines");
+          Path drugsDir = cliHelper.getValidDirectory("g", true);
+          Path guidelinesDir = drugsDir.resolve("guidelines");
           manager.transformGuidelines(downloadDir, guidelinesDir);
           pgkbGuidelineCollection = new PgkbGuidelineCollection(guidelinesDir);
         } else {
@@ -228,35 +221,22 @@ public class DataManager {
     }
   }
 
-  private static final Pattern GUIDELINE_FILENAME_PATTERN = Pattern.compile("^Annotation_of_(.+)_(Guideline|Label)_for_(.+)$");
-
   private void transformGuidelines(Path downloadDir, Path guidelinesDir) throws IOException {
     if (!Files.exists(guidelinesDir)) {
       Files.createDirectories(guidelinesDir);
     }
     System.out.println("Saving guidelines to " + guidelinesDir);
-    Set<String> currentFiles = getCurrentFiles(guidelinesDir, ".json");
-
     AtomicInteger count = new AtomicInteger();
     try (Stream<Path> stream = Files.list(downloadDir.resolve("guidelines"))) {
       stream.forEach((file) -> {
         try {
-          String origFilename = FilenameUtils.getName(file.toString());
-          Matcher m = GUIDELINE_FILENAME_PATTERN.matcher(origFilename);
-          if (m.matches()) {
-            String dataSource = m.group(1);
-            String annotationName = m.group(3);
-            String filename = dataSource + "_" + annotationName;
-            count.incrementAndGet();
-            try (Reader reader = Files.newBufferedReader(file)) {
-              GuidelinePackage guidelinePackage = DataSerializer.GSON.fromJson(reader, GuidelinePackage.class);
-              guidelinePackage.getCitations().forEach(Publication::normalize);
-              try (Writer writer = Files.newBufferedWriter(guidelinesDir.resolve(filename))) {
-                DataSerializer.GSON.toJson(guidelinePackage, writer);
-              }
-              if (!currentFiles.remove(filename)) {
-                System.out.println("New guideline: " + filename);
-              }
+          count.incrementAndGet();
+          try (Reader reader = Files.newBufferedReader(file)) {
+            GuidelinePackage guidelinePackage = DataSerializer.GSON.fromJson(reader, GuidelinePackage.class);
+            guidelinePackage.getCitations().forEach(Publication::normalize);
+
+            try (Writer writer = Files.newBufferedWriter(guidelinesDir.resolve(guidelinePackage.toString()))) {
+              DataSerializer.GSON.toJson(guidelinePackage, writer);
             }
           }
         } catch (IOException ex) {
@@ -265,7 +245,6 @@ public class DataManager {
       });
     }
     System.out.println("Found " + count.get() + " guidelines");
-    deleteObsoleteFiles(guidelinesDir, currentFiles);
   }
 
 

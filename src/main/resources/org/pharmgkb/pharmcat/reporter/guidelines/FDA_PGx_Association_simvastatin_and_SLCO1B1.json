@@ -1,0 +1,101 @@
+{
+  "guideline": {
+    "id": "PA166328741",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Indicate a Potential Impact on Safety or Response]: Simvastatin - SLCO1B1",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328741",
+    "relatedChemicals": [
+      {
+        "id": "PA451363",
+        "name": "simvastatin",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134865839",
+        "name": "solute carrier organic anion transporter family member 1B1",
+        "symbol": "SLCO1B1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315422",
+      "name": "Recommendation Annotation PA166315422",
+      "population": "Affected subgroup: SLCO1B1 521 TC or 521 CC (intermediate or poor function transporters)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451363",
+          "name": "simvastatin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246341,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk (myopathy). The risk of adverse reaction (myopathy) is higher for patients on 80 mg than for those on lower doses.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "SLCO1B1": "Decreased Function"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315423",
+      "name": "Recommendation Annotation PA166315423",
+      "population": "Affected subgroup: SLCO1B1 521 TC or 521 CC (intermediate or poor function transporters)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451363",
+          "name": "simvastatin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246342,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk (myopathy). The risk of adverse reaction (myopathy) is higher for patients on 80 mg than for those on lower doses.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "SLCO1B1": "Possible Decreased Function"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315421",
+      "name": "Recommendation Annotation PA166315421",
+      "population": "Affected subgroup: SLCO1B1 521 TC or 521 CC (intermediate or poor function transporters)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA451363",
+          "name": "simvastatin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246340,
+        "html": "<p>&quot;Results in higher systemic concentrations and higher adverse reaction risk (myopathy). The risk of adverse reaction (myopathy) is higher for patients on 80 mg than for those on lower doses.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "SLCO1B1": "Poor Function"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

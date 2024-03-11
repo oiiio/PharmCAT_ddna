@@ -17,6 +17,7 @@ import com.google.common.collect.SortedSetMultimap;
 import com.google.common.collect.TreeMultimap;
 import org.pharmgkb.common.util.PathUtils;
 import org.pharmgkb.pharmcat.reporter.model.DataSource;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.pgkb.AccessionObject;
 import org.pharmgkb.pharmcat.reporter.model.pgkb.GuidelinePackage;
 import org.pharmgkb.pharmcat.util.DataSerializer;
@@ -41,7 +42,7 @@ public class PgkbGuidelineCollection {
         stream.filter(f -> f.getFileName().toString().endsWith(".json"))
             .forEach(annotationFiles::add);
     }}
-    if (annotationFiles.size() == 0) {
+    if (annotationFiles.isEmpty()) {
       throw new IOException("Cannot find annotations");
     }
 
@@ -60,9 +61,9 @@ public class PgkbGuidelineCollection {
     return f_guidelinePackages;
   }
 
-  public List<GuidelinePackage> findGuidelinePackages(String chemicalName, DataSource source) {
+  public List<GuidelinePackage> findGuidelinePackages(String chemicalName, PrescribingGuidanceSource source) {
     return f_guidelineMap.get(chemicalName).stream()
-        .filter(p -> p.getGuideline().getSource().equalsIgnoreCase(source.getPharmgkbName()))
+        .filter(p -> p.isDataSourceType(source))
         .collect(Collectors.toList());
   }
 

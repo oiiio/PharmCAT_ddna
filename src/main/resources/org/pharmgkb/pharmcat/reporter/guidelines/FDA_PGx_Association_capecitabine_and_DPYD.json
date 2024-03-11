@@ -1,0 +1,125 @@
+{
+  "guideline": {
+    "id": "PA166328674",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Capecitabine - DPYD",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328674",
+    "relatedChemicals": [
+      {
+        "id": "PA448771",
+        "name": "capecitabine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA145",
+        "name": "dihydropyrimidine dehydrogenase",
+        "symbol": "DPYD"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310722",
+      "name": "Recommendation Annotation PA166310722",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448771",
+          "name": "capecitabine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213161,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers, and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "1.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166310701",
+      "name": "Recommendation Annotation PA166310701",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448771",
+          "name": "capecitabine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213140,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers, and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310721",
+      "name": "Recommendation Annotation PA166310721",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448771",
+          "name": "capecitabine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213160,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers, and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310723",
+      "name": "Recommendation Annotation PA166310723",
+      "population": "Affected subgroup: DPYD intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448771",
+          "name": "capecitabine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213162,
+        "html": "<p>&quot;Results in higher adverse reaction risk (severe, life-threatening, or fatal toxicities). No dosage has proven safe in poor metabolizers, and insufficient data are available to recommend a dosage in intermediate metabolizers. Withhold or discontinue in the presence of early-onset or unusually severe toxicity.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "DPYD": "1.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

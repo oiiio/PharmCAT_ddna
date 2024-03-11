@@ -1,0 +1,709 @@
+{
+  "guideline": {
+    "id": "PA166328669",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Azathioprine - TPMT and/or NUDT15",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328669",
+    "relatedChemicals": [
+      {
+        "id": "PA448515",
+        "name": "azathioprine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134963132",
+        "name": "nudix hydrolase 15",
+        "symbol": "NUDT15"
+      },
+      {
+        "id": "PA356",
+        "name": "thiopurine S-methyltransferase",
+        "symbol": "TPMT"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310891",
+      "name": "Recommendation Annotation PA166310891",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213330,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310922",
+      "name": "Recommendation Annotation PA166310922",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213361,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310895",
+      "name": "Recommendation Annotation PA166310895",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213334,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310900",
+      "name": "Recommendation Annotation PA166310900",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213339,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310882",
+      "name": "Recommendation Annotation PA166310882",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213321,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310897",
+      "name": "Recommendation Annotation PA166310897",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213336,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310884",
+      "name": "Recommendation Annotation PA166310884",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213323,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Indeterminate"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310887",
+      "name": "Recommendation Annotation PA166310887",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213326,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310863",
+      "name": "Recommendation Annotation PA166310863",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213302,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310898",
+      "name": "Recommendation Annotation PA166310898",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213337,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310889",
+      "name": "Recommendation Annotation PA166310889",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213328,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310865",
+      "name": "Recommendation Annotation PA166310865",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213304,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Normal Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310890",
+      "name": "Recommendation Annotation PA166310890",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213329,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310892",
+      "name": "Recommendation Annotation PA166310892",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213331,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310921",
+      "name": "Recommendation Annotation PA166310921",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213360,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310883",
+      "name": "Recommendation Annotation PA166310883",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213322,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310881",
+      "name": "Recommendation Annotation PA166310881",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213320,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "No Result",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310894",
+      "name": "Recommendation Annotation PA166310894",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213333,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310901",
+      "name": "Recommendation Annotation PA166310901",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213340,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Possible Intermediate Metabolizer",
+        "NUDT15": "No Result"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310885",
+      "name": "Recommendation Annotation PA166310885",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213324,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Intermediate Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310861",
+      "name": "Recommendation Annotation PA166310861",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213300,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Poor Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310896",
+      "name": "Recommendation Annotation PA166310896",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213335,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310899",
+      "name": "Recommendation Annotation PA166310899",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213338,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Possible Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310886",
+      "name": "Recommendation Annotation PA166310886",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213325,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310862",
+      "name": "Recommendation Annotation PA166310862",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213301,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Normal Metabolizer",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310888",
+      "name": "Recommendation Annotation PA166310888",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213327,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166310864",
+      "name": "Recommendation Annotation PA166310864",
+      "population": "Affected subgroup: TPMT and/or NUDT15 intermediate or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448515",
+          "name": "azathioprine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213303,
+        "html": "<p>&quot;Alters systemic active metabolite concentration and dosage requirements. Results in higher adverse reaction risk (myelosuppression). Consider alternative therapy in poor metabolizers. Dosage reduction is recommended in intermediate metabolizers for NUDT15 or TPMT. Intermediate metabolizers for both genes may require more substantial dosage reductions. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "TPMT": "Indeterminate",
+        "NUDT15": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

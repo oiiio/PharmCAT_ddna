@@ -1,0 +1,77 @@
+{
+  "guideline": {
+    "id": "PA166328768",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Ibuprofen - CYP2C9",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328768",
+    "relatedChemicals": [
+      {
+        "id": "PA449957",
+        "name": "ibuprofen",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA126",
+        "name": "cytochrome P450 family 2 subfamily C member 9",
+        "symbol": "CYP2C9"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315875",
+      "name": "Recommendation Annotation PA166315875",
+      "population": "Affected subgroup: CYP2C9 poor metabolizers or *3 carriers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449957",
+          "name": "ibuprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246854,
+        "html": "<p>&quot;May result in higher systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315876",
+      "name": "Recommendation Annotation PA166315876",
+      "population": "Affected subgroup: CYP2C9 poor metabolizers or *3 carriers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449957",
+          "name": "ibuprofen",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246855,
+        "html": "<p>&quot;May result in higher systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C9": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

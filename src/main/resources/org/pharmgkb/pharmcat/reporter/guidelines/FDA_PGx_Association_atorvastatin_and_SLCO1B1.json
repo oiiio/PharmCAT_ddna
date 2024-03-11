@@ -1,0 +1,53 @@
+{
+  "guideline": {
+    "id": "PA166328749",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Atorvastatin - SLCO1B1",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328749",
+    "relatedChemicals": [
+      {
+        "id": "PA448500",
+        "name": "atorvastatin",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA134865839",
+        "name": "solute carrier organic anion transporter family member 1B1",
+        "symbol": "SLCO1B1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315761",
+      "name": "Recommendation Annotation PA166315761",
+      "population": "Affected subgroup: SLCO1B1 521 CC (poor function transporters)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA448500",
+          "name": "atorvastatin",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246720,
+        "html": "<p>&quot;May result in higher systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "SLCO1B1": "Poor Function"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

@@ -1,0 +1,86 @@
+{
+  "guideline": {
+    "id": "PA166104884",
+    "name": "Annotation of FDA Label for clobazam and CYP2C19",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 30,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166104884",
+    "relatedChemicals": [
+      {
+        "id": "PA10888",
+        "name": "clobazam",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA124",
+        "name": "cytochrome P450 family 2 subfamily C member 19",
+        "symbol": "CYP2C19"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166307682",
+      "name": "Recommendation Annotation PA166307682",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA10888",
+          "name": "clobazam",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452162041,
+        "html": "<p>&quot;In CYP2C19 poor metabolizers ... the starting dose should be 5 mg/day and dose titration should proceed slowly according to weight, but to half the dose presented in Table 1 [of the drug label], as tolerated. If necessary and based upon clinical response, an additional titration to the maximum dose (20 mg/day or 40 mg/day, depending on the weight group) may be started on day 21.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Likely Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    },
+    {
+      "id": "PA166307681",
+      "name": "Recommendation Annotation PA166307681",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA10888",
+          "name": "clobazam",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452162040,
+        "html": "<p>&quot;In CYP2C19 poor metabolizers ... the starting dose should be 5 mg/day and dose titration should proceed slowly according to weight, but to half the dose presented in Table 1 [of the drug label], as tolerated. If necessary and based upon clinical response, an additional titration to the maximum dose (20 mg/day or 40 mg/day, depending on the weight group) may be started on day 21.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2C19": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product Onfi (clobazam), NDA202067, Lundbeck Pharmaceuticals LLC",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=202067"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

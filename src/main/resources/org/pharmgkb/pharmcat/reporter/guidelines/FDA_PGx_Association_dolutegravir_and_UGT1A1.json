@@ -1,0 +1,53 @@
+{
+  "guideline": {
+    "id": "PA166328757",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Dolutegravir - UGT1A1",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328757",
+    "relatedChemicals": [
+      {
+        "id": "PA166114961",
+        "name": "dolutegravir",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA420",
+        "name": "UDP glucuronosyltransferase 1 family, polypeptide A1",
+        "symbol": "UGT1A1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315847",
+      "name": "Recommendation Annotation PA166315847",
+      "population": "Affected subgroup: UGT1A1 poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA166114961",
+          "name": "dolutegravir",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246826,
+        "html": "<p>&quot;Results in higher systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "UGT1A1": "Poor Metabolizer"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

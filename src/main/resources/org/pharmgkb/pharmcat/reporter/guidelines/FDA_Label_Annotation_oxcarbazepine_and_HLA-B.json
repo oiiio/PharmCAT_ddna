@@ -1,0 +1,62 @@
+{
+  "guideline": {
+    "id": "PA166105213",
+    "name": "Annotation of FDA Label for oxcarbazepine and HLA-B",
+    "objCls": "Label Annotation",
+    "source": "FDA",
+    "version": 31,
+    "url": "https://www.pharmgkb.org/labelAnnotation/PA166105213",
+    "relatedChemicals": [
+      {
+        "id": "PA450732",
+        "name": "oxcarbazepine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA35056",
+        "name": "major histocompatibility complex, class I, B",
+        "symbol": "HLA-B"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310841",
+      "name": "Recommendation Annotation PA166310841",
+      "population": null,
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450732",
+          "name": "oxcarbazepine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452213280,
+        "html": "<p>&quot;The use of oxcarbazepine should be avoided in patients positive for HLA-B*1502 unless the benefits clearly outweigh the risks.&quot; See label for more information.</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "HLA-B": "*15:02 positive"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": true,
+      "otherPrescribingGuidance": false
+    }
+  ],
+  "citations": [
+    {
+      "pmid": null,
+      "title": "Drugs@FDA: Drug Product OXTELLAR XR (OXCARBAZEPINE), NDA202810, Supernus Pharmaceuticals, Inc.",
+      "authors": [],
+      "journal": null,
+      "year": -1,
+      "_sameAs": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=202810"
+    }
+  ],
+  "version": "2024-03-08-14-34"
+}

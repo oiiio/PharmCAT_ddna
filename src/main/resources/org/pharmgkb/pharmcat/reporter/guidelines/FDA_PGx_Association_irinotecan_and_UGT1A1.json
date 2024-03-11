@@ -1,0 +1,77 @@
+{
+  "guideline": {
+    "id": "PA166328693",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Support Therapeutic Management Recommendations]: Irinotecan - UGT1A1",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328693",
+    "relatedChemicals": [
+      {
+        "id": "PA450085",
+        "name": "irinotecan",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA420",
+        "name": "UDP glucuronosyltransferase 1 family, polypeptide A1",
+        "symbol": "UGT1A1"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166310422",
+      "name": "Recommendation Annotation PA166310422",
+      "population": "Affected subgroup: UGAT1A1*1/*6, *1/*28 (intermediate metabolizers) or  *6/*6, *6/*28, *28/*28 (poor metabolizers)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450085",
+          "name": "irinotecan",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211641,
+        "html": "<p>&quot;Results in higher systemic active metabolite concentrations and higher adverse reaction risk (severe or life-threatening neutropenia, severe diarrhea). Closely monitor for neutropenia during and after treatment. Consider reducing the starting dosage by at least one level in poor metabolizers and modify the dosage based on individual patient tolerance. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "UGT1A1": "Intermediate Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166310421",
+      "name": "Recommendation Annotation PA166310421",
+      "population": "Affected subgroup: UGT1A1*1/*6, *1/*28 (intermediate metabolizers) or  *6/*6, *6/*28, *28/*28 (poor metabolizers)",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA450085",
+          "name": "irinotecan",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452211640,
+        "html": "<p>&quot;Results in higher systemic active metabolite concentrations and higher adverse reaction risk (severe or life-threatening neutropenia, severe diarrhea). Closely monitor for neutropenia during and after treatment. Consider reducing the starting dosage by at least one level in poor metabolizers and modify the dosage based on individual patient tolerance. Refer to FDA labeling for specific dosing recommendations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "UGT1A1": "Poor Metabolizer"
+      },
+      "dosingInformation": true,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

@@ -1,0 +1,317 @@
+{
+  "guideline": {
+    "id": "PA166328758",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Donepezil - CYP2D6",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328758",
+    "relatedChemicals": [
+      {
+        "id": "PA449394",
+        "name": "donepezil",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315849",
+      "name": "Recommendation Annotation PA166315849",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246828,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315858",
+      "name": "Recommendation Annotation PA166315858",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246837,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315856",
+      "name": "Recommendation Annotation PA166315856",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246835,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315854",
+      "name": "Recommendation Annotation PA166315854",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246833,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315851",
+      "name": "Recommendation Annotation PA166315851",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246830,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315848",
+      "name": "Recommendation Annotation PA166315848",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246827,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315859",
+      "name": "Recommendation Annotation PA166315859",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246838,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315857",
+      "name": "Recommendation Annotation PA166315857",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246836,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315853",
+      "name": "Recommendation Annotation PA166315853",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246832,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315855",
+      "name": "Recommendation Annotation PA166315855",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246834,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315852",
+      "name": "Recommendation Annotation PA166315852",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246831,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315850",
+      "name": "Recommendation Annotation PA166315850",
+      "population": "Affected subgroup: CYP2D6 ultrarapid or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449394",
+          "name": "donepezil",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246829,
+        "html": "<p>&quot;Alters systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}

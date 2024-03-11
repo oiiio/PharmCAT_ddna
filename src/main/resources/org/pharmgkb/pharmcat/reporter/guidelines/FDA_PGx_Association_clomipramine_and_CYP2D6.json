@@ -1,0 +1,437 @@
+{
+  "guideline": {
+    "id": "PA166328752",
+    "name": "FDA PGx Association [Pharmacogenetic Associations for which the Data Demonstrate a Potential Impact on Pharmacokinetic Properties Only]: Clomipramine - CYP2D6",
+    "objCls": "PGx Association",
+    "source": "FDA",
+    "version": 0,
+    "url": "https://www.pharmgkb.org/fdaPgxAssociations#PA166328752",
+    "relatedChemicals": [
+      {
+        "id": "PA449048",
+        "name": "clomipramine",
+        "symbol": null
+      }
+    ],
+    "relatedGenes": [
+      {
+        "id": "PA128",
+        "name": "cytochrome P450 family 2 subfamily D member 6",
+        "symbol": "CYP2D6"
+      }
+    ],
+    "recommendation": false
+  },
+  "recommendations": [
+    {
+      "id": "PA166315589",
+      "name": "Recommendation Annotation PA166315589",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246508,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315587",
+      "name": "Recommendation Annotation PA166315587",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246506,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315563",
+      "name": "Recommendation Annotation PA166315563",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246482,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.25"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315585",
+      "name": "Recommendation Annotation PA166315585",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246504,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315561",
+      "name": "Recommendation Annotation PA166315561",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246480,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315603",
+      "name": "Recommendation Annotation PA166315603",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246522,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥5.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315601",
+      "name": "Recommendation Annotation PA166315601",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246520,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315583",
+      "name": "Recommendation Annotation PA166315583",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246502,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "1.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315588",
+      "name": "Recommendation Annotation PA166315588",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246507,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315586",
+      "name": "Recommendation Annotation PA166315586",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246505,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "3.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315562",
+      "name": "Recommendation Annotation PA166315562",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246481,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315604",
+      "name": "Recommendation Annotation PA166315604",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246523,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥6.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315584",
+      "name": "Recommendation Annotation PA166315584",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246503,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "2.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315602",
+      "name": "Recommendation Annotation PA166315602",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246521,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥4.0"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315582",
+      "name": "Recommendation Annotation PA166315582",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246501,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.75"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315581",
+      "name": "Recommendation Annotation PA166315581",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246500,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "0.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    },
+    {
+      "id": "PA166315590",
+      "name": "Recommendation Annotation PA166315590",
+      "population": "Affected subgroup: CYP2D6 ultrarapid, intermediate, or poor metabolizers",
+      "classification": null,
+      "relatedChemicals": [
+        {
+          "id": "PA449048",
+          "name": "clomipramine",
+          "symbol": null
+        }
+      ],
+      "text": {
+        "id": 1452246509,
+        "html": "<p>&quot;May alter systemic concentrations.&quot;</p>\n"
+      },
+      "implications": [],
+      "lookupKey": {
+        "CYP2D6": "≥3.5"
+      },
+      "dosingInformation": false,
+      "alternateDrugAvailable": false,
+      "otherPrescribingGuidance": true
+    }
+  ],
+  "citations": [],
+  "version": "2024-03-08-14-34"
+}
