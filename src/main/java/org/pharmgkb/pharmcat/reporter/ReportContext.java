@@ -121,12 +121,8 @@ public class ReportContext {
     }
 
     // check drug data
-    for (GuidelinePackage guidelinePackage : guidelineCollection.getGuidelinePackages()) {
-      // NOTE: CPIC recommendations are pulled from PharmGKB DB, not CPIC DB so their version will not match the allele
-      // definition, so let's exclude the check for CPIC
-      if (dataSource != DataSource.CPIC && guidelinePackage.getGuideline().getSource().equals(dataSource.getPharmgkbName())) {
-        observedVersions.add(guidelinePackage.getVersion());
-      }
+    if (guidelineCollection.getVersion() != null) {
+      observedVersions.add(guidelineCollection.getVersion());
     }
 
     if (observedVersions.isEmpty()) {
@@ -204,7 +200,7 @@ public class ReportContext {
 
   /**
    * Gets the PharmCAT version tag this context was created with
-   * @return a verstion tag string in the form vX.Y
+   * @return a version tag string in the form vX.Y
    */
   public String getPharmcatVersion() {
     return f_pharmcatVersion;

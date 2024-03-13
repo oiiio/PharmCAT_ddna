@@ -53,6 +53,7 @@ public class DataManager {
   private static final String POSITIONS_VCF = "pharmcat_positions.vcf";
   private static final String ALLELES_FILE_NAME = "allele_translations.json";
   private static final String CPIC_ALLELES_FILE_NAME = "allele_definitions.json";
+  private static final String PRESCRIBING_GUIDANCE_FILE_NAME = "prescribing_guidance.json";
   private static final String sf_zipFileName = "pharmcat.zip";
   private static final String sf_googleDocUrlFmt = "https://docs.google.com/spreadsheets/d/%s/export?format=tsv";
 
@@ -143,9 +144,8 @@ public class DataManager {
         PgkbGuidelineCollection pgkbGuidelineCollection;
         if (!skipGuidelines) {
           Path drugsDir = cliHelper.getValidDirectory("g", true);
-          Path guidelinesDir = drugsDir.resolve("guidelines");
-          manager.transformGuidelines(downloadDir, guidelinesDir);
-          pgkbGuidelineCollection = new PgkbGuidelineCollection(guidelinesDir);
+          Path guidanceFile = drugsDir.resolve(PRESCRIBING_GUIDANCE_FILE_NAME);
+          pgkbGuidelineCollection = new PgkbGuidelineCollection(guidanceFile);
         } else {
           // if we're skipping new drug data, then use the default data
           pgkbGuidelineCollection = new PgkbGuidelineCollection();

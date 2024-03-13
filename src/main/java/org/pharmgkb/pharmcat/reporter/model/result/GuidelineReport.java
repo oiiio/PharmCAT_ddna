@@ -55,7 +55,7 @@ public class GuidelineReport implements Comparable<GuidelineReport> {
     m_id = guidelinePackage.getGuideline().getId();
     m_name = guidelinePackage.getGuideline().getName();
     m_source = PrescribingGuidanceSource.typeFor(guidelinePackage.getGuideline());
-    m_version = guidelinePackage.getVersion();
+    m_version = reportContext.getCpicVersion();
     m_url = guidelinePackage.getGuideline().getUrl();
     initializeGenes(guidelinePackage.getGenes(), reportContext);
     matchAnnotations(guidelinePackage, drugName);

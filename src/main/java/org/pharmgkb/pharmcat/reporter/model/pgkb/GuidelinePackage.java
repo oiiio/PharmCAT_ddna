@@ -25,9 +25,6 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
   @Expose
   @SerializedName("citations")
   private List<Publication> citations = new ArrayList<>();
-  @Expose
-  @SerializedName("version")
-  private String m_version;
 
 
   /**
@@ -66,11 +63,6 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
     return guideline.getRelatedChemicals().stream()
         .map(AccessionObject::getName)
         .collect(Collectors.toSet());
-  }
-
-
-  public String getVersion() {
-    return m_version;
   }
 
 
