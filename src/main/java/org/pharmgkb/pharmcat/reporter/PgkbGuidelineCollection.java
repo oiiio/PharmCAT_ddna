@@ -77,6 +77,12 @@ public class PgkbGuidelineCollection {
         .collect(Collectors.toSet());
   }
 
+  public Set<GuidelinePackage> getGuidelinesFromSource(PrescribingGuidanceSource source) {
+    return f_guidelineMap.values().stream()
+        .filter(g -> g.isDataSourceType(source))
+        .collect(Collectors.toSet());
+  }
+
   public Set<String> getChemicalsUsedInSource(DataSource source) {
     return f_guidelineMap.values().stream()
         .map(GuidelinePackage::getGuideline)

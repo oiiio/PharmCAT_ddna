@@ -25,6 +25,9 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
   @Expose
   @SerializedName("citations")
   private List<Publication> citations = new ArrayList<>();
+  @Expose
+  @SerializedName("url")
+  private String url;
 
 
   /**
@@ -52,6 +55,10 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
     return citations;
   }
 
+  public String getUrl() {
+    return this.url;
+  }
+
   
   public Set<String> getGenes() {
     return guideline.getRelatedGenes().stream()
@@ -73,19 +80,7 @@ public class GuidelinePackage implements Comparable<GuidelinePackage> {
   @Override
   public String toString() {
     if (guideline != null) {
-      String chemicals = recommendations.stream()
-          .flatMap((r) -> r.getRelatedChemicals().stream())
-          .map(AccessionObject::getName)
-          .distinct()
-          .sorted()
-          .collect(Collectors.joining("_"));
-      return String.format(
-          "%s_%s_%s_and_%s.json",
-          guideline.getSource(),
-          guideline.getObjCls(),
-          chemicals,
-          guideline.getRelatedGenes().stream().map(AccessionObject::getSymbol).collect(Collectors.joining("_"))
-      ).replaceAll("[\\s\\/]", "_");
+      return guideline.getName();
     }
     else {
       return super.toString();

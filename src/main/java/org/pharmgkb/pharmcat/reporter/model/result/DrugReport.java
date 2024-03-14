@@ -73,7 +73,7 @@ public class DrugReport implements Comparable<DrugReport> {
     // DPWG drug can have multiple guideline reports
     for (GuidelinePackage guidelinePackage : guidelinePackages) {
       m_source = PrescribingGuidanceSource.typeFor(guidelinePackage.getGuideline());
-      m_urls.add(guidelinePackage.getGuideline().getUrl());
+      m_urls.add(guidelinePackage.getUrl());
       if (guidelinePackage.getCitations() != null) {
         m_citations.addAll(guidelinePackage.getCitations());
       }

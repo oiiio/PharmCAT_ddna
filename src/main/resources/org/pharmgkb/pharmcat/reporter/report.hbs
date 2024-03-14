@@ -233,12 +233,7 @@
                     <tr class="top-aligned {{{rxAnnotationClass source drug}}}">
                       <td>
                         <p>
-                          <b>{{source}}</b>
-                          {{#unless notCalled}}
-                            <sup class="sources">
-                              {{{listSources urls}}}
-                            </sup>
-                          {{/unless}}
+                          <b><a href="{{url}}" target="_blank">{{source}}</a></b>
                         </p>
                         <p>Population:<br />{{capitalizeNA population}}</p>
                         {{{annotationTags this}}}

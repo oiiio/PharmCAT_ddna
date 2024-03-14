@@ -5,6 +5,7 @@ import org.pharmgkb.common.util.PathUtils;
 import org.pharmgkb.pharmcat.Env;
 import org.pharmgkb.pharmcat.phenotype.Phenotyper;
 import org.pharmgkb.pharmcat.reporter.model.DataSource;
+import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.result.DrugReport;
 import org.pharmgkb.pharmcat.reporter.model.result.GeneReport;
 import org.pharmgkb.pharmcat.reporter.model.result.GuidelineReport;
@@ -40,7 +41,7 @@ class ReporterTest {
     );
 
     // test that messages were applied for a drug
-    DrugReport warfarinReport = reportContext.getDrugReports().get(DataSource.CPIC).get("warfarin");
+    DrugReport warfarinReport = reportContext.getDrugReports().get(PrescribingGuidanceSource.CPIC_GUIDELINE).get("warfarin");
     assertNotNull(warfarinReport, "Missing warfarin drug report");
     assertEquals(2, warfarinReport.getMessages().size());
     assertEquals(1, warfarinReport.getGuidelines().size());
@@ -49,7 +50,7 @@ class ReporterTest {
     assertEquals(0, guidelineReport.getAnnotations().first().getMessages().size());
 
     // test that recommendations were matched
-    DrugReport desfluraneReport = reportContext.getDrugReports().get(DataSource.CPIC).values().stream()
+    DrugReport desfluraneReport = reportContext.getDrugReports().get(PrescribingGuidanceSource.CPIC_GUIDELINE).values().stream()
         .filter(d -> d.getName().equals("desflurane")).findFirst()
         .orElseThrow(() -> new RuntimeException("No desflurane drug report found"));
     assertEquals(1, desfluraneReport.getGuidelines().stream().filter(GuidelineReport::isMatched).count());

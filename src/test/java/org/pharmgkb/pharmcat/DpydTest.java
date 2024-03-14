@@ -92,12 +92,11 @@ class DpydTest {
     assertNotNull(dpwgDpydGeneReport);
     assertEquals(1, dpwgDpydGeneReport.getRecommendationDiplotypes().size());
 
-    int numAnnotations = 0;
-
     if (hasCpicReport == RecPresence.YES) {
       testWrapper.testAnyMatchFromSource("fluorouracil", PrescribingGuidanceSource.CPIC_GUIDELINE);
       testWrapper.testAnyMatchFromSource("capecitabine", PrescribingGuidanceSource.CPIC_GUIDELINE);
-      numAnnotations += 1;
+      testWrapper.testMatchedAnnotations("fluorouracil", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
+      testWrapper.testMatchedAnnotations("capecitabine", PrescribingGuidanceSource.CPIC_GUIDELINE, 1);
 
     } else {
       testWrapper.testNoMatchFromSource("fluorouracil", PrescribingGuidanceSource.CPIC_GUIDELINE);
@@ -107,16 +106,12 @@ class DpydTest {
     if (hasDpwgReport == RecPresence.YES) {
       testWrapper.testAnyMatchFromSource("fluorouracil", PrescribingGuidanceSource.DPWG_GUIDELINE);
       testWrapper.testAnyMatchFromSource("capecitabine", PrescribingGuidanceSource.DPWG_GUIDELINE);
-      numAnnotations += 1;
+      testWrapper.testMatchedAnnotations("fluorouracil", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
+      testWrapper.testMatchedAnnotations("capecitabine", PrescribingGuidanceSource.DPWG_GUIDELINE, 1);
 
     } else {
       testWrapper.testNoMatchFromSource("fluorouracil", PrescribingGuidanceSource.DPWG_GUIDELINE);
       testWrapper.testNoMatchFromSource("capecitabine", PrescribingGuidanceSource.DPWG_GUIDELINE);
-    }
-
-    if (numAnnotations > 0) {
-      testWrapper.testMatchedAnnotations("fluorouracil", numAnnotations);
-      testWrapper.testMatchedAnnotations("capecitabine", numAnnotations);
     }
   }
 
@@ -264,7 +259,7 @@ class DpydTest {
               .map(c -> "DPYD:" + c)
               .toList();
 
-      Elements cpicCapecitabineDips = capecitabineSection.select(".cpic-capecitabine .rx-dip");
+      Elements cpicCapecitabineDips = capecitabineSection.select(".cpic-guideline-capecitabine .rx-dip");
       if (hasCpicAnnotation == RecPresence.YES) {
         assertEquals(expectedRxCalls,
             cpicCapecitabineDips.stream()
@@ -273,13 +268,13 @@ class DpydTest {
 
       } else {
         assertEquals(0, cpicCapecitabineDips.size());
-        Elements unmatchedDips = capecitabineSection.select(".cpic-capecitabine .rx-unmatched-dip");
+        Elements unmatchedDips = capecitabineSection.select(".cpic-guideline-capecitabine .rx-unmatched-dip");
         assertEquals(expectedRxCalls, unmatchedDips.stream()
             .map(e -> cleanupRxDip(e, List.of("DPYD")))
             .toList());
       }
 
-      Elements dpwgCapecitabineDips = capecitabineSection.select(".dpwg-capecitabine .rx-dip");
+      Elements dpwgCapecitabineDips = capecitabineSection.select(".dpwg-guideline-capecitabine .rx-dip");
       if (hasDpwgAnnotation == RecPresence.YES) {
         assertEquals(expectedRxCalls,
             dpwgCapecitabineDips.stream()
@@ -287,7 +282,7 @@ class DpydTest {
                 .toList());
       } else {
         assertEquals(0, dpwgCapecitabineDips.size());
-        Elements unmatchedDips = capecitabineSection.select(".dpwg-capecitabine .rx-unmatched-dip");
+        Elements unmatchedDips = capecitabineSection.select(".dpwg-guideline-capecitabine .rx-unmatched-dip");
         assertEquals(expectedRxCalls, unmatchedDips.stream()
             .map(e -> cleanupRxDip(e, List.of("DPYD")))
             .toList());
