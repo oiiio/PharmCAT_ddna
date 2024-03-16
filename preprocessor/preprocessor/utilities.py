@@ -729,8 +729,43 @@ def _extract_pgx_regions(pharmcat_positions: Path, vcf_file: Path, sample_file: 
     return pgx_regions_vcf
 
 
+def force_indel(pharmcat_positions_vcf: Path, vcf_file: Path, output_dir: Path, output_basename: Optional[str],
+                verbose: int = 0) -> Path:
+    """
+    merge vcf_file with pharmcat_positions_vcf to force the representation of indels in vcf_file.
+    :param pharmcat_positions_vcf: reference pharmcat position vcf
+    :param vcf_file: input file where indels will be forced
+    :param output_dir:
+    :param output_basename:
+    :param verbose:
+    :return: a vcf file whose indels have been forced to be represented
+    """
+    if output_basename is None:
+        output_basename = get_vcf_basename(vcf_file)
+    # merge with pharmcat_positions_vcf to enforce the representation of indels
+    # especially when individual positions of an indel are listed as homozygous reference in the input vcf
+    # see https://github.com/PharmGKB/PharmCAT/issues/128
+    pcat_merged_vcf = output_dir / (output_basename + '.pcat_merged.vcf.bgz')
+    bcftools_command = [common.BCFTOOLS_PATH, 'merge', '--no-version', '-m', 'both', '-Oz', '-o', str(pcat_merged_vcf),
+                        vcf_file, pharmcat_positions_vcf]
+    if verbose:
+        print('* Merge with %s to force the representation of INDELs' % str(pharmcat_positions_vcf))
+    run(bcftools_command)
+    index_vcf(pcat_merged_vcf, verbose)
+
+    # remove the artificial pharmcat sample and genotypes
+    force_indel_vcf = output_dir / (output_basename + '.force_indel.vcf.bgz')
+    bcftools_command = [common.BCFTOOLS_PATH, 'view', '--no-version', '-s', '^PharmCAT', '-U',
+                        '-Oz', '-o', str(force_indel_vcf), pcat_merged_vcf]
+    if verbose:
+        print('* Removing the artificial PharmCAT sample and genotypes from %s' % str(pharmcat_positions_vcf))
+    run(bcftools_command)
+    index_vcf(force_indel_vcf, verbose)
+    return force_indel_vcf
+
+
 def normalize_vcf(reference_genome: Path, vcf_file: Path, output_dir: Path, output_basename: Optional[str],
-                  verbose: int = 0):
+                  verbose: int = 0) -> Path:
     """
     Normalize the input VCF against the human reference genome sequence GRCh38/hg38.
 

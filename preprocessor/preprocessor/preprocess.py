@@ -97,8 +97,14 @@ def _preprocess(pharmcat_positions_vcf: Path, reference_genome: Path,
                                                     output_basename,
                                                     concurrent_mode=concurrent_mode, max_processes=max_processes,
                                                     verbose=verbose)
+
+    # force the representation of indels in the input vcf by merging it with the pharmcat position vcf
+    # note, partial missing at any position of an indel will lead to a missing indel due to uncertain genotypes
+    force_indel_vcf: Path = util.force_indel(pharmcat_positions_vcf, pgx_region_vcf, output_dir, output_basename,
+                                             verbose=verbose)
+
     # normalize the input VCF
-    normalized_vcf = util.normalize_vcf(reference_genome, pgx_region_vcf, output_dir, output_basename, verbose=verbose)
+    normalized_vcf = util.normalize_vcf(reference_genome, force_indel_vcf, output_dir, output_basename, verbose=verbose)
 
     # extract the specific PGx genetic variants in the reference PGx VCF
     # this step also generates a report of missing PGx positions in the input VCF
