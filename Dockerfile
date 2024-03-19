@@ -6,7 +6,7 @@ FROM python:3.10
 
 # apt-utils line due to https://github.com/phusion/baseimage-docker/issues/319
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends apt-utils apt-transport-https gnupg && \
+    apt-get install -y --no-install-recommends apt-utils apt-transport-https gnupg libncurses5-dev && \
     apt-get -y upgrade && \
     apt-get -y install bzip2 build-essential wget
 

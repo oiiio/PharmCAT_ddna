@@ -367,6 +367,32 @@ public class DataManager {
         star1.getAlleles()[x] = star38.getAlleles()[x];
       }
     }
+
+    int rs12769205Idx = 0;
+    int rs3758581Idx = 0;
+    for (int x = 0; x < definitionFile.getVariants().length; x += 1) {
+      if (definitionFile.getVariants()[x].getRsid().equals("rs12769205")) {
+        rs12769205Idx = x;
+      } else if (definitionFile.getVariants()[x].getRsid().equals("rs3758581")) {
+        rs3758581Idx = x;
+      }
+    }
+    if (rs12769205Idx == 0) {
+      throw new IllegalStateException("Could not find rs12769205Idx for CYP2C19");
+    }
+    if (rs3758581Idx == 0) {
+      throw new IllegalStateException("Could not find rs3758581 for CYP2C19");
+    }
+    System.out.println("Updating rs12769205 and rs3758581 in CYP2C19");
+    for (NamedAllele na : definitionFile.getNamedAlleles()) {
+      if (na == star1 || na == star38) {
+        continue;
+      }
+      if (na.getName().equals("*2")) {
+        na.getAlleles()[rs12769205Idx] = "R";
+      }
+      na.getAlleles()[rs3758581Idx] = "R";
+    }
   }
 
 
