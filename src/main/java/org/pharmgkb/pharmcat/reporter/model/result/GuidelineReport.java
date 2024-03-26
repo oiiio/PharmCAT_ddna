@@ -11,6 +11,7 @@ import com.google.gson.annotations.SerializedName;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.pharmgkb.common.util.ComparisonChain;
 import org.pharmgkb.pharmcat.reporter.ReportContext;
+import org.pharmgkb.pharmcat.reporter.model.DataSource;
 import org.pharmgkb.pharmcat.reporter.model.PrescribingGuidanceSource;
 import org.pharmgkb.pharmcat.reporter.model.pgkb.GuidelinePackage;
 import org.pharmgkb.pharmcat.reporter.model.pgkb.RecommendationAnnotation;
@@ -135,6 +136,10 @@ public class GuidelineReport implements Comparable<GuidelineReport> {
 
   public SortedSet<String> getHomozygousComponentHaplotypes() {
     return m_homozygousComponentHaplotypes;
+  }
+
+  public boolean isFda() {
+    return m_source.getPgkbSource() == DataSource.FDA;
   }
 
 

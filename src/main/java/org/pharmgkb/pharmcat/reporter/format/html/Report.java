@@ -24,7 +24,7 @@ public class Report {
   private final PrescribingGuidanceSource m_source;
   private final boolean m_matched;
   private final List<String> m_urls;
-  private SortedSet<GuidelineReport> m_guidelines;
+  private final SortedSet<GuidelineReport> m_guidelines;
   private boolean m_notCalled;
   private String m_uncalledGenes;
   private SortedSet<Diplotype> m_unmatchedDiplotypes;

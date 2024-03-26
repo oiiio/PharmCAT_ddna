@@ -211,6 +211,8 @@
         <section class="guideline {{{sanitizeCssSelector drug}}}">
           <h3 id="{{{sanitizeCssSelector drug}}}">{{drug}}</h3>
 
+
+
           {{#each messages}}
             <div class="alert alert-info {{messageClass this}}">{{{message}}}</div>
           {{/each}}
@@ -218,7 +220,7 @@
           <table>
             <thead>
             <tr>
-              <th>Guideline</th>
+              <th>Source</th>
               <th>Genes</th>
               <th>Implications</th>
               <th>Recommendation</th>
@@ -273,7 +275,10 @@
                         </td>
                     {{else}}
                         <td>{{{rxImplications implications}}}</td>
-                        <td class="drugRecommendation">{{{drugRecommendation}}}</td>
+                        <td class="drugRecommendation">
+                          {{{drugRecommendation}}}
+                          {{#if ../fda}}<a href="#rx-ast-{{../../../drug}}">&ast;</a>{{/if}}
+                        </td>
                         <td>{{capitalizeNA classification}}</td>
                     {{/if}}
                   {{/each}}
@@ -325,6 +330,13 @@
               haplotypes. Consult the
               {{{externalHref "https://pharmcat.org/methods/Gene-Definition-Exceptions/#dpyd" "PharmCAT documentation"}}}
               for details.
+            </div>
+          {{/if}}
+          {{#if fda}}
+            <div class="footnote" id="rx-ast-{{drug}}">
+              <sup>&ast;</sup> Text in quotation is taken directly from the FDA Label or FDA PGx Association table. For
+              a label PDF with highlighted PGx content use the link in the Source column or go to
+              <a href="https://www.pharmgkb.org/fda">PharmGKB</a>.
             </div>
           {{/if}}
 

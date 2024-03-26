@@ -233,6 +233,10 @@ public class Recommendation implements Comparable<Recommendation> {
     return m_citations;
   }
 
+  public boolean isFda() {
+    return (m_fdaReport != null && m_fdaReport.isMatched()) || (m_fdaPgxAssocReport != null && m_fdaPgxAssocReport.isMatched());
+  }
+
 
   @Override
   public int compareTo(Recommendation o) {
