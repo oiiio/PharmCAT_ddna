@@ -84,6 +84,7 @@ clean.dependsOn(tasks.cleanTestOutput)
 
 test.dependsOn(tasks.cleanTestOutput)
 
+/*
 java {
   sourceCompatibility = JavaVersion.VERSION_17
   targetCompatibility = JavaVersion.VERSION_17
@@ -91,6 +92,7 @@ java {
     languageVersion = JavaLanguageVersion.of(17)
   }
 }
+*/
 
 tasks.withType(JavaCompile).configureEach {
   options.encoding = 'UTF-8'
