@@ -41,6 +41,7 @@
         "id": 1452059560,
         "html": "<p>Use abacavir per standard dosing guidelines</p>\n"
       },
+      "guidanceLevel": "1",
       "implications": [
         "HLA-B: Low or reduced risk of abacavir hypersensitivity"
       ],
@@ -70,6 +71,7 @@
         "id": 1452059561,
         "html": "<p>Abacavir is not recommended</p>\n"
       },
+      "guidanceLevel": "3",
       "implications": [
         "HLA-B: Significantly increased risk of abacavir hypersensitivity"
       ],

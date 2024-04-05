@@ -1,0 +1,9 @@
+##fileformat=VCFv4.1
+##fileDate=2015-08-04
+##reference=hg38
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FILTER=<ID=PASS,Description="All filters passed">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NA12878
+chr1	1	.	C	T	.	PASS	.	GT	0|1
+chr1	2	.	C	CT	.	PASS	.	GT	0|1
+chr1	4	.	TG	T	.	PASS	.	GT	0|1

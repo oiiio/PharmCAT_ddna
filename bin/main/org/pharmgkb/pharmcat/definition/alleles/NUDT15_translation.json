@@ -1,0 +1,1261 @@
+{
+  "formatVersion": "2",
+  "source": "CPIC",
+  "version": "v1.38.0-1-g39f50e7",
+  "modificationDate": "2024-02-15T19:05:07.836Z",
+  "gene": "NUDT15",
+  "orientation": null,
+  "chromosome": "chr13",
+  "genomeBuild": "GRCh38.p13",
+  "refSeqChromosomeId": "NC_000013.11",
+  "variants": [
+    {
+      "chromosome": "chr13",
+      "position": 48037748,
+      "cpicPosition": 48037748,
+      "rsid": "rs769369441",
+      "chromosomeHgvsName": "g.48037748T>C",
+      "cpicAlleles": [
+        "C",
+        "T"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "T": "T"
+      },
+      "ref": "T",
+      "alts": [
+        "C"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037749,
+      "cpicPosition": 48037749,
+      "rsid": null,
+      "chromosomeHgvsName": "g.48037749G>C",
+      "cpicAlleles": [
+        "C",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "G": "G"
+      },
+      "ref": "G",
+      "alts": [
+        "C"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037782,
+      "cpicPosition": 48037784,
+      "rsid": "rs746071566",
+      "chromosomeHgvsName": "g.48037784GAGTCG[2]; g.48037784GAGTCG[4]",
+      "cpicAlleles": [
+        "GAGTCG(2)",
+        "GAGTCG(3)",
+        "GAGTCG(4)"
+      ],
+      "cpicToVcfAlleleMap": {
+        "GAGTCG(3)": "AGGAGTC",
+        "GAGTCG(4)": "AGGAGTCGGAGTC",
+        "GAGTCG(2)": "A"
+      },
+      "ref": "AGGAGTC",
+      "alts": [
+        "A",
+        "AGGAGTCGGAGTC"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037798,
+      "cpicPosition": 48037798,
+      "rsid": "rs186364861",
+      "chromosomeHgvsName": "g.48037798G>A",
+      "cpicAlleles": [
+        "A",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "A": "A",
+        "G": "G"
+      },
+      "ref": "G",
+      "alts": [
+        "A"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037825,
+      "cpicPosition": 48037826,
+      "rsid": "rs777311140",
+      "chromosomeHgvsName": "g.48037826_48037827insCGGG",
+      "cpicAlleles": [
+        "del",
+        "insCGGG"
+      ],
+      "cpicToVcfAlleleMap": {
+        "insCGGG": "CGCGG",
+        "del": "C"
+      },
+      "ref": "C",
+      "alts": [
+        "CGCGG"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037834,
+      "cpicPosition": 48037834,
+      "rsid": "rs1202487323",
+      "chromosomeHgvsName": "g.48037834C>T",
+      "cpicAlleles": [
+        "C",
+        "T"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "T": "T"
+      },
+      "ref": "C",
+      "alts": [
+        "T"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037847,
+      "cpicPosition": 48037847,
+      "rsid": "rs766023281",
+      "chromosomeHgvsName": "g.48037847G>C",
+      "cpicAlleles": [
+        "C",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "G": "G"
+      },
+      "ref": "G",
+      "alts": [
+        "C"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037849,
+      "cpicPosition": 48037849,
+      "rsid": null,
+      "chromosomeHgvsName": "g.48037849A>G",
+      "cpicAlleles": [
+        "A",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "A": "A",
+        "G": "G"
+      },
+      "ref": "A",
+      "alts": [
+        "G"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037885,
+      "cpicPosition": 48037885,
+      "rsid": "rs1950545307",
+      "chromosomeHgvsName": "g.48037885G>A",
+      "cpicAlleles": [
+        "A",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "A": "A",
+        "G": "G"
+      },
+      "ref": "G",
+      "alts": [
+        "A"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48037902,
+      "cpicPosition": 48037902,
+      "rsid": "rs149436418",
+      "chromosomeHgvsName": "g.48037902C>G",
+      "cpicAlleles": [
+        "C",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "G": "G"
+      },
+      "ref": "C",
+      "alts": [
+        "G"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48040977,
+      "cpicPosition": 48040982,
+      "rsid": "rs1457579126",
+      "chromosomeHgvsName": "g.48040982del",
+      "cpicAlleles": [
+        "A",
+        "delA"
+      ],
+      "cpicToVcfAlleleMap": {
+        "A": "GA",
+        "delA": "G"
+      },
+      "ref": "GA",
+      "alts": [
+        "G"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48041103,
+      "cpicPosition": 48041104,
+      "rsid": "rs761191455",
+      "chromosomeHgvsName": "g.48041104dup",
+      "cpicAlleles": [
+        "G",
+        "GG"
+      ],
+      "cpicToVcfAlleleMap": {
+        "GG": "TG",
+        "G": "T"
+      },
+      "ref": "T",
+      "alts": [
+        "TG"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48041113,
+      "cpicPosition": 48041113,
+      "rsid": "rs1368252918",
+      "chromosomeHgvsName": "g.48041113G>T",
+      "cpicAlleles": [
+        "G",
+        "T"
+      ],
+      "cpicToVcfAlleleMap": {
+        "T": "T",
+        "G": "G"
+      },
+      "ref": "G",
+      "alts": [
+        "T"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48045690,
+      "cpicPosition": 48045690,
+      "rsid": "rs768324690",
+      "chromosomeHgvsName": "g.48045690C>G",
+      "cpicAlleles": [
+        "C",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "G": "G"
+      },
+      "ref": "C",
+      "alts": [
+        "G"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48045719,
+      "cpicPosition": 48045719,
+      "rsid": "rs116855232",
+      "chromosomeHgvsName": "g.48045719C>T",
+      "cpicAlleles": [
+        "C",
+        "T"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "T": "T"
+      },
+      "ref": "C",
+      "alts": [
+        "T"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48045720,
+      "cpicPosition": 48045720,
+      "rsid": "rs147390019",
+      "chromosomeHgvsName": "g.48045720G>A",
+      "cpicAlleles": [
+        "A",
+        "G"
+      ],
+      "cpicToVcfAlleleMap": {
+        "A": "A",
+        "G": "G"
+      },
+      "ref": "G",
+      "alts": [
+        "A"
+      ]
+    },
+    {
+      "chromosome": "chr13",
+      "position": 48045771,
+      "cpicPosition": 48045771,
+      "rsid": "rs139551410",
+      "chromosomeHgvsName": "g.48045771T>A",
+      "cpicAlleles": [
+        "A",
+        "T"
+      ],
+      "cpicToVcfAlleleMap": {
+        "A": "A",
+        "T": "T"
+      },
+      "ref": "T",
+      "alts": [
+        "A"
+      ]
+    }
+  ],
+  "namedAlleles": [
+    {
+      "name": "*1",
+      "id": "779064",
+      "alleles": [
+        "T",
+        "G",
+        "AGGAGTC",
+        "G",
+        "C",
+        "C",
+        "G",
+        "A",
+        "G",
+        "C",
+        "GA",
+        "T",
+        "G",
+        "C",
+        "C",
+        "G",
+        "T"
+      ],
+      "cpicAlleles": [
+        "T",
+        "G",
+        "GAGTCG(3)",
+        "G",
+        "del",
+        "C",
+        "G",
+        "A",
+        "G",
+        "C",
+        "A",
+        "G",
+        "G",
+        "C",
+        "C",
+        "G",
+        "T"
+      ],
+      "populationFrequency": null,
+      "reference": true,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*2",
+      "id": "779066",
+      "alleles": [
+        null,
+        null,
+        "AGGAGTCGGAGTC",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        "GAGTCG(4)",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*3",
+      "id": "779068",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*4",
+      "id": "779070",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "A",
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "A",
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*5",
+      "id": "779072",
+      "alleles": [
+        null,
+        null,
+        null,
+        "A",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        "A",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*6",
+      "id": "779074",
+      "alleles": [
+        null,
+        null,
+        "AGGAGTCGGAGTC",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        "GAGTCG(4)",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*7",
+      "id": "779076",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "C",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "C",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*8",
+      "id": "779078",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*9",
+      "id": "779080",
+      "alleles": [
+        null,
+        null,
+        "A",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        "GAGTCG(2)",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*10",
+      "id": "779082",
+      "alleles": [
+        "C",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        "C",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*11",
+      "id": "779084",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "A",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "A",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*12",
+      "id": "779086",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*13",
+      "id": "779088",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "TG",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "GG",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*14",
+      "id": "779090",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        "CGCGG",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        "insCGGG",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*15",
+      "id": "779092",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "A"
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "A"
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*16",
+      "id": "779094",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*17",
+      "id": "779096",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "T",
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*18",
+      "id": "779098",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "delA",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*19",
+      "id": "779100",
+      "alleles": [
+        null,
+        "C",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        "C",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*20",
+      "id": "779102",
+      "alleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null
+      ],
+      "cpicAlleles": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "G",
+        null,
+        null,
+        null
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    }
+  ]
+}

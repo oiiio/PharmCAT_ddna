@@ -1,0 +1,108 @@
+{
+  "formatVersion": "2",
+  "source": "CPIC",
+  "version": "test",
+  "modificationDate": "2023-10-03T03:13:15.094Z",
+  "gene": "CYP3A5",
+  "orientation": null,
+  "chromosome": "chr1",
+  "genomeBuild": "GRCh38.p13",
+  "refSeqChromosomeId": "NC_000007.14",
+  "variants": [
+    {
+      "chromosome": "chr1",
+      "position": 1,
+      "cpicPosition": 1,
+      "rsid": null,
+      "chromosomeHgvsName": "g.1C>T",
+      "cpicAlleles": [
+        "C",
+        "T"
+      ],
+      "cpicToVcfAlleleMap": {
+        "C": "C",
+        "T": "T"
+      },
+      "ref": "C",
+      "alts": [
+        "T"
+      ]
+    },
+    {
+      "chromosome": "chr1",
+      "position": 2,
+      "cpicPosition": 2,
+      "rsid": null,
+      "chromosomeHgvsName": "g.2insT",
+      "cpicAlleles": [
+        "del",
+        "insT"
+      ],
+      "cpicToVcfAlleleMap": {
+        "insT": "T",
+        "del": "C"
+      },
+      "ref": "C",
+      "alts": [
+        "CT"
+      ]
+    },
+    {
+      "chromosome": "chr1",
+      "position": 4,
+      "cpicPosition": 4,
+      "rsid": null,
+      "chromosomeHgvsName": "g.3del",
+      "cpicAlleles": [
+        "G",
+        "delG"
+      ],
+      "cpicToVcfAlleleMap": {
+        "delG": "T",
+        "G": "TG"
+      },
+      "ref": "TG",
+      "alts": [
+        "T"
+      ]
+    }
+  ],
+  "namedAlleles": [
+    {
+      "name": "*1",
+      "id": "CA100125.1",
+      "alleles": [
+        "C",
+        "C",
+        "TG"
+      ],
+      "cpicAlleles": [
+        "C",
+        "insT",
+        "G"
+      ],
+      "populationFrequency": null,
+      "reference": true,
+      "numCombinations": 0,
+      "numPartials": 0
+    },
+    {
+      "name": "*2",
+      "id": "CA100126.1",
+      "alleles": [
+        "T",
+        "CT",
+        "T"
+      ],
+      "cpicAlleles": [
+        "T",
+        "del",
+        "delG"
+      ],
+      "populationFrequency": null,
+      "reference": false,
+      "numCombinations": 0,
+      "numPartials": 0
+    }
+ ]
+}

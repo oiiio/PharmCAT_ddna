@@ -1,0 +1,383 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    html {
+      font-size: 16px;
+      background-color: #666666;
+    }
+    body {
+      font-weight: 300;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+      font-size: 1rem;
+      font-family: "Museo Sans W01 Rounded",Arial,Helvetica,sans-serif;
+      color: rgb(25, 31, 42);
+      background-color: #ffffff;
+      margin: 0 auto;
+      max-width: 70em;
+      padding: 0;
+    }
+    .browserUpgrade {
+      background: #ccc;
+      color: #000;
+      padding: 1em;
+    }
+    header {
+      margin-bottom: 1em;
+    }
+    main {
+      margin: 1em 1em 0 1em;
+      padding-bottom: 2em;
+    }
+    h1, h2, h3, h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    a, h1, h2, h3, h4, h5, h6 {
+      color: #3e4c6c;
+    }
+    h1 {
+      font-size: 2em;
+      font-weight: 100;
+    }
+    h2, h3, h4 {
+      font-weight: 300;
+    }
+    h2 {
+      font-size: 1.8em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    h4 {
+      font-size: 1.2em;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    table, ul {
+      margin-bottom: 1.5rem;
+    }
+    table {
+      min-width: 100%;
+      border-collapse: collapse;
+      border-color: grey;
+      font-size: 0.9rem;
+    }
+    td, th {
+      border: 1px solid rgba(62, 76, 108, 0.1);
+      max-width: 600px;
+      word-wrap: break-word;
+      padding: 1em 1.3em;
+    }
+    td p:last-child {
+      margin-bottom: 0;
+    }
+    th {
+      text-align: left;
+    }
+    tr.top-aligned td,th {
+      vertical-align: top;
+    }
+    .table-small th {
+      font-weight: normal;
+      font-style: italic;
+      width: 10em;
+    }
+    .table-small th, .table-small td {
+      padding:.2em;
+      font-size: .8em;
+      border: 0;
+    }
+    table.diplotype {
+      margin-bottom: 0;
+    }
+    table.genotypeSummary thead th {
+      padding-bottom: 0;
+    }
+    table.diplotype td {
+      width: 33%;
+      padding: .2em .2em .2em 1em;
+      border-width: 1px 0 0 0;
+    }
+    table.diplotype tbody tr:first-child td {
+      border-top: 0;
+    }
+    tr.lowestFunctionDiplotype td {
+      color: #3f3f3f;
+    }
+    tr.lowestFunctionDiplotype + tr td {
+      border-top: 0;
+    }
+    table.diplotype tbody tr td:first-child {
+      padding: .2em;
+      border-left-width: 0;
+    }
+    table.diplotype tbody tr td {
+      border-left-width: 1px;
+    }
+
+
+    .pageHeader {
+      display: flex;
+      align-items: center;
+      padding: 1em 1em;
+      background-color: #3e4c6c;
+      color: #ffffff;
+      min-width: 20em;
+    }
+    .pageHeader .title {
+      font-weight: bold;
+      font-size: 2em;
+      min-width: 10em;
+      width: 30%;
+    }
+    .pageHeader .subtitle {
+      margin-left: .5em;
+      font-size: .75em;
+    }
+    .pageHeader .metadata {
+      min-width: 10em;
+      width: 69%;
+    }
+    .pageHeader .metadata table {
+      line-height: 1;
+      margin: 0 .5em 0 auto;
+      min-width: unset;
+    }
+    .pageHeader .metadata th {
+      padding: 0 .5em 0 0;
+      font-size: .8em;
+      font-style: normal;
+      font-weight: normal;
+      text-align: right;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    .pageHeader .metadata td {
+      font-size: .8em;
+      padding: 0;
+      vertical-align: top;
+    }
+
+    p.tdNote {
+      margin-top: 1.2em;
+      margin-bottom: 0;
+      font-size: 0.9em;
+    }
+    p.tdNote + p.tdNote {
+      margin-top: 1em;
+      margin-bottom: 0;
+      font-size: 0.9em;
+    }
+
+    hr {
+      margin-bottom: 2em;
+    }
+    section.gene, section.guideline {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-bottom: 1px solid #DDD;
+    }
+    section.gene:last-child, section.guideline:last-child {
+      border-bottom: 0;
+    }
+
+    ol.noPadding, ul.noPadding {
+      padding-inline-start: 1rem;
+    }
+    ol.noBullet, ul.noBullet {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    dl.compact dd {
+      margin-left: 1em;
+    }
+
+    div.hint {
+      text-transform: capitalize;
+      font-size: .8em;
+      color: #666666;
+    }
+
+    .alert {
+      margin: 1em 0;
+      padding: 0.6em;
+      border-radius: 4px;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      print-color-adjust: exact !important;
+    }
+    .alert-info {
+      background-color: #d9edf7;
+      border-color: #bce8f1;
+      color: #3a87ad;
+    }
+    .alert-secondary {
+      background-color: #f6f6f6;
+      border-color: rgba(62, 76, 108, 0.1);
+    }
+    .alert-warning {
+      background-color: #fcf8e3;
+      border-color: #faebcc;
+      color: #8a6d3b;
+    }
+    .alert-danger {
+      background-color: #EAD6D5;
+      border-color: #EFDFDE;
+      color: #7C3A37;
+    }
+    .alert-danger h4 {
+      color: #7C3A37;
+      font-weight: bold;
+    }
+    .alert-debug {
+      padding: 0.2em;
+      background-color: #ffeeff;
+    }
+
+    .noGeneData {
+      font-size: .8em;
+      margin: 0 0.5em;
+    }
+    .drugName, .noWrap {
+      white-space: nowrap;
+    }
+    .normalWrap {
+      white-space: normal;
+    }
+
+    td.missingVariant {
+      background-color: lightsalmon;
+      print-color-adjust: exact !important;
+    }
+
+    td.mismatch {
+      font-weight: bold;
+    }
+    .nonwild {
+      background-color: palegoldenrod;
+      print-color-adjust: exact !important;
+    }
+
+    td.drugRecommendation ul {
+      /* same as noPadding above */
+      padding-inline-start: 1rem;
+    }
+
+    .mt-0 {
+      margin-top: 0;
+    }
+    .mt-1 {
+      margin-top: 0.5em;
+    }
+    .mb-0 {
+      margin-bottom: 0;
+    }
+    .mb-1 {
+      margin-bottom: 0.5em;
+    }
+    .mb-2 {
+      margin-bottom: 1em;
+    }
+
+    div.callMessage {
+      font-style: italic;
+      font-weight: normal;
+    }
+    
+    .geneCall {
+      font-size: 1.2em;
+    }
+
+    .footnote {
+      padding: .25em .5em;
+      font-size: .8em;
+    }
+    .citations {
+      font-size: .9em;
+    }
+    .footnote + .citations {
+      margin-top: 1.5rem;
+    }
+    .sources {
+      font-size: .8em;
+    }
+    .smallFont {
+      font-size: .9em;
+    }
+
+    .footnote sup {
+      font-style: normal;
+    }
+
+    #liability {
+      font-size: 1.2em;
+      color: darkred;
+    }
+
+    .warfarinFlowchart {
+      text-align: center;
+    }
+    .warfarinFlowchart img {
+      width: 100%;
+      height: auto;
+    }
+
+    .warningList {
+      margin: 0;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    sup a {
+      text-decoration: none;
+    }
+
+    .tag {
+      align-items: center;
+      background-color: #ffc107;
+      border-radius: .2rem;
+      display: inline-flex;
+      justify-content: center;
+      padding: .1em .4em .15em;
+      text-transform: none;
+      white-space: nowrap;
+      margin-bottom: .5rem;
+    }
+    .tag.noAction {
+      background-color: #d8dbe2;
+    }
+
+    @media print {
+      html {
+        font-size: 12px;
+      }
+
+      body {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img, pre, blockquote, table, figure, p {
+        page-break-inside: avoid;
+      }
+    }
+  </style>

@@ -1,0 +1,19 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##source=PharmCAT allele definitions
+##reference=hg38
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##contig=<ID=chr10,assembly=GRCh38.p13,species="Homo sapiens">
+##INFO=<ID=PX,Number=.,Type=String,Description="Gene">
+##INFO=<ID=POI,Number=0,Type=Flag,Description="Position of Interest but not part of an allele definition">
+##FILTER=<ID=PCATxREF,Description="Position not matching PharmCAT PGx reference alleles">
+##FILTER=<ID=PCATxALT,Description="Position not matching PharmCAT PGx alternative alleles">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	Sample_1
+chr10	94941982	.	GA	G	.	PCATxREF	AC=0;AN=2	GT	0/0
+chr10	94938683	.	G	.	.	PCATxREF	AN=2	GT	0/0
+chr10	94938828	rs564813580	A	C,T	.	PCATxALT	AC=0,1;AN=2	GT	2/0
+chr10	94941897	.	G	C	.	PCATxREF	AC=0,1;AN=2	GT	0/0
+chr10	94941915	.	G	A	.	PCATxALT	AC=0,1;AN=2	GT	0/0
+chr10	94949281	.	GA	G,<*>	.	.	AN=2	GT	0/1
