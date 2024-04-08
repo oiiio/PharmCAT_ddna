@@ -56,7 +56,8 @@
       },
       "dosingInformation": true,
       "alternateDrugAvailable": true,
-      "otherPrescribingGuidance": false
+      "otherPrescribingGuidance": false,
+      "guidanceLevel": "3"
     },
     {
       "id": "PA166297152",
