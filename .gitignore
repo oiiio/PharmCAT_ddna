@@ -35,6 +35,7 @@ venv/
 ._.DS_Store
 *~
 /build/
+.env
 
 # PharmCAT specific
 /docs/assets/

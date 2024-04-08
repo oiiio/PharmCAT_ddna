@@ -1,3 +1,10 @@
+## [2.12.0](https://github.com/oiiio/PharmCAT_ddna/compare/v2.11.0...v2.12.0) (2024-04-08)
+
+
+### Features
+
+* **pipeline:** add the feature of bypassing the gVCF check to the pipeline ([d38005e](https://github.com/oiiio/PharmCAT_ddna/commit/d38005e7cfe42a8e403af701ae078fb255779ce0))
+
 ## [2.11.0](https://github.com/PharmGKB/PharmCAT/compare/v2.10.0...v2.11.0) (2024-3-26)
 
 

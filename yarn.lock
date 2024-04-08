@@ -3357,9 +3357,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pharmcat@workspace:.":
+"pharmcat_ddna@workspace:.":
   version: 0.0.0-use.local
-  resolution: "pharmcat@workspace:."
+  resolution: "pharmcat_ddna@workspace:."
   dependencies:
     "@google/semantic-release-replace-plugin": 1.2.7
     "@semantic-release/changelog": 6.0.3

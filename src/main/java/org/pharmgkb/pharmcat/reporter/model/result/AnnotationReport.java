@@ -59,6 +59,9 @@ public class AnnotationReport implements Comparable<AnnotationReport> {
   @Expose
   @SerializedName("lookupKey")
   private Map<String,Object> m_lookupKey = new TreeMap<>();
+  @Expose
+  @SerializedName("guidanceLevel")
+  private String m_guidanceLevel;
 
 
   /**
@@ -87,6 +90,7 @@ public class AnnotationReport implements Comparable<AnnotationReport> {
     }
     m_drugRecommendation = recommendation.getText().getHtmlStripped();
     m_classification = recommendation.getClassification() != null ? recommendation.getClassification().getTerm() : null;
+    m_guidanceLevel = recommendation.getGuidanceLevel();
 
     m_population = recommendation.getPopulation();
 
@@ -156,6 +160,10 @@ public class AnnotationReport implements Comparable<AnnotationReport> {
 
   public String getClassification() {
     return m_classification;
+  }
+
+  public String getGuidanceLevel() {
+    return m_guidanceLevel;
   }
 
   public String getPopulation() {
@@ -233,6 +241,7 @@ public class AnnotationReport implements Comparable<AnnotationReport> {
         .compare(m_highlightedVariants, o.getHighlightedVariants())
         .compare(m_activityScores, o.getActivityScores())
         .compare(m_classification, o.getClassification())
+        .compare(m_guidanceLevel, o.getGuidanceLevel())
         .compare(m_drugRecommendation, o.getDrugRecommendation())
         .compare(m_implications, o.getImplications())
         .compare(m_messages, o.getMessages())

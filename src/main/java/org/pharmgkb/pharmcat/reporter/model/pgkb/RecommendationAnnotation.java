@@ -46,6 +46,9 @@ public class RecommendationAnnotation implements Comparable<RecommendationAnnota
   @SerializedName("otherPrescribingGuidance")
   @Expose
   private boolean otherPrescribingGuidance;
+  @Expose
+  @SerializedName("guidanceLevel")
+  private String guidanceLevel;
 
 
   public String getId() {
@@ -144,6 +147,10 @@ public class RecommendationAnnotation implements Comparable<RecommendationAnnota
 
   public void setLookupKey(Map<String,Object> lookupKey) {
     this.lookupKey = lookupKey;
+  }
+
+  public String getGuidanceLevel() {
+    return guidanceLevel;
   }
 
 

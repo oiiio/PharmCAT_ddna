@@ -38,7 +38,7 @@ jobs:
       - name: Upload jar to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: build/libs/pharmcat-${{steps.appVersion.outputs.substring}}-all.jar
           overwrite: true
@@ -46,7 +46,7 @@ jobs:
       - name: Upload preprocessor to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: build/preprocessor.tar.gz
           asset_name: pharmcat-preprocessor-${{steps.appVersion.outputs.substring}}.tar.gz
@@ -55,7 +55,7 @@ jobs:
       - name: Upload positions.vcf to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: pharmcat_positions.vcf
           asset_name: pharmcat_positions_${{steps.appVersion.outputs.substring}}.vcf
@@ -64,7 +64,7 @@ jobs:
       - name: Upload positions.vcf.bgz to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: pharmcat_positions.vcf.bgz
           asset_name: pharmcat_positions_${{steps.appVersion.outputs.substring}}.vcf.bgz
@@ -73,7 +73,7 @@ jobs:
       - name: Upload positions.vcf.bgz.csi to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: pharmcat_positions.vcf.bgz.csi
           asset_name: pharmcat_positions_${{steps.appVersion.outputs.substring}}.vcf.bgz.csi
@@ -82,7 +82,7 @@ jobs:
       - name: Upload positions.uniallelic.vcf.bgz to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: pharmcat_positions.uniallelic.vcf.bgz
           asset_name: pharmcat_positions_${{steps.appVersion.outputs.substring}}.uniallelic.vcf.bgz
@@ -91,7 +91,7 @@ jobs:
       - name: Upload positions.uniallelic.vcf.bgz.csi to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           tag: ${{ github.ref }}
           file: pharmcat_positions.uniallelic.vcf.bgz.csi
           asset_name: pharmcat_positions_${{steps.appVersion.outputs.substring}}.uniallelic.vcf.bgz.csi
