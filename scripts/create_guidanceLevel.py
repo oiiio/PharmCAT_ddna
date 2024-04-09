@@ -13,6 +13,10 @@ from openai import OpenAI
 client = OpenAI()
 client.api_key = os.getenv("OPENAI_API_KEY")
 
+
+# Open and loop through every JSON file in the /Users/gareth/PharmCAT_ddna/src/main/resources/org/pharmgkb/pharmcat/reporter/guidelines directory
+# For each file, loop through each object and for each recommendations element, send the element's ["text"]["html"] to the OpenAI API as the user message
+
 completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
   messages=[
