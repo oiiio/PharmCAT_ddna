@@ -1104,6 +1104,9 @@ class PipelineTest {
     assertNotNull(dpwgReport);
     assertNotNull(dpwgReport.getGuidelines());
     assertEquals("No recommendation", dpwgReport.getGuidelines().first().getAnnotations().first().getClassification());
+    //print a statement to allow easier reading of test output
+    System.out.println(dpwgReport.getGuidelines().first().getAnnotations().first().getGuidanceLevel());
+    assertEquals("1", dpwgReport.getGuidelines().first().getAnnotations().first().getGuidanceLevel() );
 
     Document document = readHtmlReport(vcfFile);
     htmlChecks(document, "SLCO1B1", expectedCalls, "simvastatin", RecPresence.YES, RecPresence.YES);

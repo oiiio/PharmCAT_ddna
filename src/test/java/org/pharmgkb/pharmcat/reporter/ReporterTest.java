@@ -47,6 +47,11 @@ class ReporterTest {
     GuidelineReport guidelineReport = warfarinReport.getGuidelines().first();
     assertEquals(1, guidelineReport.getAnnotations().size());
     assertEquals(0, guidelineReport.getAnnotations().first().getMessages().size());
+    //print out the guideline report
+    System.out.println(guidelineReport);
+
+    //test that guidanceLevel is included and matched
+    //assertEquals("Level A", guidelineReport.getGuidanceLevel());
 
     // test that recommendations were matched
     DrugReport desfluraneReport = reportContext.getDrugReports().get(DataSource.CPIC).values().stream()
