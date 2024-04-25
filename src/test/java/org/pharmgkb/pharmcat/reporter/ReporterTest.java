@@ -50,8 +50,8 @@ class ReporterTest {
     //print out the guideline report
     System.out.println(guidelineReport);
 
-    //test that guidanceLevel is included and matched
-    //assertEquals("Level A", guidelineReport.getGuidanceLevel());
+    // test that the reportContext outputs JSON correctly
+    
 
     // test that recommendations were matched
     DrugReport desfluraneReport = reportContext.getDrugReports().get(DataSource.CPIC).values().stream()
